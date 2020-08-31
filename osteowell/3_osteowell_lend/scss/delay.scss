@@ -1,0 +1,58 @@
+.delay {
+  padding: 120px 0 0;
+  background: $backgr url("../imgs/delay/delay-bg.png") no-repeat center/cover;
+  min-height: 1000px;
+}
+
+.delay-title {
+  font-size: 51px;
+  text-transform: uppercase;
+  color: $red;
+  margin-bottom: 70px;
+}
+
+.delay-text {
+  max-width: 670px;
+  flex: 1 0 100%;
+  font-size: 24px;
+  margin-bottom: 70px;
+  line-height: 1.5;
+}
+
+.delay-text_big {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 991px){
+  .delay {
+    padding-top: 550px;
+    background: url("../imgs/delay/delay-bg.png") no-repeat 68% 0/1400px;
+    min-height: inherit;
+    .order1-btn {
+      margin: 0 auto;
+    }
+  }
+
+  .delay-title,
+  .delay-text {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .delay {
+    padding-top: 300px;
+    background: url("../imgs/delay/delay-bg.png") no-repeat 68% 0/680px;
+    min-height: inherit;
+  }
+
+  .delay-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .delay-text, .delay-text_big {
+    font-size: 20px;
+  }
+
+}

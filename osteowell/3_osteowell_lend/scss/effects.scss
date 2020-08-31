@@ -1,0 +1,72 @@
+.effects {
+  margin-top: -200px;
+  padding-bottom: 100px;
+}
+
+.effects-title {
+  font-size: 72px;
+  text-transform: uppercase;
+  color: $red;
+  text-align: right;
+  line-height: 0.8;
+}
+
+.effects-title_small {
+  font-weight: 400;
+  font-size: 48px;
+  text-transform: lowercase;
+  color: #000;
+}
+
+.effectsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
+.effectsItem {
+  max-width: 175px;
+  flex: 1 0 100%;
+  margin: 10px;
+}
+
+.effectsItem-img {
+  border-radius: 50%;
+  animation: pain2 2s linear infinite
+}
+
+.effectsItem-text {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 991px){
+  .effects {
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .effects-title {
+    text-align: center;
+  }
+
+  .effectsBlock {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 576px){
+
+  .effects-title {
+    font-size: 40px;
+  }
+
+  .effects-title_small {
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,141 @@
+.plus {
+  margin-top: -200px;
+  padding: 0 0 50px;
+  .container {
+    background: url("../imgs/plus/plus-foots.png") no-repeat 85% 100%;
+    background-size: 435px;
+  }
+}
+
+.plus-title {
+  font-size: 101px;
+  text-transform: uppercase;
+  color: $green;
+}
+
+.plus-subTitle {
+  font-size: 50px;
+}
+
+.plus-list {
+  margin: 40px 0;
+}
+
+.plusList-Item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.plusList-plus {
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
+  max-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: $blue;
+  margin-right: 20px;
+  font-size: 35px;
+}
+
+.plusList-text {
+  font-size: 25px;
+}
+
+.podagra {
+  max-width: 270px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  height: 60px;
+  box-shadow: 0 10px 10px rgba(0,0,0,.1);
+  background: #fff;
+  @extend %absoluteCenter;
+  right: -490px;
+  top: -60px;
+}
+
+.circle {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  max-height: 40px;
+  margin: 10px 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bitToiLightBlue;
+}
+
+.little-circle {
+  width: 12px;
+  min-width: 12px;
+  height: 12px;
+  max-height: 12px;
+  border-radius: 50%;
+  background: $red;
+}
+
+.podagra-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 991px){
+  .plus {
+    margin-top: 20px;
+  }
+
+  .plus .container {
+    background: url("../imgs/plus/plus-foots.png") no-repeat 100% 100%/50%
+  }
+
+  .podagra {
+    top: 0;
+    margin-bottom: 35%;
+    right: -62%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .plus-title {
+    font-size: 80px;
+  }
+
+  .podagra {
+    max-width: 200px;
+    height: 50px;
+  }
+
+  .circle {
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .plus .container {
+    background: none;
+  }
+
+  .plus-title {
+    font-size: 50px;
+  }
+
+  .plus-subTitle {
+    font-size: 40px;
+  }
+
+  .plus-list {
+    margin: 20px 0;
+  }
+
+  .podagra {
+    display: none;
+  }
+}
