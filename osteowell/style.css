@@ -1,6 +1,8 @@
 body {
     background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/double-bubble-dark.png");
     font-family: 'Arial';
+    box-sizing: border-box;
+    margin: 0;
 }
 
 h1 {
@@ -17,10 +19,11 @@ input {
     width: 100%;
 }
 .product {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 15px 0;
+    height: 100vh;
 }
 
 .list__item {
