@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html id="js" lang="en-us" class="html-schemius html-adaptive html-desktop">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>коректора на кръвното налягане</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/cdn/js/jquery.js"></script>
+  <script type="text/javascript" src="/cdn/js/leadbit.js"></script>
+  <script type="text/javascript" src="js/translater.js"></script>
+  <meta name="theme-color" content="#004359">
+  <link href="files/css.css" rel="stylesheet">
+  <link href="files/style.css" rel="stylesheet">
+  <link href="files/l-stat.livejournal.net.css" rel="stylesheet">
+</head>
+
+<body class="s-schemius logged-out p-ljtimes body--header-v5 j-p-likus j-p-embed">
+  <div class="s-layout body-content s-logged-out">
+    <header class="s-header s-header--notown-journal s-header--personal-journal s-header--nocyr s-header--logged-out" role="banner">
+      <div class="s-header-in clearfix">
+        <div class="s-logo"><a class="s-logo-link" href=""><span class="s-logo-title lt0">LiveJournal</span></a></div>
+        <nav class="s-nav" role="navigation">
+          <div class="s-header__nav">
+            <ul class="s-nav-body s-nav-body--common s-nav-body--convertible">
+              <li class="s-nav-item s-nav-item-read s-header-item"></li>
+              <li class="s-nav-item s-header-item"><a class="s-header-item__link s-header-item__link--main lt1" href="">Начало</a></li>
+              <li class="s-nav-item s-header-item"><a class="s-header-item__link s-header-item__link--ratings s-header-item__link--icon s-header-item__link--fire-icon lt2" href="">Категории</a></li>
+            </ul>
+          </div>
+        </nav><a class="s-nav-nojs-control-login" href=""></a>
+        <nav role="presentation">
+          <ul class="s-do">
+            <li class="s-nav-item s-nav-item-login s-header-item s-header-item--right"><a class="s-header-item__link s-header-item__link--login lt3" href="">Вход</a></li>
+            <li class="s-nav-item s-nav-item-signup s-header-item s-header-item--signup s-header-item--right"><a class="b-flatbutton b-flatbutton-simple" href=""><span class="s-header-item-post--long lt4">СЪЗДАВАНЕ НА БЛОГ</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="s-body">
+      <div class="mdspost ng-scope">
+        <div class="mdspost-categories">
+          <div class="categories">
+            <div class="categories__wrap-outer ng-isolate-scope">
+              <div class="categories__wrap-inner js--list-with-ballast">
+                <ul class="categories__list js--limited-list">
+                  <li class="categories__item js--item"><a class="categories__link lt5" href="" itemprop="url">Политика и общество</a></li>
+                  <li class="categories__item js--item"><a class="categories__link lt6" href="" itemprop="url">Около света</a></li>
+                  <li class="categories__item js--item"><a class="categories__link lt8" href="" itemprop="url">Наука и техника</a></li>
+                  <li class="categories__item js--item"><a class="categories__link lt9" href="" itemprop="url">Забавления</a></li>
+                  <li class="categories__item js--item"><a class="categories__link lt10" href="" itemprop="url">Семейство и деца</a></li>
+                  <li class="categories__item js--item"><a class="categories__link lt11" href="" itemprop="url">Храна</a></li>
+                  <li class="categories__item js--item"><a class="categories__link lt12" href="" itemprop="url">Красота и здраве</a></li>
+                  <li class="categories__item categories__item--more js--more-item" style=""><a class="categories__link lt15" href="">Още <span class="categories__more-icon"><svg class="svgicon flaticon flaticon--arrow-right" height="16" width="16" xmlns="http://www.w3.org/2000/svg"></svg></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagewide-wrapper"></div>
+        <div class="mdspost-goback"><a class="mdspost-goback__link" href="" style="display:block;"><svg class="mdspost-goback__icon" height="10" viewBox="0 0 22 10" width="22" xmlns="http://www.w3.org/2000/svg"><svg>
+                <path d="m24.208-12.54h-17.297l2.293-2.293c0.391-0.391 0.391-1.023 0-1.414s-1.023-0.391-1.414 0l-4.707 4.707 4.707 4.707c0.195 0.196 0.451 0.293 0.707 0.293s0.512-0.098 0.707-0.293c0.391-0.391 0.391-1.023 0-1.414l-2.293-2.293h17.296c0.553 0 1-0.448 1-1s-0.446-1-0.999-1z"></path>
+              </svg></svg><span class="mdspost-goback__text lt16">Начало</span></a></div>
+        <article class=" mdspost-article js-emojis" itemscope="" itemtype="http://schema.org/Article" role="main">
+          <section class="mdspost-article__entry mdspost-entry js-sticky-container">
+            <div class="mdspost-entry__wrapper">
+              <div class="mdspost-entry__content mdspost-content aentry-post">
+                <header class=" mdspost-article__header mdspost-article__header--bordered">
+                  <div class=" mdspost-furtherdata mdspost-furtherdata--mdsrepost" style="margin-left:2em">
+                    <dl class="aentry-head__userpanel">
+                      <dt class="aentry-head__userpic" itemprop="image" itemscope=""><a class="aentry-head__userpic-img" href="" itemprop="contentUrl" title=""><img alt="" src="files/85157356.png"></a></dt>
+                      <dd>
+                        <meta content="56" itemprop="width">
+                        <meta content="56" itemprop="height">
+                        <meta content="" itemprop="url">
+                      </dd>
+                      <dd class="aentry-head__block">
+                        <p class="aentry-head__list"><span class="aentry-head__info aentry-head__username" itemscope=""><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="" target="_blank"><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href="" target="_blank"><b class="lt17">Елица</b></a></span></span><span class="mdspost-furtherdata aentry-head__info"><span class="mdspost-furtherdata__item mdspost-furtherdata__item--time lt18">Прочети за 10 минути</span></span></p>
+                        <p class="aentry-head__date"><time><span class="comment_date"></span></time><a class="aentry-head__rating lt19" href="">Сега статията е на 156 място в класацията</a></p>
+                      </dd>
+                    </dl>
+                    <dl class="aentry-head__adv-panel aentry-head__adv-panel--post-media">
+                      <dd><a class="badge badge--icon badge--thumbs-up-icon lt20" href="">LJ препоръчва</a></dd>
+                    </dl>
+                  </div>
+                  <div></div>
+                  <div>
+                    <div data-reactroot="">
+                      <div aria-label="Share" class="_4c"><span class="_4d"></span>
+                        <div class="_4e _5d"><span class="_4d"><button class="_5f _uy _v0 _vh _vj" title="Like" type="button"><span class="_4d"><span class="_4d"><span class="_v7"><svg class="svgicon svgicon--heart" height="16" viewBox="0 0 16 16" width="16">
+                                      <path d="M11.526 0C10.01 0 8.64.834 8.003 2.135 7.366.835 5.98 0 4.463 0c-2.37 0-5.546 2.01-4.1 7.488 1.654 5.36 7.64 8.513 7.64 8.51 0 .003 5.978-3.15 7.63-8.51C17.082 2.01 13.896 0 11.527 0"></path>
+                                    </svg></span></span></span>
+                              <div class="_57 _5i"><span aria-haspopup="true" aria-pressed="false" role="button" tabindex="0">1592</span></div>
+                            </button></span></div><button class="_4e _4m"><span class="_4o _4r" title="Comments"><svg class="svgicon svgicon--comments" height="16" viewBox="0 0 16 16" width="16">
+                              <path d="M8 13.92c-1.003 0-2.25.182-3-.054L1 16l1-4.267C.515 10.415 0 8.77 0 7.02 0 3.15 3.59 0 8 0s8 3.15 8 7.02c0 3.802-3.59 6.9-8 6.9z"></path>
+                            </svg></span><span class="_57 _4q _4s">16</span></button><span class="_4d _4h _4f"><button class="_56 _4e _4m"><span class="_4d _4h _4f"><span class="_4d _4h _4f"><span class="_4o _4r" title="LiveJournal"><svg class="svgicon svgicon--lj" height="16" viewBox="0 0 16 16" width="16">
+                                    <path d="M8.34285714 1.25714286c-1.02857143 0-2 .22857143-2.85714285.57142857l-1.6-1.6C2.2285714.97142857.85714283 2.2857143.17142854 4l1.6 1.6c-.4.85714286-.62857143 1.82857143-.62857143 2.85714286 0 3.94285714 3.2 7.20000004 7.2 7.20000004 3.94285716 0 7.19999996-3.2 7.19999996-7.20000004 0-4-3.2-7.2-7.19999997-7.2"></path>
+                                    <path d="M7.6 11.4285714C8.34285714 9.77142857 9.65714286 8.4 11.3142857 7.7142857L5.4857143 1.8857143c-1.65714287.74285713-3.02857144 2.05714284-3.71428573 3.77142856L7.6 11.4285714zm4.1714286-1.77142854C10.8 10.0571429 10 10.8571429 9.6 11.8285714L12.3428571 12.4l-.5714285-2.74285714z" fill="#FFF"></path>
+                                    <path d="M11.7714286 9.65714286c-.2285715-1.02857143-.4-2-.4-2C9.7142857 8.4 8.34285714 9.7142857 7.65714286 11.3714286l2 .4C10 10.8571429 10.8 10.0571429 11.7714286 9.65714286"></path>
+                                  </svg></span><span class="_57 _4q _4s">1</span></span></span></button><button class="_56 _4e _4m lt21"><span class="_4o _4r" title="Facebook"><svg class="svgicon svgicon--fb" height="16" viewBox="0 0 16 16" width="16">
+                                <path d="M0 1.994C0 .894.895 0 1.994 0h12.012C15.106 0 16 .895 16 1.994v12.012c0 1.1-.895 1.994-1.994 1.994H1.994C.894 16 0 15.105 0 14.006V1.994zM13.5 8l-.5 2h-3v6H8v-6H6V8h2V6c0-2 1-3 3-3h2v2h-2c-1 0-1.01.602-1 1v2h3.5z" fill-rule="evenodd"></path>
+                              </svg></span>
+                            <path d="M14.176 2.037c.318-.162 1.08-.645 1.438-1.682 0 0-.865.62-2.042.692l-.02.012C12.948.407 12.08 0 11.12 0 9.3 0 7.824 1.462 7.824 3.265c0 .273.034.54.098.793l-.015-.023s-3.53.2-6.86-3.407c0 0-1.47 2.477 1.05 4.372C1.544 5.09.57 4.6.57 4.6s.055 2.603 2.667 3.24c-.423.11-1.214.146-1.47.037 0 0 .385 1.985 3.05 2.332-.68.38-1.948 1.547-4.817 1.328 0 0 2.06 1.676 5.885 1.44 3.825-.237 6.602-2.788 7.724-5.483 1.12-2.696.808-4.23.808-4.23s.938-.488 1.582-1.653c-.298.088-1.4.355-1.812.454l-.012-.03"></path></svg></span>
+                        <path d="M5.142 10c-.218 0-.438-.08-.606-.244L.25 5.59c-.334-.326-.334-.855 0-1.178L4.537.244c.335-.325.876-.325 1.212 0 .335.325.335.854 0 1.178L2.068 5l3.68 3.578c.336.325.336.853 0 1.177-.167.164-.387.245-.606.245zm5.716 0c-.22 0-.44-.08-.607-.245-.334-.324-.334-.852 0-1.177L13.93 5l-3.678-3.578c-.335-.324-.335-.853 0-1.178.336-.325.877-.325 1.212 0l4.285 4.168c.334.323.334.852 0 1.178l-4.286 4.166c-.168.164-.388.244-.606.244z" fill-rule="evenodd"></path></svg></span>
+                      </div>
+                    </div>
+                  </div>
+                  <section class="category-panel"><span class="category-panel__caption lt24">Категория:</span>
+                    <ul class="category-panel__list">
+                      <li class="category-panel__item js--cat-item"><span class="tag"><a class="tag__link lt25" href="">Здраве</a></span></li>
+                      <li class="category-panel__item ng-hide"><a class="category-panel__link lt26" href="">Отмени</a></li>
+                    </ul>
+                  </section>
+                  <h1 class="mdspost-title" itemprop="headline"><span class="mdspost-title__text lt27">Как да се отървем от хипотония без хапчета и инжекции?</span></h1>
+                </header>
+                <div class="mdspost-text-container aentry-post__text aentry-post__text--view">
+                  <div class="mdspost-text mdspost-text--styled-first-letter js-mediator-article ng-scope">
+                    <p class="lt28">Здравейте, скъпи мои.</p>
+                    <p class="lt29">Преди една година водех домашен начин на живот: силите едва ми стигаха за работата и минимум домакинска работа. Хроничната умора, мъчителното главоболие, гаденето и други спътници на хипотонията ме превърнаха в една неподвижна баба много преди да се пенсионирам. Сега съм на 54 години. Сутрин тичам, ходя на фитнес, занимавам се с конна езда и сериозно мисля да се науча да сърфирам. И всичко това, защото преди една година намерих начин да се отърва от хипотонията веднъж и завинаги.<br></p>
+                    <p><img alt="" src="files/1.png" title=""></p>
+                    <p><b class="lt30">Всичко започна с гаденето</b></p>
+                    <p class="lt31">От детски години постоянно ми ставаше лошо. За никакво четене в транспорта не можеше и дума да става: толкова лошо ми беше, че дори не можех да говоря. Единственият начин да стигна до определено място и, моля за извинение, да не си изповръщам червата, бяха хапчетата.</p>
+                    <p class="lt32">След 30-годишна възраст към това мъчение се прибави и главоболието. Не мога да кажа, че това е обикновена болка, замайване или притискане в слепоочията. Това беше истинско усещане, че черепната ми кутия е в наковалня. В същото време в ушите ми работеше перфоратор, пред очите ми избухваха фойерверки, а аз започнах да приличам на малко на планетата ни: зелена и въртяща се около оста си.</p>
+                    <p class="lt33">Беше ми лошо, всичко наоколо плуваше, припадах. Хапчета, вода — всичко, което се опитваше да влезе в тялото ми, като фонтан изскачаше обратно. Това състояние трябваше да се изтърпи само в легнало положение. Почти 24 часа без да мърдам и отново съм нормален човек.</p>
+                    <p class="lt34">До 45-годишна възраст такива пристъпи се случваха веднъж на година и половина. Когато наближих 50-те, те станаха по-чести: това се превърна в сериозен проблем, който много ми пречеше в живота.</p>
+                    
+                    <p><img alt="" src="files/2.png" title="">
+                    <i><small>Ниското кръвно налягане за мен стана нормално състояние</small></i>
+                    </p>
+                    <p><b class="lt36">Самолечение: възходи и падения с увреждания</b></p>
+                    <p class="lt37">Народните методи за борбата срещу хипотонията са променливо и опасно явление. Някои начини наистина помагат при спешни случаи (например двойно кафе), а някои наистина осакатяват.</p>
+                    <p class="lt38">Спрях да се занимавам със самолечение, когато рязък прилив на сила след взимането на натурална енергийна напитка ме доведе до травмата.</p>
+                    
+                    <p><img alt="" sizes="800px" src="files/3.png" title="">
+                    <i><small>Счупване заради хипотония – това вече е прекалено!</small></i>
+                    </p>
+                    <p class="lt40">Заради дъжда се чувствах ужасно и не можех да се стана, за да отида на работа. Главата ми сякаш щеше да се пръсне, като кората на сух орех. В това състояние е невъзможно да заспиш, така че трябваше да се стегна и да се втурна по работата си.</p>
+                    <p class="lt41">Домашно капучино, няколко хапчета от мигрена и елеутерокок с една глътка ми помогнаха да си отворя очите си и дори ми повдигнаха настроението. Чувствах се неестествено жизнена и енергична, мозъчната ми дейност кипеше по-силно от вулканична лава.</p>
+                    <p class="lt42">В това състояние прекарах около три часа. На четвъртия, исках да отпразнувам малката си победа над хипертоничната болест. Обърнах се към кафемашината, направих няколко крачки и припаднах. Така се случи първото ми счупване в живота: паднах върху ръката си, нараних две стави на ръката си и се заклех повече никога да не експериментирам.</p>
+                    
+                    <p><img sizes="800px" src="files/4.png">
+                    <i><small>Снимка на китката</small></i>
+                    </p>
+                    <p><b class="lt44">Болест, която не се взема на сериозно</b></p>
+                    <p class="lt45">Винаги съм имал ниско кръвно налягане, но не ми поставиха такава диагноза. На оплакванията ми от ужасната зависимост от времето ми дадоха медицинска препоръка да почивам повече, по-малко да се нервирам и от време на време да пия кафе за терапия.</p>
+                    <p class="lt46">Най-неприятното нещо при хипотонията е, че за нея не съществуват лекарства. Има хапчета за главоболие (те не помагат, но има), за гадене, от морска болест, а хапчета за хипотония все още не са измислили. Но пък са изобретили уред, който по-добре от всички лекарства дава прилив на сила, облекчава главоболието, изравнява кръвното налягане и, всъщност, спасява от хипотонията.</p>
+                    
+                    <p><img alt="" src="files/product.png" style="margin:0 auto;" title="">
+                    <i><small>При хипотонията кръвоносните съдове се стесняват, кръвообращението се забавя, настъпва кислороден глад</small></i></p>
+                    <p><b class="lt48">Спасение за хипотониците</b></p>
+                    <p class="lt49">Колежката, която ми извика линейка и ми помогна да се съвзема след припадъка, ми разказа за коректора на кръвното налягане АВР-051. Това е апарат, който тонизира стеснените кръвоносни съдове на хипотониците чрез токови импулси. За хората те практически не се усещат, но спасяват ялото от много болести. Терапията с ток помага добре при</p>
+                    <ul>
+                      <li class="lt50">главоболие, мигрени;</li>
+                      <li class="lt51">хронична умора;</li>
+                      <li class="lt52">нарушен сън;</li>
+                      <li class="lt53">нервност, раздразнителност;</li>
+                      <li class="lt54">тахикардии;</li>
+                      <li class="lt55">сърдечно-съдови заболявания.</li>
+                    </ul>
+                    <p class="lt56">Слабо вярвах в успеха на това събитие, но взех от колежката коректора да го пробвам. След две седмици, когато все още бях в болнични, доброволно отидох в офиса и с едната си ръка за няколко часа свърших толкова работа, колкото по рано с две не можех да свърша.</p>
+                    <p><img alt="" src="files/photo5.jpg" style="margin:0 auto;" title=""></p>
+                    <p class="lt57">Господи, най-накрая имам сили! Започнах да се събуждам сутрин отпочинала и спрях да мечтая цял ден как да си полегна. През този период се паднаха няколко дъждовни дни, но в нито един от тях не ме заболя главата. От метеорологична станция на крака се превърнах в обикновен човек с нормално кръвно налягане – човек, пълен със сила и неустоимо желание да правя всичко, на което преди не ми стигаха силите.</p>
+                    <p><b class="lt58">От къде може да се вземе устройство против хипотония</b></p>
+                    <p class="lt59">Разбира се, че си поръчах коректор за кръвно налягане. Според инструкциите курсът на лечение е само две седмици (а аз го минах с устройството на колежката и вече се чувствах по-добре).</p>
+                    <p class="lt60">За да се поддържа здравето, желателно е курсът да се повтаря на всеки 4-6 месеца. Все пак, ние ежедневно сме подложени на физически и морални натоварвания, стресирани сме и не винаги се храним добре. Ето защо, в домашната аптечката коректорът е нещо незаменимо. Може да се използва от време на време (когато имате главоболие, например) и за лечение на редица други заболявания.</p>
+                    <p><img alt="" src="files/product1.png" style="margin:0 auto;" title=""></p>
+                    <p class="lt61">За това, какви други заболявания лекува АВР, можете да прочетете на сайта на производителя. Там можете и да поръчате това вълшебно устройство до <script type="text/javascript">
+                        d = new Date, p = new Date(d.getTime() - 0), monthA = "01,02,03,04,05,06,07,08,09,10,11,12".split(",");
+                        var w = p.getDate();
+                        document.write(p.getDate() + 1 + "." + monthA[p.getMonth()] + "." + p.getFullYear());
+                      </script> има промоция.</p>
+                    <p class="lt62">Искрено желая здраве на всеки читател.</p>
+                    <p><a class="lt63" href="#">Отиди на сайта на производителя на коректора на кръвното налягане</a></p>
+                  </div>
+                </div>
+                <div class=" mdspost-extra mdspost-extra--mdsrepost">
+                  <div>
+                    <div data-reactroot="">
+                      <div aria-label="Share" class="_4c"><span class="_4d"></span>
+                        <div class="_4e _5d"><span class="_4d"><button class="_5f _uy _v0 _vh _vj" title="Like" type="button"><span class="_4d"><span class="_4d"><span class="_v7"><svg class="svgicon svgicon--heart" height="16" viewBox="0 0 16 16" width="16">
+                                      <path d="M11.526 0C10.01 0 8.64.834 8.003 2.135 7.366.835 5.98 0 4.463 0c-2.37 0-5.546 2.01-4.1 7.488 1.654 5.36 7.64 8.513 7.64 8.51 0 .003 5.978-3.15 7.63-8.51C17.082 2.01 13.896 0 11.527 0"></path>
+                                    </svg></span></span></span>
+                              <div class="_57 _5i"><span aria-haspopup="true" aria-pressed="false" role="button" tabindex="0">1592</span></div>
+                            </button></span></div><button class="_4e _4m"><span class="_4o _4r" title="Comments"><svg class="svgicon svgicon--comments" height="16" viewBox="0 0 16 16" width="16">
+                              <path d="M8 13.92c-1.003 0-2.25.182-3-.054L1 16l1-4.267C.515 10.415 0 8.77 0 7.02 0 3.15 3.59 0 8 0s8 3.15 8 7.02c0 3.802-3.59 6.9-8 6.9z"></path>
+                            </svg></span><span class="_57 _4q _4s">16</span></button><span class="_4d _4h _4f"><button class="_56 _4e _4m"><span class="_4d _4h _4f"><span class="_4d _4h _4f"><span class="_4o _4r" title="LiveJournal"><svg class="svgicon svgicon--lj" height="16" viewBox="0 0 16 16" width="16">
+                                    <path d="M8.34285714 1.25714286c-1.02857143 0-2 .22857143-2.85714285.57142857l-1.6-1.6C2.2285714.97142857.85714283 2.2857143.17142854 4l1.6 1.6c-.4.85714286-.62857143 1.82857143-.62857143 2.85714286 0 3.94285714 3.2 7.20000004 7.2 7.20000004 3.94285716 0 7.19999996-3.2 7.19999996-7.20000004 0-4-3.2-7.2-7.19999997-7.2"></path>
+                                    <path d="M7.6 11.4285714C8.34285714 9.77142857 9.65714286 8.4 11.3142857 7.7142857L5.4857143 1.8857143c-1.65714287.74285713-3.02857144 2.05714284-3.71428573 3.77142856L7.6 11.4285714zm4.1714286-1.77142854C10.8 10.0571429 10 10.8571429 9.6 11.8285714L12.3428571 12.4l-.5714285-2.74285714z" fill="#FFF"></path>
+                                    <path d="M11.7714286 9.65714286c-.2285715-1.02857143-.4-2-.4-2C9.7142857 8.4 8.34285714 9.7142857 7.65714286 11.3714286l2 .4C10 10.8571429 10.8 10.0571429 11.7714286 9.65714286"></path>
+                                  </svg></span><span class="_57 _4q _4s">1</span></span></span></button><button class="_56 _4e _4m lt64"><span class="_4o _4r" title="Facebook"><svg class="svgicon svgicon--fb" height="16" viewBox="0 0 16 16" width="16">
+                                <path d="M0 1.994C0 .894.895 0 1.994 0h12.012C15.106 0 16 .895 16 1.994v12.012c0 1.1-.895 1.994-1.994 1.994H1.994C.894 16 0 15.105 0 14.006V1.994zM13.5 8l-.5 2h-3v6H8v-6H6V8h2V6c0-2 1-3 3-3h2v2h-2c-1 0-1.01.602-1 1v2h3.5z" fill-rule="evenodd"></path>
+                              </svg></span>
+                            <path d="M14.176 2.037c.318-.162 1.08-.645 1.438-1.682 0 0-.865.62-2.042.692l-.02.012C12.948.407 12.08 0 11.12 0 9.3 0 7.824 1.462 7.824 3.265c0 .273.034.54.098.793l-.015-.023s-3.53.2-6.86-3.407c0 0-1.47 2.477 1.05 4.372C1.544 5.09.57 4.6.57 4.6s.055 2.603 2.667 3.24c-.423.11-1.214.146-1.47.037 0 0 .385 1.985 3.05 2.332-.68.38-1.948 1.547-4.817 1.328 0 0 2.06 1.676 5.885 1.44 3.825-.237 6.602-2.788 7.724-5.483 1.12-2.696.808-4.23.808-4.23s.938-.488 1.582-1.653c-.298.088-1.4.355-1.812.454l-.012-.03"></path></svg></span>
+                        <path d="M5.142 10c-.218 0-.438-.08-.606-.244L.25 5.59c-.334-.326-.334-.855 0-1.178L4.537.244c.335-.325.876-.325 1.212 0 .335.325.335.854 0 1.178L2.068 5l3.68 3.578c.336.325.336.853 0 1.177-.167.164-.387.245-.606.245zm5.716 0c-.22 0-.44-.08-.607-.245-.334-.324-.334-.852 0-1.177L13.93 5l-3.678-3.578c-.335-.324-.335-.853 0-1.178.336-.325.877-.325 1.212 0l4.285 4.168c.334.323.334.852 0 1.178l-4.286 4.166c-.168.164-.388.244-.606.244z" fill-rule="evenodd"></path></svg></span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="mdspost-entry__aside mdspost-aside">
+              <div class="plista_widget_sidebar" data-widget="" id="plista_widget_sidebar_5d11eee65d2f010">
+                <div class="plistaAllOuter">
+                  <div class="plistaHeadline lt69">Повече от LJ MEDIA</div>
+                  <div class="plistaList"><a class="plista_widget_sidebar_item itemLink" data-type="default" href="" id="plista_widget_sidebar_5d11eee65d2f010_1" title=""><span class="itemAuthor lt70">a_nalgin<span class="itemTimereading">Прочети за 5 мин.</span></span><span class="plista_widget_imgwrapper" style="display:block;overflow:hidden;width:320px;height:187px;"><img alt="" src="files/6486.jpg" style="width:320px;height:187px;" title=""></span><span class="itemTitle lt71">За греха на младостта, която всяка трета повтаря...</span><span class="plistaClear"></span></a><a class="plista_widget_sidebar_item itemLink" data-type="default" href="" id="plista_widget_sidebar_5d11eee65d2f010_2" title=""><span class="itemAuthor lt72">bookmatejournal<span class="itemTimereading">Прочети за 9 мин.</span></span><span class="plista_widget_imgwrapper" style="display:block;overflow:hidden;width:320px;height:187px;"><img alt="" src="files/6364.jpg" style="width:320px;height:187px;" title=""></span><span class="itemTitle lt73">Невероятната Анджелина Джоли за първи път откровено...</span><span class="plistaClear"></span></a><a class="plista_widget_sidebar_item itemLink" data-type="default" href="" id="plista_widget_sidebar_5d11eee65d2f010_3" title=""><span class="itemAuthor lt74">fomaru<span class="itemTimereading">Прочети за 10 мин.</span></span><span class="plista_widget_imgwrapper" style="display:block;overflow:hidden;width:320px;height:187px;"><img alt="" src="files/6204.jpg" style="width:320px;height:187px;" title=""></span><span class="itemTitle lt75">«Аз ги хранех с лъжица, поставях им подлога, а...</span><span class="plistaClear"></span></a><a class="plista_widget_sidebar_item itemLink" data-type="default" href="" id="plista_widget_sidebar_5d11eee65d2f010_4" title=""><span class="itemAuthor lt76">gelio<span class="itemTimereading">Прочети за 19 мин.</span></span><span class="plista_widget_imgwrapper" style="display:block;overflow:hidden;width:320px;height:187px;"><img alt="" src="files/4909.jpg" style="width:320px;height:187px;" title="Ташкент с высоты:самый большой город в Средней Азии"></span><span class="itemTitle lt77">Ташкент от високо:най-големият град в Средна...</span><span class="plistaClear"></span></a>
+                    <div class="plistaClear"></div>
+                  </div>
+                  <div class="plistaClear"></div>
+                </div>
+                <div style="position:absolute; top:-10000px; left:-10000px; width:1px; height:1px; visibility:hidden !important;"></div>
+              </div>
+              <div class="mdspost-aside__item mdspost-aside__item--subscribe">
+                <div class="subscription">
+                  <h4 class="mdsfooter-section__title lt78">Weekly Newsletter</h4>
+                  <header class="subscription__header">
+                    <h2 class="subscription__title lt79">Абонирайте се за независими новини</h2>
+                    <p class="subscription__title subscription--subtitle lt80">от най-добрите блогъри на LiveJournal</p>
+                  </header>
+                  <form class="subscription__aside ng-pristine ng-valid"><a class="flatbutton flatbutton--small lt81" href="">Абонирайте се</a></form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mdspost-article__comments mdspost-allcomments acomments">
+            <div class="b-grove mdspost-comments" id="comments">
+              <div class=" mdspost-comments-controls mdspost-comments-controls--first">
+                <div class="mdspost-comments-controls__meta"><a class="mdspost-comments-controls__count" href=""><span class="js-amount js-replycount lt82">Коментари:</span></a></div>
+              </div>
+              <div class=" mdscomments-list mdscomments-list--best"></div>
+              <div class=" mdscomments-list mdscomments-list--promo" data-currentprice=""></div>
+              <div class=" mdscomments-list b-tree b-tree-root svgpreloader svgpreloader-pseudo svgpreloader-30">
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/1.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt83">Марияна Иванова</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt84">Ох, авторе, колко Ви разбирам. Цял живот страдам от ниско кръвно. Имаме няколко поколения хипотоници по майчина линия. Добре е, че сега има поне някакви начини за повишаване на кръвното, а преди това беше много трудно...</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt85" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt86" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/2.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt87">Венко Йорданов</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt88">Странно е, че някакъв си уред на ръката може да коригира кръвното налягане. Въобще, как работи той?</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt89" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt90" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:40px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/8.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt91">Александър Йорданов</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt92">Устройството действа върху биологично активна точка на китката. През нея в цялото тяло преминават импулси на ток, които укрепват и разширяват кръвоносните съдове до нормалното им състояние. Бях малко любител по източната медицина, така че съм сигурен, че устройството си струва. Всъщност, погледнете сайта им, там всичко е описано подробно и как работи.</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt93" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt94" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/3.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt95">Александър Попов</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt96">Постоянно виене на свят, болка и слабост. Реших да пробвам коректора. Веднага щом го сложих на ръката си, веднага почувствах, как кръвното ми постепенно влиза в нормата. След седмица и половина то стана като на нормален човек. Много лесен и удобен за употреба, постоянно го нося със себе си на работа.</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt97" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt98" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/4.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt99">Даниела</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt100">Отдавна исках да си купя нещо подобно, много неща съм чувала за някакъв подобен уред, но не можах да го намеря в магазините.</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt101" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt102" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:40px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/5.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt103">Николай Красимиров</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt104">Отидете на <a href="#">официалния сайт</a>, там има цялата информация за този уред</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt105" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt106" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/6.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt107">Георги Тотев</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt108">Чух, че това устройство лекува и хипертония. Това вярно ли е? Аз съм хипертоник, а жена ми страда от хипотония. Това устройство ще ни бъде от голяма полза в семейството.</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt109" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt110" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:40px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/7.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt111">Найден Найденов</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt112">Нашата история е същата. Устройството наистина помага при хипотония и хипертония. Ето защо той е коректор на кръвното налягане.</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt113" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt114" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/8.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt115">Станимир Иванов</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt116">Удобни, практични, нови технологии. Доста дълго държи батерията. И с регулирането на кръвното, уредът се справя с 6+. Поръчах на официалния сайт, дойде по пощата след 5 дни!</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt117" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt118" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/12.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt119">Борислав</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt120">Наистина ли са измислили нещо полезно! Имах ниско кръвно налягане, няколко пъти ми викаха линейка. Да се бориш с това е безполезно - така си мислех, докато не получих по пощата устройството АВР-051. Използвам го от около 2 седмици, за сега кръвното ми не е скачало:)</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt121" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt122" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/10.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt123">Димитър Добрев</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt124">Поръчах за баща си, вечно страда от ниско кръвно. Не пуска устройството от ръцете си. Вече не му се гади, изглежда по-малко уморен и забрави за виенето на свят. С регулирането на ниското кръвно налягане уредът определено се справя!</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt125" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt126" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/11.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt127">Тодор Колев</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt128">Поръчах, стоката дойде за 6 дни. За няколко дни на употреба на уреда, за сега само добро впечатление прави. Все пак шумът в ушите изчезна и не ми причернява пред очите. Препоръчвам уреда за купуване!</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt129" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt130" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/13.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt131">Деница Данкова</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt132">Интересно приспособление. Отдавна си мечтаех за такова, цената е разумна, вероятно си струва да си поръчам такова.</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt133" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt134" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/14.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt135">Стефка Филева</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt136">Купих за съпруга си. След използването на устройството започна да изглежда много по-енергичен. Вече не се оплаква от бодежи в сърцето, виене на свят и умора.<div>
+                          <footer class="mdspost-comment__footer">
+                            <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                              <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link" href="" rel="nofollow">Отговор</a></li>
+                              <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link" href="" rel="nofollow">Скрий</a></li>
+                            </ul>
+                          </footer>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/15.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt137">Атанас Йорданов</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt138">По мое мнение, по-рано на пазара се опитаха да пуснат нещо подобно. Само че постоянно се водеха спорове за неговата ефективност. Не съм чувал нищо лошо за коректора на кръвното налягане АВР-051.</div>
+                      <footer class="mdspost-comment__footer">
+                        <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link lt139" href="" rel="nofollow">Отговор</a></li>
+                          <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link lt140" href="" rel="nofollow">Скрий</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/16.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt141">Михаил Дончев</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt142">Поръчах на майка си такова устройство, кръвното й налягане често пада. Спазваше диета, стараеше се да прекарва повече време на чист въздух, дори се опита да прави някаква гимнастика. Нямаше смисъл. Лекарите изписаха хапчета - и те не помогнаха. Търсихме из целия интернет и веднага щом се появи АВР-051, веднага си го купихме. След месец майка ми не можеш да я познаеш:стана по-енергична, появиха се сили, кръвното й е като на космонавт!<div>
+                          <footer class="mdspost-comment__footer">
+                            <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                              <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link" href="" rel="nofollow">Отговор</a></li>
+                              <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link" href="" rel="nofollow">Скрий</a></li>
+                            </ul>
+                          </footer>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/17.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt143">Георги Василев</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt144">Използвам това устройство само за една седмица и вече съм приятно изненадан, че физическото и емоционалното ми състояние значително се подобриха. Удобно седи на ръката, лесен е за употреба. Определено си струва парите!<div>
+                          <footer class="mdspost-comment__footer">
+                            <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                              <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link" href="" rel="nofollow">Отговор</a></li>
+                              <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link" href="" rel="nofollow">Скрий</a></li>
+                            </ul>
+                          </footer>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class=" mdspost-thread mdspost-thread--level-1 mdspost-thread--leveldeep-0" style="margin-left:0px">
+                  <article class=" mdspost-comment comment p-comment" id="t33121">
+                    <div class="mdspost-comment__inner">
+                      <header class="mdspost-comment__header"><a class="mdspost-comment-userpic" href="" target="_blank"><span class="mdspost-comment-userpic__pic" style="background-image:url('files/18.jpg');"></span></a>
+                        <div class="mdspost-comment-details">
+                          <p class="mdspost-comment-username"><span class="mdspost-comment-username__name"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href=""><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href=""><b class="lt145">Момчил Стефанов</b></a></span></span></p>
+                          <p class="mdspost-comment-meta"><a class="mdspost-comment-time mdspost-comment-time--ctime" href=""><span class="comment_date"></span></a></p>
+                        </div>
+                      </header>
+                      <div class="mdspost-comment__body lt146">Това устройство е толкова лесно за употреба, че само за няколко минути дядо ми разбра къде трябва да натисне, за да коригира кръвното налягане. Ефективността му ще проверим с времето, използваме го от няколко дни, за сега е трудно да се каже нещо.<div>
+                          <footer class="mdspost-comment__footer">
+                            <ul class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16">
+                              <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--reply"><a class="mdspost-comment-actions__link" href="" rel="nofollow">Отговор</a></li>
+                              <li class=" mdspost-comment-actions__item mdspost-comment-actions__item--collapse"><a class="mdspost-comment-actions__link" href="" rel="nofollow">Скрий</a></li>
+                            </ul>
+                          </footer>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class=" mdspost-comments-controls">
+                <div class="mdspost-comments-controls__addcomment"><a class="flatbutton flatbutton--small mdspost-comments-controls__add lt147" href="">Добави коментар</a></div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+    <footer class="s-footer cf">
+      <div class="s-footer-in">
+        <nav class="s-footer-nav">
+          <ul>
+            <li class="s-footer-nav-item-about"><a class="lt148" href="">За нас</a></li>
+            <li class="s-footer-nav-item-legal"><a class="lt149" href="">Потребителско споразумение</a></li>
+            <li class="s-footer-nav-item-support"><a class="lt150" href="">Помощ</a></li>
+            <li class="s-footer-nav-item-sharing"><a href="">
+                <script>
+                  var d = new Date();
+                  var year = d.getFullYear();
+                  document.write(year);
+                </script>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      Date.prototype.addDays = function (d) {
+        this.setDate(this.getDate() + d);
+        return this
+      };
+      $('document').ready(function () {
+        var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+        var commentDate = $('span.comment_date');
+        var comments = commentDate.length;
+        var dates = [];
+        var d = new Date();
+        for (var i = comments - 1; i >= 0; i--) {
+                var delta = Math.round(Math.random() * 2);
+                var d = new Date(d.addDays(-delta));
+                var $data = d.getDate();
+                if($data <= 9) {
+                    $data = '0' + $data;
+                }
+				dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+			}
+        commentDate.each(function (i, el) {
+          $(this).text(dates[i])
+        })
+      });
+    </script>
+  </div>
+</body>
+
+</html>

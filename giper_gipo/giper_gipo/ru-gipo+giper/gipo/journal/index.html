@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html id="js" lang="en-us" class="html-schemius html-adaptive html-desktop">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Корректор давления</title>
+
+    <meta name="theme-color" content="#004359">
+    <link href="files/css.css" rel="stylesheet">
+    <link href="files/style.css" rel="stylesheet">
+    <link href="files/l-stat.livejournal.net.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/cdn/js/jquery.js"></script>
+    <script type="text/javascript" src="/cdn/js/shakesland.js"></script>
+</head>
+
+<body class="s-schemius logged-out p-ljtimes body--header-v5 j-p-likus j-p-embed">
+
+    <div class="s-layout body-content s-logged-out">
+        <header
+            class="s-header                       s-header--notown-journal                               s-header--personal-journal                                                       s-header--nocyr s-header--logged-out"
+            role="banner">
+            <div class="
+            s-header-in clearfix">
+                <div class="s-logo">
+                    <a class="s-logo-link" href="">
+                        <span class="s-logo-title">LiveJournal</span>
+                    </a>
+                </div>
+                <nav class="s-nav" role="navigation">
+                    <div class="s-header__nav">
+                        <ul class="
+                            s-nav-body
+                            s-nav-body--common
+                            s-nav-body--convertible
+                        ">
+                            <li class="
+                            s-nav-item
+                            s-nav-item-read
+                            s-header-item
+
+                            ">
+                            </li>
+                            <li class="
+                                s-nav-item
+                                s-header-item
+                                ">
+                                <a class="
+                                    s-header-item__link
+                                    s-header-item__link--main
+                                    " href="">Main</a>
+                            </li>
+                            <li class="
+                                s-nav-item
+                                s-header-item
+                                ">
+                                <a class="
+                                    s-header-item__link
+                                    s-header-item__link--ratings
+                                    s-header-item__link--icon
+                                    s-header-item__link--fire-icon
+                                    " href="">Ratings
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="" class="s-nav-nojs-control-login"></a>
+
+                <nav role="presentation">
+                    <ul class="s-do">
+                        <li class="
+                                s-nav-item
+                                s-nav-item-login
+                                s-header-item
+                                s-header-item--right
+                            ">
+                            <a class="
+                                s-header-item__link
+                                s-header-item__link--login
+                                " href="">Login</a>
+                        </li>
+
+                        <li class="
+                                s-nav-item
+                                s-nav-item-signup
+                                s-header-item
+                                s-header-item--signup
+                                s-header-item--right
+                                ">
+                            <a class="
+                                b-flatbutton
+                                b-flatbutton-simple
+                                " href="">
+                                <span class="s-header-item-post--long">
+                                    CREATE BLOG
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="s-body">
+            <div class="mdspost   ng-scope" ng-app="Entry">
+                <div class="mdspost-categories">
+                    <div class="categories">
+                        <div class="categories__wrap-outer ng-isolate-scope" col-men-2018="colMenOptions">
+                            <div class="categories__wrap-inner js--list-with-ballast">
+                                <ul class="categories__list js--limited-list">
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Политика и общество </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Вокруг света </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Кино </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Наука и техника </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Развлечения </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Семья и дети </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Еда </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Красота и здоровье </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> Стиль жизни </a> </li>
+                                    <li class="categories__item js--item"> <a href="" class="categories__link"
+                                            itemprop="url"> 20 лет ЖЖ </a> </li>
+                                    <li class="categories__item categories__item--more js--more-item" style=""> <a
+                                            href="" class="categories__link"> Ещё <span class="categories__more-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="svgicon flaticon flaticon--arrow-right" width="16"
+                                                    height="16"></svg></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagewide-wrapper">
+                </div>
+                <div class="mdspost-goback">
+                    <a href="" class="mdspost-goback__link" style="display: block;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10"
+                            class="mdspost-goback__icon">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" height="10"
+                                viewBox="3.083 -16.54 22.125 10" width="22" version="1.1" y="0" x="0px"
+                                enable-background="new 3.083 -16.54 22.125 10">
+                                <path
+                                    d="m24.208-12.54h-17.297l2.293-2.293c0.391-0.391 0.391-1.023 0-1.414s-1.023-0.391-1.414 0l-4.707 4.707 4.707 4.707c0.195 0.196 0.451 0.293 0.707 0.293s0.512-0.098 0.707-0.293c0.391-0.391 0.391-1.023 0-1.414l-2.293-2.293h17.296c0.553 0 1-0.448 1-1s-0.446-1-0.999-1z">
+                                </path>
+                            </svg>
+                        </svg> <span class="mdspost-goback__text" go-back-text="">На главную</span> </a>
+                </div>
+                <article class=" mdspost-article js-emojis " role="main" itemscope=""
+                    itemtype="http://schema.org/Article">
+                    <section class="mdspost-article__entry mdspost-entry js-sticky-container">
+                        <div class="mdspost-entry__wrapper">
+                            <div class="mdspost-entry__content mdspost-content aentry-post">
+                                <header class=" mdspost-article__header mdspost-article__header--bordered ">
+                                    <ul class=" mdspost-furtherdata mdspost-furtherdata--mdsrepost ">
+                                        <dl class="aentry-head__userpanel">
+                                            <dt class="aentry-head__userpic" itemscope="" itemprop="image">
+                                                <a href="" class="aentry-head__userpic-img" title=""
+                                                    itemprop="contentUrl">
+                                                    <img src="files/85157356.png" alt="">
+                                                </a>
+                                                <meta itemprop="width" content="56">
+                                                <meta itemprop="height" content="56">
+                                                <meta itemprop="url" content="">
+                                            </dt>
+                                            <dd class="aentry-head__block">
+                                                <p class="aentry-head__list"> <span
+                                                        class="aentry-head__info aentry-head__username" itemscope="">
+                                                        <span class="ljuser  i-ljuser  i-ljuser-type-P"><a href=""
+                                                                target="_blank" class="i-ljuser-profile"><img
+                                                                    class="i-ljuser-userhead"
+                                                                    src="files/userinfo_v8.svg"></a><a href=""
+                                                                class="i-ljuser-username"
+                                                                target="_blank"><b>ElzaLander</b></a></span> </span>
+                                                    <span class="mdspost-furtherdata aentry-head__info"> <span
+                                                            class=" mdspost-furtherdata__item mdspost-furtherdata__item--time ">
+                                                            10 минут на прочтение </span> </span>
+                                                </p>
+                                                <p class="aentry-head__date">
+                                                    <time><span class="comment_date"></span></time> <a
+                                                        class="aentry-head__rating" href="">Сейчас запись на 156 месте в
+                                                        рейтинге</a> </p>
+                                            </dd>
+                                        </dl>
+                                        <dl class="aentry-head__adv-panel aentry-head__adv-panel--post-media"> <a
+                                                class="badge badge--icon badge--thumbs-up-icon" href=""> ЖЖ рекомендует
+                                            </a> </dl>
+                                    </ul>
+                                    <div rd-post-view-up-bar-rowdxi="top bottom medius">
+                                        <!-- react-empty: 87 -->
+                                    </div>
+                                    <div rd-post-view-social-o4y9a="top">
+                                        <div data-reactroot="">
+                                            <div class="_4c" aria-label="Share"><span class="_4d">
+                                                    <div class="_4e _5d"><button class="_5f _uy _v0 _vh _vj"
+                                                            title="Like" type="button"><span class="_v7"><svg width="16"
+                                                                    height="16" viewBox="0 0 16 16"
+                                                                    class="svgicon svgicon--heart">
+                                                                    <path
+                                                                        d="M11.526 0C10.01 0 8.64.834 8.003 2.135 7.366.835 5.98 0 4.463 0c-2.37 0-5.546 2.01-4.1 7.488 1.654 5.36 7.64 8.513 7.64 8.51 0 .003 5.978-3.15 7.63-8.51C17.082 2.01 13.896 0 11.527 0">
+                                                                    </path>
+                                                                </svg></span></button>
+                                                        <div class="_57 _5i"><span role="button" aria-pressed="false"
+                                                                aria-haspopup="true" tabindex="0">1573</span></div>
+                                                    </div>
+                                                    <button class="_4e _4m"><span class="_4o _4r" title="Comments"><svg
+                                                                width="16" height="16" viewBox="0 0 16 16"
+                                                                class="svgicon svgicon--comments">
+                                                                <path
+                                                                    d="M8 13.92c-1.003 0-2.25.182-3-.054L1 16l1-4.267C.515 10.415 0 8.77 0 7.02 0 3.15 3.59 0 8 0s8 3.15 8 7.02c0 3.802-3.59 6.9-8 6.9z">
+                                                                </path>
+                                                            </svg></span><span class="_57 _4q _4s">16</span></button>
+                                                </span><span class="_4d _4h _4f"><button class="_56 _4e _4m"><span
+                                                            class="_4o _4r" title="LiveJournal"><svg width="16"
+                                                                height="16" viewBox="0 0 16 16"
+                                                                class="svgicon svgicon--lj">
+                                                                <path
+                                                                    d="M8.34285714 1.25714286c-1.02857143 0-2 .22857143-2.85714285.57142857l-1.6-1.6C2.2285714.97142857.85714283 2.2857143.17142854 4l1.6 1.6c-.4.85714286-.62857143 1.82857143-.62857143 2.85714286 0 3.94285714 3.2 7.20000004 7.2 7.20000004 3.94285716 0 7.19999996-3.2 7.19999996-7.20000004 0-4-3.2-7.2-7.19999997-7.2">
+                                                                </path>
+                                                                <path
+                                                                    d="M7.6 11.4285714C8.34285714 9.77142857 9.65714286 8.4 11.3142857 7.7142857L5.4857143 1.8857143c-1.65714287.74285713-3.02857144 2.05714284-3.71428573 3.77142856L7.6 11.4285714zm4.1714286-1.77142854C10.8 10.0571429 10 10.8571429 9.6 11.8285714L12.3428571 12.4l-.5714285-2.74285714z"
+                                                                    fill="#FFF"></path>
+                                                                <path
+                                                                    d="M11.7714286 9.65714286c-.2285715-1.02857143-.4-2-.4-2C9.7142857 8.4 8.34285714 9.7142857 7.65714286 11.3714286l2 .4C10 10.8571429 10.8 10.0571429 11.7714286 9.65714286">
+                                                                </path>
+                                                            </svg></span><span class="_57 _4q _4s">1</span></button>
+                                                    <button class="_56 _4e _4m"><span class="_4o _4r"
+                                                            title="Facebook"><svg width="16" height="16"
+                                                                viewBox="0 0 16 16" class="svgicon svgicon--fb">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M0 1.994C0 .894.895 0 1.994 0h12.012C15.106 0 16 .895 16 1.994v12.012c0 1.1-.895 1.994-1.994 1.994H1.994C.894 16 0 15.105 0 14.006V1.994zM13.5 8l-.5 2h-3v6H8v-6H6V8h2V6c0-2 1-3 3-3h2v2h-2c-1 0-1.01.602-1 1v2h3.5z">
+                                                                </path>
+                                                            </svg></span>
+                                                        <!-- react-text: 16 -->0
+                                                        <!-- /react-text -->
+                                                    </button>
+
+                                                    <button class="_56 _4e _4m"><span class="_4o _4r"
+                                                            title="Twitter"><svg width="16" height="13"
+                                                                viewBox="0 0 16 13" class="svgicon svgicon--twitter">
+                                                                <path
+                                                                    d="M14.176 2.037c.318-.162 1.08-.645 1.438-1.682 0 0-.865.62-2.042.692l-.02.012C12.948.407 12.08 0 11.12 0 9.3 0 7.824 1.462 7.824 3.265c0 .273.034.54.098.793l-.015-.023s-3.53.2-6.86-3.407c0 0-1.47 2.477 1.05 4.372C1.544 5.09.57 4.6.57 4.6s.055 2.603 2.667 3.24c-.423.11-1.214.146-1.47.037 0 0 .385 1.985 3.05 2.332-.68.38-1.948 1.547-4.817 1.328 0 0 2.06 1.676 5.885 1.44 3.825-.237 6.602-2.788 7.724-5.483 1.12-2.696.808-4.23.808-4.23s.938-.488 1.582-1.653c-.298.088-1.4.355-1.812.454l-.012-.03">
+                                                                </path>
+                                                            </svg></span>
+                                                        <!-- react-text: 32 -->0
+                                                        <!-- /react-text -->
+                                                    </button>
+                                                    <button class="_56 _4e _4m"><span class="_4o _4r" title="Embed"><svg
+                                                                width="16" height="10" viewBox="0 0 16 10"
+                                                                class="svgicon svgicon--embed">
+                                                                <path
+                                                                    d="M5.142 10c-.218 0-.438-.08-.606-.244L.25 5.59c-.334-.326-.334-.855 0-1.178L4.537.244c.335-.325.876-.325 1.212 0 .335.325.335.854 0 1.178L2.068 5l3.68 3.578c.336.325.336.853 0 1.177-.167.164-.387.245-.606.245zm5.716 0c-.22 0-.44-.08-.607-.245-.334-.324-.334-.852 0-1.177L13.93 5l-3.678-3.578c-.335-.324-.335-.853 0-1.178.336-.325.877-.325 1.212 0l4.285 4.168c.334.323.334.852 0 1.178l-4.286 4.166c-.168.164-.388.244-.606.244z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg></span>
+                                                        <!-- react-text: 37 -->0
+                                                        <!-- /react-text -->
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section class="category-panel"> <span
+                                            class="category-panel__caption">Категория:</span>
+                                        <ul class="category-panel__list">
+                                            <li class="category-panel__item js--cat-item"> <span class="tag"> <a
+                                                        class="tag__link" href="">Здоровье</a> </span> </li>
+                                            <li class="category-panel__item ng-hide"> <a class="category-panel__link"
+                                                    href="">Отменить</a> </li>
+                                        </ul>
+                                    </section>
+                                    <h1 class="mdspost-title" itemprop="headline" ng-non-bindable=""><span
+                                            class="mdspost-title__text">Спасение угасающих: избавляемся от гипотонии за
+                                            6 минут</span></h1>
+                                </header>
+                                <div class="mdspost-text-container aentry-post__text aentry-post__text--view">
+                                    <div
+                                        class="mdspost-text  mdspost-text--styled-first-letter  js-mediator-article  ng-scope">
+                                        <p>Здравствуйте, мои дорогие.</p>
+                                        <p>
+                                            Еще год назад я вела домашний образ жизни: сил едва хватало на работу и
+                                            минимум домашних дел. Хроническая усталость, мучительные головные боли,
+                                            тошнота и прочие спутники гипотонии, превратили меня в малоподвижную бабушку
+                                            задолго до пенсии.
+                                            Сейчас мне 54 года. Я бегаю по утрам, хожу на фитнес, занимаюсь конным
+                                            спортом и всерьез подумываю освоить серфинг. А все потому, что год назад я
+                                            нашла способ раз и навсегда избавиться от гипотонии.
+                                            <br>
+                                        </p>
+                                        <p><img src="files/1.png" alt="" title=""></p>
+                                        <p><b>Все началось с тошноты</b></p>
+                                        <p>
+                                            С самого детства меня постоянно укачивало. Ни о каком чтении в транспорте и
+                                            речи не шло: плохо было так, что даже говорить не могла. Единственным
+                                            способом добраться до места назначения и, прошу прощения, не заблевать все
+                                            вокруг оставались таблетки.
+                                        </p>
+                                        <p>
+                                            После 30 лет к этой заразе прибавились головные боли. Не могу сказать, что
+                                            это была обычная боль, головокружение или сдавливание в висках. Это было
+                                            натуральное ощущение черепной коробки в наковальне. При этом в ушах орудовал
+                                            перфоратор, перед глазами взрывались фейерверки, а я становилась миниатюрным
+                                            подобием планеты: зеленого цвета и крутилась вокруг своей оси.
+                                        </p>
+                                        <p>
+                                            Меня тошнило, все вокруг плыло, я теряла сознание. Таблетка, вода — все, что
+                                            пыталось войти в мой организм, фонтаном выскакивало обратно. Это состояние
+                                            можно было только переждать в положении лёжа. Почти сутки не шевелятся — и я
+                                            снова нормальный человек.
+                                        </p>
+                                        <p>
+                                            До 45 лет такие приступы случались раз в год-полтора и. Ближе к 50 они
+                                            участились: это превращалось в серьёзную проблему, изрядно мешающую жить.
+                                        </p>
+                                        <p><img src="files/2.png" alt="" title="">
+                                        <i><small>Низкое давление для меня давно стало нормой</small></i></p>
+                                        
+                                        <p><b>Самолечение: взлеты и падение с повреждением</b></p>
+                                        <p>
+                                            Народные методы в борьбе с гипотонией – явление переменчивое и опасное.
+                                            Какие-то способы действительно выручают в экстренных ситуациях (двойной
+                                            кофе, например), а какие-то натурально калечат.
+                                        </p>
+                                        <p>
+                                            Самолечением я перестала заниматься тогда, когда резкий прилив сил после
+                                            приема натуральных энергетиков привел меня в травматологию.
+                                        </p>
+
+                                        <p><img src="files/3.png" sizes="800px" alt="" title="">
+                                            <i><small>Перелом из-за гипотонии – это черезчур!</small></i>
+                                        </p>
+                                        <p>
+                                            Из-за дождя я ужасно себя чувствовала и не могла расшевелиться, чтобы выйти
+                                            на работу. Голова, казалось, вот-вот треснет, как корка пересушенного
+                                            грецкого ореха. Уснуть в таком состоянии невозможно, поэтому надо было
+                                            собираться с силами и мчать навстречу рабочим делам.
+                                        </p>
+                                        <p>
+                                            Домашний капучино, пара таблеток от мигрени и элеутерококк одним глотком
+                                            помогли мне открыть глаза и даже подняли настроение. Я почувствовала себя
+                                            неестественно бодрой и энергичной, мозговая деятельность забурлила похлеще
+                                            вулканической лавы.
+                                        </p>
+                                        <p>
+                                            В таком состоянии я провела около трех часов. На четвертом мне захотелось
+                                            отпраздновать свою мини-победу над гипотонической заразой. Я встала по
+                                            направлению к кофемашине, сделала пару шагов и без сознания рухнула.
+                                            Так случился мой первый в жизни перелом: упала на руку, повредила два
+                                            сустава на кисти и поклялась себе никогда больше не экспериментировать.
+                                        </p>
+
+                                        <p><img src="files/4.png" sizes="800px">
+                                            <i><small>Снимок кисти</small></i>
+                                        </p>
+                                        <p><b>Болезнь, которую не воспринимают всерьез</b></p>
+                                        <p>
+                                            Давление у меня всегда было низким, но как такового диагноза мне не ставили.
+                                            Жалобы на страшную зависимость от погоды закрывались врачебной рекомендацией
+                                            больше отдыхать, меньше нервничать и время от времени пить кофе в
+                                            терапевтических целях.
+                                        </p>
+                                        <p>
+                                            Самое неприятное в гипотонии то, что лекарств как таковых от нее нет. Есть
+                                            таблетки от головной боли (они не помогают, но есть), от тошноты, от
+                                            укачивания, а от гипотонии пилюль еще не придумали. Зато изобрели аппарат,
+                                            который лучше всяких медикаментов дает прилив сил, снимает головную боль,
+                                            выравнивает давление и, собственно, избавляет от гипотонии.
+                                        </p>
+                                        <p><img src="files/product.png" alt="" title="">
+                                        <small>При гипотонии сосуды сужаются, кровообращение замедляется,
+                                            происходит кислородное голодание</small>
+                                        </p>
+                                        <p><b>Спасение гипотоников</b></p>
+                                        <p>
+                                            Коллега, которая вызывала мне неотложку и помогала прийти в себя после
+                                            обморока, рассказала мне про корректор давления АВР-051. Это аппарат,
+                                            который приводит в тонус суженные сосуды гипотоников с помощью токовых
+                                            сигналов.
+                                            Для человека они практически не ощутимы, а вот организм спасают от массы
+                                            болячек. Терапия током хорошо помогает при:
+                                        </p>
+                                        <ul>
+                                            <li>головных болях, мигрени;</li>
+                                            <li>хронической усталости;</li>
+                                            <li>нарушенном сне;</li>
+                                            <li>нервозности, раздражительности;</li>
+                                            <li>тахикардии;</li>
+                                            <li>сердечно-сосудистых заболеваниях.</li>
+                                        </ul>
+                                        <p>
+                                            Я слабо верила в успех мероприятия, но корректор у коллеги взяла на пробу.
+                                            Спустя две недели, будучи еще на больничном, я вызвалась в офис и одной
+                                            рукой за пару часов выполнила столько работы, сколько прежде не выполняла
+                                            двумя.
+                                        </p>
+                                        <p><img src="files/photo5.jpg" alt=""></p>
+                                        <p>
+                                            Господи, у меня наконец-то появились силы! Я начала просыпаться по утрам
+                                            отдохнувшей и перестала весь день мечтать прилечь. На тот период выпало
+                                            несколько ливневых дней, но ни в один из них у меня не заболела голова.
+                                            Из метеостанции на ногах я превратилась в обычного человека с нормальным
+                                            давлением – человека полного сил и непреодолимой жажды делать все то, на что
+                                            меня не хватало раньше.
+                                        </p>
+                                        <p><b>Где можно достать прибор от гипотонии</b></p>
+                                        <p>
+                                            Конечно же, я заказала корректор давления и себе. По инструкции курс лечения
+                                            всего две недели (а я его прошла с аппаратом коллеги и уже чувствовала
+                                            улучшения).
+                                        </p>
+                                        <p>
+                                            Для поддержания здоровья курсы желательно повторять раз в 4-6 месяцев.
+                                            Все-таки, мы ежедневно подвергаемся физическим и моральным нагрузкам,
+                                            испытываем стресс и не всегда идеально питаемся.
+                                            Поэтому в домашней аптечке корректор – вещь незаменимая. Его можно
+                                            использовать от случая к случаю (когда болит голова, например) и для лечения
+                                            ряда других болезней.
+                                        </p>
+                                        <p><img src="files/product1.png" alt="" ></p>
+                                        <p>
+                                            О том, какие еще болезни лечит АВР, можно почитать на сайте производителя.
+                                            Там же можно и заказать этот волшебный аппарат до
+                                            <script type="text/javascript">
+                                                d = new Date, p = new Date(d.getTime() - 0), monthA = "01,02,03,04,05,06,07,08,09,10,11,12".split(","); var w = p.getDate();
+                                                document.write(p.getDate() + 1 + "." + monthA[p.getMonth()] + "." + p.getFullYear());
+                                            </script>
+                                            действует акция – корректор давления можно заказать на льготных условиях.
+                                        </p>
+                                        <p>
+                                            Искренне желаю здоровья каждому читателю.
+                                        </p>
+                                        <p><a href="#">Перейти на сайт производителя корректора давления
+                                            </a></p>
+
+                                    </div>
+                                </div>
+                                <div class=" mdspost-extra mdspost-extra--mdsrepost ">
+                                    <div rd-post-view-social-wimpbk="bottom">
+                                        <div data-reactroot="">
+                                            <div class="_4c" aria-label="Share"><span class="_4d">
+                                                    <div class="_4e _5d"><button class="_5f _uy _v0 _vh _vj"
+                                                            title="Like" type="button"><span class="_v7"><svg width="16"
+                                                                    height="16" viewBox="0 0 16 16"
+                                                                    class="svgicon svgicon--heart">
+                                                                    <path
+                                                                        d="M11.526 0C10.01 0 8.64.834 8.003 2.135 7.366.835 5.98 0 4.463 0c-2.37 0-5.546 2.01-4.1 7.488 1.654 5.36 7.64 8.513 7.64 8.51 0 .003 5.978-3.15 7.63-8.51C17.082 2.01 13.896 0 11.527 0">
+                                                                    </path>
+                                                                </svg></span></button>
+                                                        <div class="_57 _5i"><span role="button" aria-pressed="false"
+                                                                aria-haspopup="true" tabindex="0">1573</span></div>
+                                                    </div>
+                                                    <button class="_4e _4m"><span class="_4o _4r" title="Comments"><svg
+                                                                width="16" height="16" viewBox="0 0 16 16"
+                                                                class="svgicon svgicon--comments">
+                                                                <path
+                                                                    d="M8 13.92c-1.003 0-2.25.182-3-.054L1 16l1-4.267C.515 10.415 0 8.77 0 7.02 0 3.15 3.59 0 8 0s8 3.15 8 7.02c0 3.802-3.59 6.9-8 6.9z">
+                                                                </path>
+                                                            </svg></span><span class="_57 _4q _4s">16</span></button>
+                                                </span><span class="_4d _4h _4f"><button class="_56 _4e _4m"><span
+                                                            class="_4o _4r" title="LiveJournal"><svg width="16"
+                                                                height="16" viewBox="0 0 16 16"
+                                                                class="svgicon svgicon--lj">
+                                                                <path
+                                                                    d="M8.34285714 1.25714286c-1.02857143 0-2 .22857143-2.85714285.57142857l-1.6-1.6C2.2285714.97142857.85714283 2.2857143.17142854 4l1.6 1.6c-.4.85714286-.62857143 1.82857143-.62857143 2.85714286 0 3.94285714 3.2 7.20000004 7.2 7.20000004 3.94285716 0 7.19999996-3.2 7.19999996-7.20000004 0-4-3.2-7.2-7.19999997-7.2">
+                                                                </path>
+                                                                <path
+                                                                    d="M7.6 11.4285714C8.34285714 9.77142857 9.65714286 8.4 11.3142857 7.7142857L5.4857143 1.8857143c-1.65714287.74285713-3.02857144 2.05714284-3.71428573 3.77142856L7.6 11.4285714zm4.1714286-1.77142854C10.8 10.0571429 10 10.8571429 9.6 11.8285714L12.3428571 12.4l-.5714285-2.74285714z"
+                                                                    fill="#FFF"></path>
+                                                                <path
+                                                                    d="M11.7714286 9.65714286c-.2285715-1.02857143-.4-2-.4-2C9.7142857 8.4 8.34285714 9.7142857 7.65714286 11.3714286l2 .4C10 10.8571429 10.8 10.0571429 11.7714286 9.65714286">
+                                                                </path>
+                                                            </svg></span><span class="_57 _4q _4s">1</span></button>
+                                                    <button class="_56 _4e _4m"><span class="_4o _4r"
+                                                            title="Facebook"><svg width="16" height="16"
+                                                                viewBox="0 0 16 16" class="svgicon svgicon--fb">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M0 1.994C0 .894.895 0 1.994 0h12.012C15.106 0 16 .895 16 1.994v12.012c0 1.1-.895 1.994-1.994 1.994H1.994C.894 16 0 15.105 0 14.006V1.994zM13.5 8l-.5 2h-3v6H8v-6H6V8h2V6c0-2 1-3 3-3h2v2h-2c-1 0-1.01.602-1 1v2h3.5z">
+                                                                </path>
+                                                            </svg></span>
+                                                        <!-- react-text: 16 -->0
+                                                        <!-- /react-text -->
+                                                    </button>
+
+                                                    <button class="_56 _4e _4m"><span class="_4o _4r"
+                                                            title="Twitter"><svg width="16" height="13"
+                                                                viewBox="0 0 16 13" class="svgicon svgicon--twitter">
+                                                                <path
+                                                                    d="M14.176 2.037c.318-.162 1.08-.645 1.438-1.682 0 0-.865.62-2.042.692l-.02.012C12.948.407 12.08 0 11.12 0 9.3 0 7.824 1.462 7.824 3.265c0 .273.034.54.098.793l-.015-.023s-3.53.2-6.86-3.407c0 0-1.47 2.477 1.05 4.372C1.544 5.09.57 4.6.57 4.6s.055 2.603 2.667 3.24c-.423.11-1.214.146-1.47.037 0 0 .385 1.985 3.05 2.332-.68.38-1.948 1.547-4.817 1.328 0 0 2.06 1.676 5.885 1.44 3.825-.237 6.602-2.788 7.724-5.483 1.12-2.696.808-4.23.808-4.23s.938-.488 1.582-1.653c-.298.088-1.4.355-1.812.454l-.012-.03">
+                                                                </path>
+                                                            </svg></span>
+                                                        <!-- react-text: 32 -->0
+                                                        <!-- /react-text -->
+                                                    </button>
+                                                    <button class="_56 _4e _4m"><span class="_4o _4r" title="Embed"><svg
+                                                                width="16" height="10" viewBox="0 0 16 10"
+                                                                class="svgicon svgicon--embed">
+                                                                <path
+                                                                    d="M5.142 10c-.218 0-.438-.08-.606-.244L.25 5.59c-.334-.326-.334-.855 0-1.178L4.537.244c.335-.325.876-.325 1.212 0 .335.325.335.854 0 1.178L2.068 5l3.68 3.578c.336.325.336.853 0 1.177-.167.164-.387.245-.606.245zm5.716 0c-.22 0-.44-.08-.607-.245-.334-.324-.334-.852 0-1.177L13.93 5l-3.678-3.578c-.335-.324-.335-.853 0-1.178.336-.325.877-.325 1.212 0l4.285 4.168c.334.323.334.852 0 1.178l-4.286 4.166c-.168.164-.388.244-.606.244z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </svg></span>
+                                                        <!-- react-text: 37 -->0
+                                                        <!-- /react-text -->
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mdspost-extra__follow" authors-list="">
+                                        <ul class=" mdspost-extra-follow  ">
+                                            <li class="mdspost-extra-follow__item">
+                                                <a href="" class="mdspost-extra-follow__userpic">
+                                                    <img src="files/85157356.png" alt=""
+                                                        class="mdspost-extra-follow__pic">
+                                                </a>
+                                                <span class="mdspost-extra-follow__username"><span
+                                                        class="ljuser  i-ljuser  i-ljuser-type-P     "><a href=""
+                                                            target="_blank" class="i-ljuser-profile"><img
+                                                                class="i-ljuser-userhead"
+                                                                src="files/userinfo_v8.svg"></a><a href=""
+                                                            class="i-ljuser-username"
+                                                            target="_blank"><b>ElzaLander</b></a></span></span>
+                                                <a href="" target="_blank"
+                                                    class=" flatbutton flatbutton--neutral flatbutton--small mdspost-extra-follow__friend ">
+                                                    <span class="mdspost-extra-follow__friend-text"> Добавить в друзья
+                                                    </span> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdspost-entry__aside mdspost-aside">
+
+                            <div data-widget="" id="plista_widget_sidebar_5d11eee65d2f010"
+                                class="plista_widget_sidebar">
+                                <div class="plistaAllOuter">
+                                    <div class="plistaHeadline">Больше LJ MEDIA</div>
+                                    <div class="plistaList">
+                                        <a class="plista_widget_sidebar_item itemLink" href=""
+                                            id="plista_widget_sidebar_5d11eee65d2f010_1" data-type="default" title="">
+                                            <span class="itemAuthor">a_nalgin
+                                                <span class="itemTimereading">Читать 5 мин.</span>
+                                            </span>
+                                            <span class="plista_widget_imgwrapper"
+                                                style="display:block;overflow:hidden;width:320px;height:187px;">
+                                                <img src="files/6486.jpg" title="" alt=""
+                                                    style="width:320px;height:187px;">
+                                            </span>
+                                            <span class="itemTitle">О грехе юности, который повторяет каждая
+                                                третья...</span>
+                                            <span class="plistaClear"></span>
+                                        </a>
+                                        <a class="plista_widget_sidebar_item itemLink" href=""
+                                            id="plista_widget_sidebar_5d11eee65d2f010_2" data-type="default" title="">
+                                            <span class="itemAuthor">bookmatejournal
+                                                <span class="itemTimereading">Читать 9 мин.</span>
+                                            </span>
+                                            <span class="plista_widget_imgwrapper"
+                                                style="display:block;overflow:hidden;width:320px;height:187px;">
+                                                <img src="files/6364.jpg" title="" alt=""
+                                                    style="width:320px;height:187px;">
+                                            </span>
+                                            <span class="itemTitle">Роскошная Анджелина Джоли впервые
+                                                откровенно...</span>
+                                            <span class="plistaClear"></span>
+                                        </a>
+                                        <a class="plista_widget_sidebar_item itemLink" href=""
+                                            id="plista_widget_sidebar_5d11eee65d2f010_3" data-type="default" title="">
+                                            <span class="itemAuthor">fomaru
+                                                <span class="itemTimereading">Читать 10 мин.</span>
+                                            </span>
+                                            <span class="plista_widget_imgwrapper"
+                                                style="display:block;overflow:hidden;width:320px;height:187px;">
+                                                <img src="files/6204.jpg" title="" alt=""
+                                                    style="width:320px;height:187px;"></span>
+                                            <span class="itemTitle">«Я кормила их с ложечки, подставляла утку,
+                                                а...</span>
+                                            <span class="plistaClear"></span>
+                                        </a>
+                                        <a class="plista_widget_sidebar_item itemLink" href=""
+                                            id="plista_widget_sidebar_5d11eee65d2f010_4" data-type="default" title="">
+                                            <span class="itemAuthor">gelio
+                                                <span class="itemTimereading">Читать 19 мин.</span>
+                                            </span>
+                                            <span class="plista_widget_imgwrapper"
+                                                style="display:block;overflow:hidden;width:320px;height:187px;"><img
+                                                    src="files/4909.jpg"
+                                                    title="Ташкент с высоты: самый большой город в Средней Азии" alt=""
+                                                    style="width:320px;height:187px;"></span>
+                                            <span class="itemTitle">Ташкент с высоты: самый большой город в
+                                                Средней...</span>
+                                            <span class="plistaClear"></span>
+                                        </a>
+                                        <div class="plistaClear"></div>
+                                    </div>
+                                    <div class="plistaClear"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: -10000px; left: -10000px; width: 1px; height: 1px; visibility: hidden !important;">
+                                </div>
+                            </div>
+
+                            <div medius-subscribe="" class="mdspost-aside__item mdspost-aside__item--subscribe">
+
+                                <div class="subscription">
+                                    <h4 class="mdsfooter-section__title">Weekly Newsletter</h4>
+                                    <header class="subscription__header">
+                                        <h2 class="subscription__title">Подпишитесь на независимые новости</h2>
+                                        <p class="subscription__title subscription--subtitle">от лучших блоггеров
+                                            LiveJournal</p>
+                                    </header>
+                                    <form class="subscription__aside ng-pristine ng-valid">
+                                        <a class="flatbutton flatbutton--small" href="">Подписаться</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mdspost-article__comments mdspost-allcomments acomments">
+                        <div id="comments" class="b-grove mdspost-comments">
+                            <div class=" mdspost-comments-controls mdspost-comments-controls--first   ">
+                                <div class="mdspost-comments-controls__meta"> <a href=""
+                                        class="mdspost-comments-controls__count"><span
+                                            class="js-amount js-replycount">Комментарии:</span></a> </div>
+                            </div>
+                            <div class=" mdscomments-list mdscomments-list--best "></div>
+                            <div class=" mdscomments-list mdscomments-list--promo " data-currentprice=""></div>
+                            <div
+                                class=" mdscomments-list b-tree b-tree-root svgpreloader svgpreloader-pseudo svgpreloader-30 ">
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/1.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Monica
+                                                                        Rifreddi</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Ох, автор, как я вас понимаю. Сама всю жизнь от пониженного давления
+                                                мучаюсь. У нас несколько поколений гипотоников по материнской линии.
+                                                Хорошо, что сейчас хоть какие-то способы поднять давление есть, а раньше
+                                                с этим очень сложно было...
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/2.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Werner
+                                                                        Becker</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">Странно, какой-то прибор на руке способен
+                                                корректировать давление. Как он вообще работает?</div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 40px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/8.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Adalmund
+                                                                        Eichenwald</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Прибор действует на биоактивную точку на запястье. Через нее по всему
+                                                организму проходят импульсы тока, которые укрепляют и расширяют сосуды
+                                                до нормального состояния. Я немного увлекался восточной медициной,
+                                                поэтому уверен, что аппарат достойный. А вообще, посмотрите их сайт, там
+                                                все подробно расписано, как это работает.
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/3.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Albert Phua</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Постоянные головокружения, боли и упадок сил. Решил попробовать
+                                                корректор. Как только надел на руку, то сразу почувствовал, как мое
+                                                давление постепенно приходит в норму. Через полторы недели оно стало как
+                                                у нормального человека. Очень прост и удобен в использовании, постоянно
+                                                беру его с собой на работу.
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/4.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Akiana</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Давно хотела купить себе что-то подобное, много слышала о каком-то
+                                                приборе такого плана, но найти в магазине так и не смогла.
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 40px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/5.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Alexander
+                                                                        Parico</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">Зайдите на <a href="#">официальный
+                                                    сайт</a>, там вся информация об этом приборе</div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/6.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>George Larry</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Слышал, что этот прибор еще и гипотонию лечит. Это правда? Я гипотоник,
+                                                а жена от гипотонии страдает. Нам бы очень этот аппарат в семье
+                                                пригодился.
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 40px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/7.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Georg Mücke</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                У нас такая же история. Прибор правда помогает и при гипотонии, и при
+                                                гипотонии. На то он и корректор давления.
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/8.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Sebuhi
+                                                                        Kerimi</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Удобно, практично, новые технологии. Довольно долго держит заряд. А с
+                                                корректировкой давления прибор справляется на 5+. Заказывал на
+                                                официальном сайте, пришел на почту через 5 дней!
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/12.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Bittner</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Неужели придумали что-то стоящее! У меня снижалось давление, пару раз
+                                                отвозили на скорой. Бороться с этим бесполезно - так я думала до того
+                                                времени, пока мне не пришел на почту прибор АВР-051. Пользуюсь около 2-х
+                                                недель, пока скачков давление не было:)
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/10.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Donald Williams
+                                                                    </b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Заказал своему отцу, вечно страдающему от низкого давления. Прибор не
+                                                выпускает из рук. У него пропала тошнота, стал выглядеть менее усталым и
+                                                забыл про головокружение. С корректировкой низкого давления прибор уж
+                                                точно справляется!
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/11.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Tobias
+                                                                        Kaufmann</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Заказал, товар шел 6 дней. За несколько дней использования о приборе
+                                                пока только хорошее впечатление. По крайней мере пропал шум в ушах и
+                                                перестало темнеть в глазах. К покупке прибор рекомендую!
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/13.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Dina Dina</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Интересное приспособление. Давно о таком мечтала, цена приемлемая,
+                                                наверное стоит оформить себе такой.
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/14.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Sophie
+                                                                        Fischer</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Купила своему мужу. После использования прибора стал выглядеть гораздо
+                                                живее. Больше не жалуется на покалывание в сердце, головокружение и
+                                                усталость.
+                                                <div>
+                                                    <footer class="mdspost-comment__footer">
+                                                        <ul
+                                                            class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                            <li
+                                                                class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                                <a href="" rel="nofollow"
+                                                                    class="mdspost-comment-actions__link">Ответить</a>
+                                                            </li>
+                                                            <li
+                                                                class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                                <a href="" rel="nofollow"
+                                                                    class="mdspost-comment-actions__link">Свернуть</a>
+                                                            </li>
+                                                        </ul>
+                                                    </footer>
+                                                </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/15.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Arnaud
+                                                                        Landri</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                По-моему, раньше на рынок пытались выпустить что-то похожее. Только
+                                                постоянно велись споры о его эффективности. О корректоре давления
+                                                АВР-051 ничего плохого пока не слышал.
+                                            </div>
+                                            <footer class="mdspost-comment__footer">
+                                                <ul
+                                                    class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Ответить</a>
+                                                    </li>
+                                                    <li
+                                                        class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                        <a href="" rel="nofollow"
+                                                            class="mdspost-comment-actions__link">Свернуть</a>
+                                                    </li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/16.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Millet
+                                                                        Doller</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Заказала маме такой прибор, у нее очень часто падало давление. Села на
+                                                диету, старалась больше быть на свежем воздухе, даже пробовала какие-то
+                                                физические упражнения делать. Толку никакого. Врачи прописывали таблетки
+                                                - тоже не помогло. Мониторили весь интернет, и как только в продаже
+                                                появился АВР-051, мы его сразу же купили. Через месяц маму было не
+                                                узнать: стала бодрее, силы появились, давление как у космонавта!
+                                                <div>
+                                                    <footer class="mdspost-comment__footer">
+                                                        <ul
+                                                            class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                            <li
+                                                                class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                                <a href="" rel="nofollow"
+                                                                    class="mdspost-comment-actions__link">Ответить</a>
+                                                            </li>
+                                                            <li
+                                                                class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                                <a href="" rel="nofollow"
+                                                                    class="mdspost-comment-actions__link">Свернуть</a>
+                                                            </li>
+                                                        </ul>
+                                                    </footer>
+                                                </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/17.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>John Votsis</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Пользуюсь всего неделю этим прибором и уже приятно удивлен, что
+                                                физическое и эмоциональное состояние улучшилось в разы. Удобно сидит на
+                                                руке, простой в использовании. Своих денег однозначно стоит!
+                                                <div>
+                                                    <footer class="mdspost-comment__footer">
+                                                        <ul
+                                                            class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                            <li
+                                                                class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                                <a href="" rel="nofollow"
+                                                                    class="mdspost-comment-actions__link">Ответить</a>
+                                                            </li>
+                                                            <li
+                                                                class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                                <a href="" rel="nofollow"
+                                                                    class="mdspost-comment-actions__link">Свернуть</a>
+                                                            </li>
+                                                        </ul>
+                                                    </footer>
+                                                </div>
+                                    </article>
+                                </div>
+
+                                <div class=" mdspost-thread  mdspost-thread--level-1 mdspost-thread--leveldeep-0"
+                                    style="margin-left: 0px">
+                                    <article id="t33121" class=" mdspost-comment comment p-comment">
+                                        <div class="mdspost-comment__inner">
+                                            <header class="mdspost-comment__header">
+                                                <a href="" target="_blank" class="mdspost-comment-userpic">
+                                                    <span class="mdspost-comment-userpic__pic"
+                                                        style="background-image: url('files/18.jpg');"></span>
+                                                </a>
+                                                <div class="mdspost-comment-details">
+                                                    <p class="mdspost-comment-username">
+                                                        <span class="mdspost-comment-username__name"><span
+                                                                class="ljuser  i-ljuser  i-ljuser-type-P     ">
+                                                                <a href="" class="i-ljuser-profile">
+                                                                    <img class="i-ljuser-userhead"
+                                                                        src="files/userinfo_v8.svg">
+                                                                </a>
+                                                                <a href="" class="i-ljuser-username"><b>Mimo Sadi</b>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="mdspost-comment-meta">
+                                                        <a href=""
+                                                            class="mdspost-comment-time mdspost-comment-time--ctime"><span
+                                                                class="comment_date"></span></a>
+                                                    </p>
+                                                </div>
+                                            </header>
+                                            <div class="mdspost-comment__body">
+                                                Этот прибор настолько прост в использовании, что буквально за пару минут
+                                                мой дед разобрался, куда нужно тыкать, чтоб подкорректировать давление.
+                                                Эффективность проверим временем, пользуемся пару дней, пока сложно
+                                                что-то сказать.
+                                                <div>
+                                                    <footer class="mdspost-comment__footer">
+                                                        <ul
+                                                            class=" mdspost-comment-actions svgpreloader svgpreloader-pseudo svgpreloader-16 ">
+                                                            <li
+                                                                class=" mdspost-comment-actions__item  mdspost-comment-actions__item--reply   ">
+                                                                <a href="" rel="nofollow"
+                                                                    class="mdspost-comment-actions__link">Ответить</a>
+                                                            </li>
+                                                            <li
+                                                                class=" mdspost-comment-actions__item  mdspost-comment-actions__item--collapse   ">
+                                                                <a href="" rel="nofollow"
+                                                                    class="mdspost-comment-actions__link">Свернуть</a>
+                                                            </li>
+                                                        </ul>
+                                                    </footer>
+                                                </div>
+                                    </article>
+                                </div>
+
+                            </div>
+                            <div class=" mdspost-comments-controls  ">
+                                <div class="mdspost-comments-controls__addcomment">
+                                    <a href=""
+                                        class="flatbutton flatbutton--small mdspost-comments-controls__add">Добавить
+                                        комментарий</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <footer class="s-footer cf">
+            <div class="s-footer-in">
+                <nav class="s-footer-nav">
+                    <ul>
+                        <li class="s-footer-nav-item-about">
+                            <a href="">
+                                About
+                            </a>
+                        </li>
+                        <li class="s-footer-nav-item-legal">
+                            <a href="">
+                                User Agreement
+                            </a>
+                        </li>
+                        <li class="s-footer-nav-item-support">
+                            <a href="">
+                                Help
+                            </a>
+                        </li>
+                        <li class="s-footer-nav-item-sharing">
+                            <a href="">
+                                Button "Share"
+                            </a>
+                        </li>
+                        <li class="s-footer-nav-item-sharing">
+                            <a href="">
+                                <script>
+                                    var d = new Date();
+                                    var year = d.getFullYear();
+                                    document.write(year);
+                                </script>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </footer>
+        <script type="text/javascript">
+            Date.prototype.addDays = function (d) {
+                this.setDate(this.getDate() + d);
+                return this;
+            };
+            $('document').ready(function () {
+                var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+                var commentDate = $('span.comment_date');
+                var comments = commentDate.length;
+                var dates = [];
+                var d = new Date();
+                for (var i = comments - 1; i >= 0; i--) {
+                    var delta = Math.round(Math.random() * 2);
+                    var d = new Date(d.addDays(-delta));
+                    dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+                }
+                commentDate.each(function (i, el) {
+                    $(this).text(dates[i]);
+                });
+            });
+        </script>
+</body>
+
+</html>
