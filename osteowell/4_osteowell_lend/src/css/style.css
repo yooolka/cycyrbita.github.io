@@ -320,6 +320,12 @@ html [type="button"],
   background-size: cover;
 }
 
+.section_factors {
+  background-image: url("../media/section/factors.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
 .section_commits {
   background-color: #cfd8e2;
 }
@@ -2486,6 +2492,27 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   transform: translateX(-50%);
 }
 
+.factors {
+  max-width: 600px;
+}
+
+.factors__title {
+  margin-bottom: 30px;
+  font-size: 62px;
+  color: #fff;
+}
+
+.factors__item {
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.factors__item + .factors__item {
+  margin-top: 15px;
+}
+
 .form {
   position: relative;
   z-index: 1;
@@ -3077,7 +3104,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .section__title {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 1;
   }
 
@@ -3132,6 +3159,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .face__list-item img {
     max-width: 35px;
+  }
+
+  .factors__item {
+    font-size: 18px;
   }
 
   .form {
