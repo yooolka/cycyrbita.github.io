@@ -1,5 +1,6 @@
 @charset "UTF-8";
-.owl-theme .owl-nav, .how .container:before, .podagra, .pain-productBefore, .pain .productBlock, .bigToe-left, .product-before, .productBlock {
+.owl-theme .owl-nav, .howBlock-item_middle:before,
+.howBlock-item_middle:after, .how .container:before, .podagra, .pain-productBefore, .pain .productBlock, .bigToe-left, .product-before, .productBlock {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -173,15 +174,15 @@ h2,
 }
 
 .borderBottom {
-  background: linear-gradient(rgba(255, 255, 255, 0.001) 60%, #eef1f7 60%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 60%, #e6e6ee 60%, #e6e6ee 93%, rgba(255, 255, 255, 0.001) 93%);
 }
 
 .borderBottom_light {
-  background: linear-gradient(rgba(255, 255, 255, 0.001) 60%, #fff 60%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 60%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.8) 93%, rgba(255, 255, 255, 0.001) 93%);
 }
 
 .borderBottom_dark {
-  background: linear-gradient(rgba(255, 255, 255, 0.001) 60%, #3286be 60%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 60%, #3286be 60%);
 }
 
 .productBlock {
@@ -454,7 +455,7 @@ header {
 }
 .bigToe {
   padding: 80px 0 40px;
-  background: #f2f4f9;
+  background: radial-gradient(circle, #fbfcff, #f2f4f9 60%);
 }
 
 .bigToe-title,
@@ -782,7 +783,7 @@ header {
 .painList-text_big {
   font-weight: 700;
   text-transform: uppercase;
-  color: #3286be;
+  color: #075e98;
 }
 
 .pain-footer {
@@ -811,9 +812,6 @@ header {
   .pain-title {
     text-align: center;
   }
-  .pain-title .borderBottom_dark {
-    background: none;
-  }
 
   .pain .productBlock {
     position: relative;
@@ -821,9 +819,14 @@ header {
     margin: 0;
   }
 
+  .pain-text,
+.pain-subTitle,
+.pain-list {
+    margin: 10px 0 30px;
+  }
+
   .pain-subTitle {
     line-height: 0.9;
-    margin: 10px 0 20px;
   }
 
   .painList-item {
@@ -832,14 +835,6 @@ header {
 
   .painList-img {
     margin-right: 15px;
-  }
-
-  .pain-text {
-    margin: 10px 0 20px;
-  }
-
-  .pain-list {
-    margin-left: 0;
   }
 
   .pain-footer {
@@ -878,6 +873,7 @@ header {
 
 .plus-subTitle {
   font-size: 50px;
+  line-height: 0.7;
 }
 
 .plus-list {
@@ -1068,6 +1064,23 @@ header {
   flex: 1 0 100%;
   margin: 15px;
   text-align: center;
+  position: relative;
+}
+
+.howBlock-item_middle:before,
+.howBlock-item_middle:after {
+  content: "";
+  display: block;
+  background: url("../imgs/how/how-next.png") no-repeat center/100%;
+  width: 19px;
+  height: 21px;
+  left: inherit;
+  right: -35px;
+}
+
+.howBlock-item_middle:after {
+  right: inherit;
+  left: -45px;
 }
 
 .howBlock-img {
@@ -1113,6 +1126,11 @@ header {
 
   .howBlock-title {
     margin-bottom: 10px;
+  }
+
+  .howBlock-item_middle:before,
+.howBlock-item_middle:after {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1486,6 +1504,11 @@ header {
     padding-top: 70px;
   }
 }
+@media screen and (max-width: 768px) {
+  .owl-theme .owl-nav {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
   .comm-item {
     padding: 70px 10px 20px;
@@ -1502,7 +1525,7 @@ header {
 }
 .order2 {
   padding-bottom: 40px;
-  background: #f2f4f9;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.001), #f2f4f9);
 }
 .order2 .container {
   display: flex;

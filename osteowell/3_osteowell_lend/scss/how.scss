@@ -70,6 +70,24 @@
   flex: 1 0 100%;
   margin: 15px;
   text-align: center;
+  position: relative;
+}
+
+.howBlock-item_middle:before,
+.howBlock-item_middle:after {
+  content: '';
+  display: block;
+  background: url("../imgs/how/how-next.png") no-repeat center/100%;
+  width: 19px;
+  height: 21px;
+  @extend %absoluteCenter;
+  left: inherit;
+  right: -35px;
+}
+
+.howBlock-item_middle:after {
+  right: inherit;
+  left: -45px;
 }
 
 .howBlock-img {
@@ -115,6 +133,11 @@
 
   .howBlock-title {
     margin-bottom: 10px;
+  }
+
+  .howBlock-item_middle:before,
+  .howBlock-item_middle:after {
+    display: none;
   }
 }
 

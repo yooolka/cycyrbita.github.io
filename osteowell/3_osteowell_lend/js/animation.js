@@ -13,8 +13,14 @@ animationSimple('.order2 .mainLogo', 'animation-fadeIn');
 function hide(arr) {
     let element = document.querySelectorAll(arr);
     for (let i = 0; i < element.length; i++) {
-        element[i].style.opacity = '0';
+        if (element[i].classList.contains('order1-title')) {
+            continue;
+        }
+        else {
+            element[i].style.opacity = '0';
+        }
     }
+
 }
 
 function position(el) { /*определяем кооординаты элемента*/
@@ -35,10 +41,15 @@ function animationSimple(dom, animation) {/*arr = DOM элемент*/
     hide(dom);
     window.addEventListener('scroll', function () {
         for (let item of arr) {
-            let pos = position(item);
-            if (pos.visibleBottom > pos.elementBorder) {
-                pos.element.classList.add(animation);
-                pos.element.style.opacity = '1';
+            if (item.classList.contains('order1-title')) {
+                continue;
+            }
+            else {
+                let pos = position(item);
+                if (pos.visibleBottom > pos.elementBorder) {
+                    pos.element.classList.add(animation);
+                    pos.element.style.opacity = '1';
+                }
             }
         }
     }, false);

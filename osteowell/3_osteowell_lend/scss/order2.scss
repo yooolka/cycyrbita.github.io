@@ -1,6 +1,6 @@
 .order2 {
   padding-bottom: 40px;
-  background: $backgr;
+  background: linear-gradient(to bottom, rgba(255,255,255,.001), $backgr);
 
   .container {
     display: flex;
