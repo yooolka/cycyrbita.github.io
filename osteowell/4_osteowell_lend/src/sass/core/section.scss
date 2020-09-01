@@ -1,0 +1,73 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_face {
+        padding-bottom: 30px;
+        background-image: url("../media/section/face.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_commits {
+        background-color: #cfd8e2;
+    }
+
+    &_info {
+        padding-top: 120px;
+    }
+
+    &_footer {
+        padding-top: 120px;
+    }
+}
+
+.section__title {
+    font-weight: 700;
+    line-height: 1;
+    color: #1a244f;
+}
+
+@media (max-width: 1280px) {
+    .section {
+        &_face {
+            background-image: url("../media/section/face-1280.jpg");
+            background-position: right bottom;
+        }
+    }
+
+    .section__title {
+        font-size: 42px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &_face {
+            background-image: url("../media/section/face-768.jpg");
+            background-position: center bottom;
+        }
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .section__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 1;
+    }
+}
