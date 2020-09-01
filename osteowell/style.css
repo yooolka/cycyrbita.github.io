@@ -1,0 +1,52 @@
+body {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/double-bubble-dark.png");
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.list__item {
+    margin: 15px;
+    text-align: center;
+}
+
+.list__item a {
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.list__item a .list__gipo {
+    color: #30728c;
+}
+
+.list__item a .list__giper {
+    color: #9c2c2c;
+}
+
+.list__item a span:last-child {
+    text-decoration: underline;
+}
+
+.list__item a + a {
+    margin-top: 10px;
+}
+
+.list__item a:hover {
+    background-color: #ffffff;
+    text-indent: 10px;
+    padding-right: 20px;
+    box-shadow: -10px 0px 20px -6px #fff;
+}
