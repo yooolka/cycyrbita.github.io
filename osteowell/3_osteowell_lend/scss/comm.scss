@@ -83,15 +83,16 @@
 }
 
 .owl-prev {
-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .owl-next {
   transform: rotate(-90deg);
 }
+
 .owl-prev span,
 .owl-next span {
-  color: rgba(255,255,255, 0.001);
+  color: rgba(255, 255, 255, 0.001);
 }
 
 .owl-dots {
@@ -132,6 +133,12 @@ transform: rotate(90deg);
 
   .comm-item {
     padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .owl-theme .owl-nav {
+    display: none;
   }
 }
 

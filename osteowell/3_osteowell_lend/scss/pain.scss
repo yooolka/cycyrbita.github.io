@@ -72,7 +72,7 @@
 .painList-text_big {
   font-weight: 700;
   text-transform: uppercase;
-  color: $borderDark;
+  color: $painList;
 }
 
 .pain-footer {
@@ -99,9 +99,6 @@
   }
 
   .pain-title {
-    .borderBottom_dark {
-      background: none;
-    }
     text-align: center;
   }
 
@@ -111,9 +108,14 @@
     margin: 0;
   }
 
+  .pain-text,
+  .pain-subTitle,
+  .pain-list {
+    margin: 10px 0 30px;
+  }
+
   .pain-subTitle {
     line-height: .9;
-    margin: 10px 0 20px;
   }
 
   .painList-item {
@@ -122,14 +124,6 @@
 
   .painList-img {
     margin-right: 15px;
-  }
-
-  .pain-text {
-    margin: 10px 0 20px;
-  }
-
-  .pain-list {
-    margin-left: 0;
   }
 
   .pain-footer {
