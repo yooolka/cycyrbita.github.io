@@ -1,0 +1,158 @@
+.comm {
+  margin-top: -330px;
+  padding: 190px 0 100px;
+  position: relative;
+  z-index: 5;
+  background: url("../imgs/comments/comments-before.png") no-repeat 50% 0%/1920px;
+}
+
+.comm-title {
+  font-size: 60px;
+  text-align: right;
+  color: $green;
+  margin-bottom: 90px;
+}
+
+.comm-title_small {
+  display: block;
+  font-weight: 400;
+  line-height: .7;
+  color: #000;
+  font-size: 48px;
+}
+
+.comm-item {
+  position: relative;
+  max-width: 715px;
+  margin: 0 auto;
+  background: #fff;
+  border: 9px solid $consistBorder;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+  padding: 30px 30px 45px;
+}
+
+.comItem-result {
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background: $blue;
+  color: #fff;
+  font-size: 20px;
+}
+
+.sliderItem-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.comm-avatar {
+  max-width: 94px;
+  margin-right: 30px;
+}
+
+.comm-info {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.comm-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.owl-theme .owl-nav {
+  @extend %absoluteCenter;
+  display: flex;
+  max-width: 800px;
+  bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.owl-prev,
+.owl-next {
+  max-width: 50px;
+  height: 50px;
+  background: url("../imgs/order1/sort-down-solid.svg") no-repeat center;
+  z-index: 3;
+}
+
+.owl-prev {
+  transform: rotate(90deg);
+}
+
+.owl-next {
+  transform: rotate(-90deg);
+}
+
+.owl-prev span,
+.owl-next span {
+  color: rgba(255, 255, 255, 0.001);
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-dot {
+  max-width: 20px;
+  height: 20px;
+  margin: 20px 10px 0;
+  border: 1px solid #2e2e2e;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.owl-carousel .owl-dot.active {
+  background: #575757;
+}
+
+.owl-carousel .owl-stage-outer {
+  z-index: 2;
+}
+
+@media screen and (max-width: 991px) {
+  .comm {
+    background: none;
+    margin-top: 0;
+    padding: 30px 0 50px;
+  }
+
+  .comm-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .comm-item {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .owl-theme .owl-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .comm-item {
+    padding: 70px 10px 20px;
+  }
+
+  .comm-text {
+    line-height: 1.2;
+    font-size: 18px;
+  }
+
+  .sliderItem-header {
+    margin-bottom: 20px;
+  }
+}
