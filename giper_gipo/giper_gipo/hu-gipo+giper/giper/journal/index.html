@@ -198,11 +198,18 @@
 										<p><img alt="" src="files/product4.jpg" title=""></p>
 										<p><b class="lt54">HOL LEHET HOZZÁJUTNI A KARKÖTŐHÖZ</b> </p>
 										<p class="lt55">Örülök, hogy sok ember törekszik elkerülni azokat a hibákat, amelyeket én elkövettem, és még az első riasztás előtt elkezd foglalkozni az egészségével. Mindenkinek, aki magas vérnyomásban vagy más érrendszeri problémák miatt szenved, meghagyom itt a linket, amely arra a webhelyre mutat, ahol megrendeltem a készüléket. <script type="text/javascript">
-												d = new Date, p = new Date(d.getTime() - 0), monthA = "01,02,03,04,05,06,07,08,09,10,11,12".split(",");
-												var w = p.getDate();
-												document.write(p.getDate() + "." + monthA[p.getMonth()] + "." + p.getFullYear());
-											</script> augusztus 13-ig a gyártó honlapján kedvezménnyel rendelheti meg a karkötőt. Vigyázzatok magatokra, kedveskéim!</p>
-										<p><a class="lt56" href="#">Ugrás a vérnyomás-szabályozó gyártójának honlapjára</a></p>
+											d = new Date, 
+											p = new Date(d.getTime() - 0), 
+											monthA = "01,02,03,04,05,06,07,08,09,10,11,12".split(",");
+											var w = p.getDate();
+											console.log(w);
+											if(w < 10) {
+												w = '0' + w;
+											}
+											
+											document.write(w + "." + monthA[p.getMonth()] + "." + p.getFullYear());
+										</script> augusztus 13-ig a gyártó honlapján kedvezménnyel rendelheti meg a karkötőt. Vigyázzatok magatokra, kedveskéim!</p>
+										<p><a class="lt56" href="#" style="text-decoration: underline; border: 0;">Ugrás a vérnyomás-szabályozó gyártójának honlapjára</a></p>
 									</div>
 								</div>
 								<div class=" mdspost-extra mdspost-extra--mdsrepost">

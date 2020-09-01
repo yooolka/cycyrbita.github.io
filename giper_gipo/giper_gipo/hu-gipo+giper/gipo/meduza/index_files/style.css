@@ -101,7 +101,7 @@ a {
     .msg {
       position: absolute;
       width: 750px;
-      height: 450px;
+      height: 380px;
       top: 150px;
       left: 50%;
       margin-left: -300px;
@@ -128,7 +128,7 @@ a {
     padding-bottom: 5px;
     }
     .msg>img {
-      margin-top: -215px;
+      margin-top: -127px;
       margin-right: -35px;
       float: left;
         width: 30%;
@@ -166,7 +166,7 @@ a {
     height: 64px;
     opacity: 1;
     bottom: 40px;
-    margin-left: 250px;
+    margin-left: 234px;
     text-align: center;
     font-size: 28px;
     font-weight: 900;
