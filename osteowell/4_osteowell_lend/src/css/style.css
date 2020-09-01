@@ -2748,6 +2748,84 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-weight: 700;
 }
 
+.what__title {
+  margin-bottom: 30px;
+  font-size: 63px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.what__title mark {
+  font-weight: 700;
+  color: #fe003c;
+}
+
+.what__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.what__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 250px;
+  flex: 1 0 250px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  min-width: 250px;
+  padding: 300px 30px 30px;
+  overflow: hidden;
+}
+
+.what__item::before {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: '';
+  -webkit-box-shadow: 0 0 130px 70px #000;
+  box-shadow: 0 0 130px 70px #000;
+}
+
+.what__item:nth-child(1) {
+  background-image: url("../media/what/img-1.jpg");
+}
+
+.what__item:nth-child(2) {
+  background-image: url("../media/what/img-5.jpg");
+}
+
+.what__item:nth-child(3) {
+  background-image: url("../media/what/img-3.jpg");
+}
+
+.what__item:nth-child(4) {
+  background-image: url("../media/what/img-4.jpg");
+}
+
+.what__item:nth-child(5) {
+  background-image: url("../media/what/img-2.jpg");
+}
+
+.what__description {
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  color: #fff;
+}
+
 @media (max-width: 1280px) {
   .container {
     max-width: 768px;
@@ -2812,6 +2890,30 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .form {
     max-width: 275px;
+  }
+
+  .what__item {
+    background-position: center bottom;
+  }
+
+  .what__item:nth-child(1) {
+    background-image: url("../media/what/img-1-1280.jpg");
+  }
+
+  .what__item:nth-child(2) {
+    background-image: url("../media/what/img-5-1280.jpg");
+  }
+
+  .what__item:nth-child(3) {
+    background-image: url("../media/what/img-3-1280.jpg");
+  }
+
+  .what__item:nth-child(4) {
+    background-image: url("../media/what/img-4-1280.jpg");
+  }
+
+  .what__item:nth-child(5) {
+    background-image: url("../media/what/img-2-1280.jpg");
   }
 }
 
