@@ -36,9 +36,17 @@ input {
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 3px;
-    font-weight: 700;
+    font-weight: 400;
     max-width: 300px;
     margin: 10px auto;
+}
+
+.list__item-lends {
+    color: rgb(176, 82, 82)
+}
+
+.list__item-prelends {
+    color: rgb(95, 95, 157)
 }
 
 .list__item:hover {
