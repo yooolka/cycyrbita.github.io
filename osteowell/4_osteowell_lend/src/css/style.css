@@ -320,6 +320,18 @@ html [type="button"],
   background-size: cover;
 }
 
+.section_factors {
+  background-image: url("../media/section/factors.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.section_stop {
+  background-image: url("../media/section/stop.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
 .section_commits {
   background-color: #cfd8e2;
 }
@@ -2486,6 +2498,27 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   transform: translateX(-50%);
 }
 
+.factors {
+  max-width: 600px;
+}
+
+.factors__title {
+  margin-bottom: 30px;
+  font-size: 62px;
+  color: #fff;
+}
+
+.factors__item {
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.factors__item + .factors__item {
+  margin-top: 15px;
+}
+
 .form {
   position: relative;
   z-index: 1;
@@ -2754,6 +2787,25 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-weight: 700;
 }
 
+.stop {
+  max-width: 643px;
+  margin-left: auto;
+}
+
+.stop__title {
+  margin-bottom: 30px;
+  font-size: 48px;
+}
+
+.stop__title mark {
+  color: #fe003c;
+}
+
+.stop__subtitle {
+  font-size: 29px;
+  font-weight: 500;
+}
+
 .what__title {
   margin-bottom: 30px;
   font-size: 63px;
@@ -2921,6 +2973,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     max-width: 275px;
   }
 
+  .stop {
+    max-width: 400px;
+  }
+
   .what__item {
     background-position: center bottom;
   }
@@ -3056,6 +3112,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     margin-bottom: 10px;
   }
 
+  .stop {
+    max-width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+  }
+
+  .stop__subtitle {
+    font-size: 24px;
+  }
+
   .wooman {
     max-width: 280px;
   }
@@ -3077,7 +3144,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .section__title {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 1;
   }
 
@@ -3132,6 +3199,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .face__list-item img {
     max-width: 35px;
+  }
+
+  .factors__item {
+    font-size: 18px;
   }
 
   .form {
