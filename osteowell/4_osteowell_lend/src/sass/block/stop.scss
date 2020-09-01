@@ -1,0 +1,38 @@
+
+.stop {
+    max-width: 643px;
+    margin-left: auto;
+}
+
+.stop__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+
+    & mark {
+        color: #fe003c;
+    }
+}
+
+.stop__subtitle {
+    font-size: 29px;
+    font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+    .stop {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stop {
+        max-width: 100%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, .7);
+        border-radius: 5px;
+    }
+
+    .stop__subtitle {
+        font-size: 24px;
+    }
+}

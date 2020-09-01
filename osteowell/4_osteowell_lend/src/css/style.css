@@ -326,6 +326,12 @@ html [type="button"],
   background-size: cover;
 }
 
+.section_stop {
+  background-image: url("../media/section/stop.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
 .section_commits {
   background-color: #cfd8e2;
 }
@@ -2781,6 +2787,25 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-weight: 700;
 }
 
+.stop {
+  max-width: 643px;
+  margin-left: auto;
+}
+
+.stop__title {
+  margin-bottom: 30px;
+  font-size: 48px;
+}
+
+.stop__title mark {
+  color: #fe003c;
+}
+
+.stop__subtitle {
+  font-size: 29px;
+  font-weight: 500;
+}
+
 .what__title {
   margin-bottom: 30px;
   font-size: 63px;
@@ -2948,6 +2973,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     max-width: 275px;
   }
 
+  .stop {
+    max-width: 400px;
+  }
+
   .what__item {
     background-position: center bottom;
   }
@@ -3081,6 +3110,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     width: 100%;
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .stop {
+    max-width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+  }
+
+  .stop__subtitle {
+    font-size: 24px;
   }
 
   .wooman {
