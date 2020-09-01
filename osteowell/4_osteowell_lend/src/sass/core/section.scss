@@ -10,6 +10,12 @@
         background-size: cover;
     }
 
+    &_wooman {
+        background-image: url("../media/section/wooman.jpg");
+        background-position: center top;
+        background-size: cover;
+    }
+
     &_commits {
         background-color: #cfd8e2;
     }
@@ -63,6 +69,10 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &_wooman {
+            background-image: url("../media/section/wooman-480.jpg");
+        }
     }
 
     .section__title {
