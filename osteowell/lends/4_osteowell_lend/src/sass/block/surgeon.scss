@@ -1,0 +1,172 @@
+
+.surgeon__title {
+    margin-bottom: 30px;
+    font-size: 37px;
+    color: #000;
+    text-align: center;
+
+    & mark {
+        display: block;
+        font-size: 102px;
+        color: #fe003c;
+        text-transform: uppercase;
+    }
+}
+
+.surgeon__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.surgeon__item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 25%;
+    padding: 380px 30px 30px;
+    overflow: hidden;
+    color: #fff;
+    background-size: cover;
+
+    &_full {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-top: 260px;
+    }
+
+    &:nth-child(1) {
+        background-image: url("../media/surgeon/img-1.jpg");
+    }
+
+    &:nth-child(2) {
+        background-image: url("../media/surgeon/img-2.jpg");
+    }
+
+    &:nth-child(3) {
+        background-image: url("../media/surgeon/img-3.jpg");
+    }
+
+    &:nth-child(4) {
+        background-image: url("../media/surgeon/img-4.jpg");
+    }
+
+    &:nth-child(5) {
+        background-image: url("../media/surgeon/img-5.jpg");
+    }
+
+    &:nth-child(6) {
+        background-image: url("../media/surgeon/img-6.jpg");
+    }
+
+    &::before {
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 1px;
+        content: '';
+        box-shadow: 0 0 130px 70px #000;
+    }
+}
+
+.surgeon__name {
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-weight: 700;
+
+    &_full {
+        font-size: 27px;
+    }
+}
+
+.surgeon__description {
+    &_full {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .surgeon__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-top: 260px;
+
+        &:nth-child(1) {
+            background-image: url("../media/surgeon/img-1-1280.jpg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../media/surgeon/img-2-1280.jpg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("../media/surgeon/img-3-1280.jpg");
+        }
+
+        &:nth-child(4) {
+            background-image: url("../media/surgeon/img-4-1280.jpg");
+        }
+
+        &:nth-child(5) {
+            background-image: url("../media/surgeon/img-5-1280.jpg");
+        }
+
+        &:nth-child(6) {
+            background-image: url("../media/surgeon/img-6-1280.jpg");
+        }
+
+        &::before {
+            box-shadow: 0 0 180px 180px #000;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .surgeon__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 260px;
+
+        &::before {
+            box-shadow: 0 0 150px 120px #000;
+        }
+
+        &:nth-child(1) {
+            background-image: url("../media/surgeon/img-1-768.jpg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../media/surgeon/img-2-768.jpg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("../media/surgeon/img-3-768.jpg");
+        }
+
+        &:nth-child(4) {
+            background-image: url("../media/surgeon/img-4-768.jpg");
+        }
+
+        &:nth-child(5) {
+            background-image: url("../media/surgeon/img-5-768.jpg");
+        }
+
+        &:nth-child(6) {
+            background-image: url("../media/surgeon/img-6-768.jpg");
+        }
+    }
+
+    .surgeon__name {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .surgeon__description {
+        font-size: 16px;
+    }
+}

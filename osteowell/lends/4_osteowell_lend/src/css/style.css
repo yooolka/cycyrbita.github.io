@@ -2806,6 +2806,110 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-weight: 500;
 }
 
+.surgeon__title {
+  margin-bottom: 30px;
+  font-size: 37px;
+  color: #000;
+  text-align: center;
+}
+
+.surgeon__title mark {
+  display: block;
+  font-size: 102px;
+  color: #fe003c;
+  text-transform: uppercase;
+}
+
+.surgeon__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.surgeon__item {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  max-width: 25%;
+  padding: 380px 30px 30px;
+  overflow: hidden;
+  color: #fff;
+  background-size: cover;
+}
+
+.surgeon__item_full {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-top: 260px;
+}
+
+.surgeon__item:nth-child(1) {
+  background-image: url("../media/surgeon/img-1.jpg");
+}
+
+.surgeon__item:nth-child(2) {
+  background-image: url("../media/surgeon/img-2.jpg");
+}
+
+.surgeon__item:nth-child(3) {
+  background-image: url("../media/surgeon/img-3.jpg");
+}
+
+.surgeon__item:nth-child(4) {
+  background-image: url("../media/surgeon/img-4.jpg");
+}
+
+.surgeon__item:nth-child(5) {
+  background-image: url("../media/surgeon/img-5.jpg");
+}
+
+.surgeon__item:nth-child(6) {
+  background-image: url("../media/surgeon/img-6.jpg");
+}
+
+.surgeon__item::before {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 1px;
+  content: '';
+  -webkit-box-shadow: 0 0 130px 70px #000;
+  box-shadow: 0 0 130px 70px #000;
+}
+
+.surgeon__name {
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.surgeon__name_full {
+  font-size: 27px;
+}
+
+.surgeon__description_full {
+  font-size: 18px;
+}
+
 .what__title {
   margin-bottom: 30px;
   font-size: 63px;
@@ -2977,6 +3081,43 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     max-width: 400px;
   }
 
+  .surgeon__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-top: 260px;
+  }
+
+  .surgeon__item:nth-child(1) {
+    background-image: url("../media/surgeon/img-1-1280.jpg");
+  }
+
+  .surgeon__item:nth-child(2) {
+    background-image: url("../media/surgeon/img-2-1280.jpg");
+  }
+
+  .surgeon__item:nth-child(3) {
+    background-image: url("../media/surgeon/img-3-1280.jpg");
+  }
+
+  .surgeon__item:nth-child(4) {
+    background-image: url("../media/surgeon/img-4-1280.jpg");
+  }
+
+  .surgeon__item:nth-child(5) {
+    background-image: url("../media/surgeon/img-5-1280.jpg");
+  }
+
+  .surgeon__item:nth-child(6) {
+    background-image: url("../media/surgeon/img-6-1280.jpg");
+  }
+
+  .surgeon__item::before {
+    -webkit-box-shadow: 0 0 180px 180px #000;
+    box-shadow: 0 0 180px 180px #000;
+  }
+
   .what__item {
     background-position: center bottom;
   }
@@ -3121,6 +3262,52 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .stop__subtitle {
     font-size: 24px;
+  }
+
+  .surgeon__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 260px;
+  }
+
+  .surgeon__item::before {
+    -webkit-box-shadow: 0 0 150px 120px #000;
+    box-shadow: 0 0 150px 120px #000;
+  }
+
+  .surgeon__item:nth-child(1) {
+    background-image: url("../media/surgeon/img-1-768.jpg");
+  }
+
+  .surgeon__item:nth-child(2) {
+    background-image: url("../media/surgeon/img-2-768.jpg");
+  }
+
+  .surgeon__item:nth-child(3) {
+    background-image: url("../media/surgeon/img-3-768.jpg");
+  }
+
+  .surgeon__item:nth-child(4) {
+    background-image: url("../media/surgeon/img-4-768.jpg");
+  }
+
+  .surgeon__item:nth-child(5) {
+    background-image: url("../media/surgeon/img-5-768.jpg");
+  }
+
+  .surgeon__item:nth-child(6) {
+    background-image: url("../media/surgeon/img-6-768.jpg");
+  }
+
+  .surgeon__name {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+  .surgeon__description {
+    font-size: 16px;
   }
 
   .wooman {
