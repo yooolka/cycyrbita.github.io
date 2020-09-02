@@ -332,6 +332,13 @@ html [type="button"],
   background-size: cover;
 }
 
+.section_treatmen {
+  padding-top: 0 !important;
+  background-image: url("../media/section/treatmen.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
 .section_commits {
   background-color: #cfd8e2;
 }
@@ -2910,6 +2917,102 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-size: 18px;
 }
 
+.treatmen {
+  position: relative;
+  max-width: 600px;
+  margin-left: auto;
+}
+
+.treatmen__product {
+  position: absolute;
+  top: 11px;
+  left: -290px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 60px;
+}
+
+.treatmen__title {
+  margin-bottom: 30px;
+  font-size: 88px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.treatmen__title mark {
+  color: #23b187;
+}
+
+.treatmen__box {
+  margin-bottom: 30px;
+}
+
+.treatmen__item {
+  position: relative;
+  min-height: 25px;
+  padding-left: 40px;
+  font-size: 20px;
+  background-image: url("../media/treatmen/check.png");
+  background-position: left top;
+}
+
+.treatmen__item + .treatmen__item {
+  margin-top: 15px;
+}
+
+.treatmen__btn {
+  margin-bottom: 30px;
+}
+
+.treatmen__btn a {
+  display: inline-block;
+  padding: 15px 85px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fbac05;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbac05), to(#e45d23));
+  background-image: -o-linear-gradient(top, #fbac05 0%, #e45d23 100%);
+  background-image: linear-gradient(180deg, #fbac05 0%, #e45d23 100%);
+  border: none;
+  border-radius: 40px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.treatmen__btn a:hover {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.treatmen__description {
+  font-size: 20px;
+  font-weight: 700;
+  color: #23b187;
+}
+
+.treatmen__description a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.treatmen__description mark {
+  display: block;
+  color: inherit;
+}
+
+.treatmen__description span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
 .what__title {
   margin-bottom: 30px;
   font-size: 63px;
@@ -3118,6 +3221,24 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     box-shadow: 0 0 180px 180px #000;
   }
 
+  .treatmen {
+    max-width: 440px;
+  }
+
+  .treatmen__item {
+    font-size: 17px;
+  }
+
+  .treatmen__title {
+    font-size: 39px;
+  }
+
+  .treatmen__product {
+    top: 0;
+    left: -220px;
+    max-width: 185px;
+  }
+
   .what__item {
     background-position: center bottom;
   }
@@ -3308,6 +3429,34 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .surgeon__description {
     font-size: 16px;
+  }
+
+  .treatmen__product {
+    position: static;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 96px;
+    flex: 0 0 96px;
+    margin-right: 0;
+  }
+
+  .treatmen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .treatmen__box {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 120px);
+    flex: 0 0 calc(100% - 120px);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
   }
 
   .wooman {
