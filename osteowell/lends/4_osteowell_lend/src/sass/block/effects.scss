@@ -100,6 +100,7 @@
 @media (max-width: 768px) {
     .effects__item {
         flex: 1 0 100%;
+        background-size: cover;
 
         &:nth-child(1) {
             background-image: url("../media/effects/img-1-768.jpg");

@@ -90,3 +90,10 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .what__box {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}

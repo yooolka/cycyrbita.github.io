@@ -3403,6 +3403,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 100%;
     flex: 1 0 100%;
+    background-size: cover;
   }
 
   .effects__item:nth-child(1) {
@@ -3532,8 +3533,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .surgeon__item::before {
-    -webkit-box-shadow: 0 0 150px 120px #000;
-    box-shadow: 0 0 150px 120px #000;
+    -webkit-box-shadow: 0 0 190px 190px #000;
+    box-shadow: 0 0 190px 190px #000;
   }
 
   .surgeon__item:nth-child(1) {
@@ -3714,6 +3715,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     font-size: 38px;
   }
 
+  .what__box {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
   .wooman {
     max-width: 100%;
   }
@@ -3738,5 +3744,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .face__list-description {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  .treatmen__title {
+    font-size: 26px;
   }
 }
