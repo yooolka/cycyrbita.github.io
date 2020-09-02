@@ -124,6 +124,12 @@
             box-shadow: 0 0 180px 180px #000;
         }
     }
+
+    .surgeon__title {
+        & mark {
+            font-size: 58px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -168,5 +174,18 @@
 
     .surgeon__description {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .surgeon__box {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .surgeon__title {
+        & mark {
+            font-size: 38px;
+        }
     }
 }
