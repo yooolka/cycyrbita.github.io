@@ -79,7 +79,6 @@ select {
     background-color: #fff;
 }
 
-
 .select {
     position: relative;
 }
@@ -1043,9 +1042,10 @@ select, input {
 }
 
 .plus-item:nth-child(even) > .plusItem-text {
-    margin-bottom: 215px;
     align-self: flex-end;
     padding: 0 0 20px;
+    position: relative;
+    top: -570px;
 }
 
 .plusItem-title_small {
@@ -1061,7 +1061,6 @@ select, input {
     margin-top: -295px;
     overflow-x: hidden;
 }
-
 
 .weeks-title,
 .weeks-subTitle,
@@ -1096,9 +1095,10 @@ select, input {
     position: relative;
 }
 
-.weekList-item:before {
+.weekList-item:before,
+.weekList-item:after {
     content: '';
-    display: block;
+    display: flex;
     position: absolute;
     background: url("../img/weeks-arrow.png") no-repeat center;
     width: 27px;
@@ -1107,6 +1107,40 @@ select, input {
     top: -260px;
     right: -30px;
     margin: auto;
+}
+
+.weekList-item:after {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #9dfbde;
+    color: #fff;
+    font-family: 'Nunito';
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 39px;
+    top: 0;
+    bottom: inherit;
+    right: inherit;
+    left: -30px;
+    width: 70px;
+    height: 70px;
+}
+
+.weekList-item_1:after {
+    content: '1';
+}
+
+.weekList-item_2:after {
+    content: '2';
+}
+
+.weekList-item_3:after {
+    content: '3';
+}
+
+.weekList-item_4:after {
+    content: '4';
 }
 
 .weekList-item:last-child:before {
@@ -1260,6 +1294,35 @@ select, input {
     width: 100%;
     max-height: 421px;
     height: 100%;
+}
+
+.specDoc:before,
+.specFooter-left_mob:before,
+.specDoc:after,
+.specFooter-left_mob:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.specDoc:before,
+.specFooter-left_mob:before {
+    background: url("../img/spec-stamp_green.png") no-repeat center/100%;
+    bottom: 0;
+    right: -250px;
+}
+
+.specDoc:after,
+.specFooter-left_mob:after {
+    background: url("../img/spec-stamp_red.png") no-repeat center/100%;
+    bottom: -50px;
+    right: -25px;
 }
 
 .comment {
@@ -1418,6 +1481,7 @@ select, input {
 .fake-text_pink {
     text-transform: uppercase;
     color: var(--violet);
+    font-weight: 900;
 }
 
 .fake-right {
@@ -1457,10 +1521,6 @@ a {
         display: none;
     }
 
-    .specFooter-left_mob {
-        display: block;
-    }
-
     .spec-footer {
         display: flex;
         flex-wrap: wrap;
@@ -1469,10 +1529,28 @@ a {
     }
 
     .specFooter-left_mob {
+        display: block;
+        position: relative;
         max-width: 200px;
         flex: 1 0 200px;
         margin-right: 20px;
         margin-bottom: 20px;
+    }
+
+    .specFooter-left_mob:before,
+    .specFooter-left_mob:after {
+        width: 50px;
+        height: 50px;
+    }
+
+    .specFooter-left_mob:before {
+        bottom: 25px;
+        right: -150px;
+    }
+
+    .specFooter-left_mob:after {
+        bottom: -10px;
+        right: -50px;
     }
 
     .specFooter-right_mob {
@@ -1687,6 +1765,7 @@ a {
         margin-top: 55px;
         margin-bottom: 10px;
         padding-top: 0;
+        top: inherit;
     }
 
     @-moz-document url-prefix() {
@@ -1898,6 +1977,11 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+
+    h2 {
+        line-height: .9;
+    }
+
     .order-title {
         font-size: 65px;
         line-height: 1;
@@ -2064,5 +2148,33 @@ a {
         margin-bottom: 15px;
         text-align: left;
     }
+
+    .multi-list {
+        max-width: 100%;
+        flex: 1 0 100%;
+    }
+
+    .multiList-item {
+        max-width: 100%;
+        flex: 1 0 100%;
+    }
+
+    .plus-item {
+        max-width: 400px;
+        flex: 1 0 100%;
+    }
+
+    .plusItem-title {
+        max-width: 190px;
+        margin: 0 auto;
+    }
+
+    .plusItem-text {
+        width: 100%;
+        max-width: 100%;
+        flex: 1 0 100%;
+    }
+
+
 
 }
