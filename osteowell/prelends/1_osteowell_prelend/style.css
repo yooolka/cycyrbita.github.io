@@ -458,8 +458,6 @@ body .page-content {
     font-style: normal;
 }
 
-
-
 @font-face {
     font-family: open-sans;
     src: url('fonts/OpenSans/OpenSans-Light_Italic.woff2') format("woff2"),
@@ -2502,7 +2500,7 @@ h4 {
     margin: 10px 10px 0 0;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
     .product-img {
         max-width: 200px;
     }
@@ -2513,5 +2511,13 @@ h4 {
 
     p {
         font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-float {
+        float: none;
+        margin: 10px auto;
+        max-width: 500px;
     }
 }
