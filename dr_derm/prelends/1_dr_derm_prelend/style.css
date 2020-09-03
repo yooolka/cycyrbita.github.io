@@ -479,6 +479,10 @@ input[name*=popradio] {
     display: inline-block
 }
 
+.wrapper figcaption {
+    text-align: left !important;
+}
+
 #popular-box-wrapper.style1 .most-popular-item.first-article {
     width: 100%;
     float: left;
