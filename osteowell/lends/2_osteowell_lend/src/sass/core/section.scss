@@ -34,10 +34,9 @@
 
     &_step {
         padding-top: 120px;
-        padding-bottom: 23%;
+        padding-bottom: 410px;
         background-image: url("../media/section/step.jpg");
         background-position: center bottom;
-        background-size: 100% auto;
     }
 
     &_effect {
@@ -95,7 +94,8 @@
         }
 
         &_step {
-            padding-bottom: 23%;
+            padding-bottom: 270px;
+            background-image: url("../media/section/step-1280.jpg");
         }
 
         &_info {
@@ -135,6 +135,7 @@
 
         &_step {
             padding-bottom: 23%;
+            background-size: 100% auto;
         }
 
         &_info {
