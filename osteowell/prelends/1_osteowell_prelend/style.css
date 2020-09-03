@@ -839,7 +839,7 @@ body, html {
 .article-right-rail .arr-group__sticky-container {
     position: -webkit-sticky;
     position: sticky;
-    top: 0
+    top: 110px
 }
 
 .article-right-rail .arr-group__sticky-container > * {
@@ -865,7 +865,7 @@ body, html {
 .article-right-rail .arr-group:last-of-type {
     position: -webkit-sticky;
     position: sticky;
-    top: 0
+    top: 110px
 }
 
 .article-right-rail .arr-group:last-of-type > * {
@@ -2505,5 +2505,9 @@ h4 {
 
     .product-img2 {
         max-width: 100px;
+    }
+
+    p {
+        font-weight: 600;
     }
 }
