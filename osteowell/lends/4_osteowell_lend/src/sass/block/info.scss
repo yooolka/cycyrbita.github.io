@@ -5,7 +5,7 @@
     align-items: center;
     padding: 20px 20px 20px 40px;
     margin-left: 27px;
-    background-color: #e0dff0;
+    background-color: #544faf;
     background-image: url('../media/info/line.png');
     background-repeat: no-repeat;
     background-position: -100px top;
@@ -28,6 +28,7 @@
     flex: 0 0 221px;
     margin-right: 70px;
     font-weight: 800;
+    color: #fff;
 
     & span {
         display: block;
@@ -35,8 +36,11 @@
 }
 
 .info__description {
+    color: #fff;
+
     & mark {
         font-weight: 700;
+        color: inherit;
     }
 }
 

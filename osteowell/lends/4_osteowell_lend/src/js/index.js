@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     $('.js-commits__box').owlCarousel({
         loop: true,
-        margin: 40,
+        margin: 20,
         autoHeight: true,
         responsive : {
             320 : {
@@ -61,7 +61,7 @@ $(document).ready(function() {
             },
 
             1280 : {
-                items: 3
+                items: 4
             }
         }
     });

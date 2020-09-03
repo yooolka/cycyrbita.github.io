@@ -2267,7 +2267,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .commits__title {
   margin-bottom: 30px;
-  font-size: 46px;
+  font-size: 57px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -2312,7 +2312,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 85px 50px 50px;
+  padding: 85px 25px 25px;
   margin: 50px 0 20px;
   background-color: #fff;
 }
@@ -2335,23 +2335,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .commits__name {
   margin-bottom: 20px;
-  font-family: 'MinionPro', serif;
-  font-size: 28px;
+  font-size: 21px;
   font-weight: 700;
-  color: #000;
+  color: #1a244f;
   text-align: center;
   text-transform: uppercase;
 }
 
 .commits__name span {
   display: block;
+  font-weight: 400;
 }
 
 .commits__description {
   width: 100%;
   margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .commits__star {
@@ -2847,7 +2847,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   align-items: center;
   padding: 20px 20px 20px 40px;
   margin-left: 27px;
-  background-color: #e0dff0;
+  background-color: #544faf;
   background-image: url("../media/info/line.png");
   background-repeat: no-repeat;
   background-position: -100px top;
@@ -2874,14 +2874,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   flex: 0 0 221px;
   margin-right: 70px;
   font-weight: 800;
+  color: #fff;
 }
 
 .info__title span {
   display: block;
 }
 
+.info__description {
+  color: #fff;
+}
+
 .info__description mark {
   font-weight: 700;
+  color: inherit;
 }
 
 .professional {
