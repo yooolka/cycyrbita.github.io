@@ -51,10 +51,6 @@
         background-color: #cfd8e2;
     }
 
-    &_info {
-        padding-top: 120px;
-    }
-
     &_footer {
         padding-top: 120px;
     }
@@ -76,6 +72,10 @@
         &_sostav {
             background-image: url("../media/section/sostav-1280.jpg");
             background-position: center center;
+        }
+
+        &_footer {
+            padding-top: 90px;
         }
     }
 

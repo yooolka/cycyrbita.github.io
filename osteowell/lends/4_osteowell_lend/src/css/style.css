@@ -355,10 +355,6 @@ html [type="button"],
   background-color: #cfd8e2;
 }
 
-.section_info {
-  padding-top: 120px;
-}
-
 .section_footer {
   padding-top: 120px;
 }
@@ -3387,6 +3383,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     background-position: center center;
   }
 
+  .section_footer {
+    padding-top: 90px;
+  }
+
   .section__title {
     font-size: 42px;
     line-height: 1;
@@ -3944,6 +3944,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     font-size: 38px;
   }
 
+  .effects__item {
+    padding-top: 280px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .face__logo {
     margin-bottom: 25px;
   }
@@ -4069,6 +4075,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     margin-left: -15px;
   }
 
+  .surgeon__item {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .surgeon__title mark {
     font-size: 38px;
   }
@@ -4076,6 +4087,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .what__box {
     margin-right: -15px;
     margin-left: -15px;
+  }
+
+  .what__item {
+    padding-top: 250px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-size: cover;
   }
 
   .wooman {
