@@ -1,0 +1,133 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_face {
+        padding-top: 10px;
+        padding-bottom: 100px;
+        background-image: url("../media/section/face.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_facts {
+        background-image: url("../media/section/facts.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &_problems {
+        background-image: url("../media/section/problems.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &_help {
+        background-image: url("../media/section/help.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &_ingredients {
+        background-image: url("../media/section/ingredients.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_research {
+        background-image: url("../media/section/research.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_recommendations {
+        background-image: url("../media/section/recommendations.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.section__title {
+    font-family: "YanoneKaffeesatz", sans-serif;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+@media (max-width: 1030px) {
+    .section {
+        &_face {
+            padding-bottom: 110px;
+        }
+
+        &_problems {
+            background-image: url("../media/section/problems-1030.jpg");
+            background-position: center top;
+        }
+
+        &_help {
+            background-size: cover;
+        }
+    }
+
+    .section__title {
+        font-size: 40px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        &_face {
+            padding-bottom: 60px;
+            background-color: #e2e8dc;
+            background-image: none;
+        }
+
+        &_facts {
+            background-image: url("../media/section/facts-768.jpg");
+            background-size: cover;
+        }
+
+        &_problems {
+            background-image: url("../media/section/problems-768.jpg");
+        }
+
+        &_help {
+            background-image: url("../media/section/help-768.jpg");
+        }
+
+        &_research {
+            background-image: url("../media/section/research-768.jpg");
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 34px;
+        padding-bottom: 34px;
+
+        &_problems {
+            padding-bottom: 0;
+            background: none;
+            background-image: url("../media/section/problems-480.jpg");
+        }
+
+        &_facts {
+            background-color: #e7d8c1;
+            background-image: url("../media/section/facts-480.jpg");
+            background-position: right bottom;
+            background-size: auto;
+        }
+
+        &_help {
+            background-image: url("../media/section/help-480.jpg");
+            background-position: center bottom;
+            background-size: auto;
+        }
+    }
+}

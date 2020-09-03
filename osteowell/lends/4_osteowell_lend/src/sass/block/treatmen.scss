@@ -129,6 +129,16 @@
     }
 }
 
+@media (max-width: 480px) {
+    .treatmen {
+        align-items: flex-end;
+    }
+
+    .treatmen__product {
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 370px) {
     .treatmen__title {
         font-size: 26px;

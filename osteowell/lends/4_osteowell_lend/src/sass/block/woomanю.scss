@@ -13,6 +13,7 @@
     & mark {
         display: block;
         color: #ff8a00;
+        text-decoration: underline;
     }
 }
 
@@ -35,5 +36,23 @@
 @media (max-width: 480px) {
     .wooman {
         max-width: 100%;
+    }
+
+    .wooman__title {
+        max-width: 250px;
+    }
+
+    .wooman__media-item {
+        &:nth-child(1) {
+            display: none;
+        }
+
+        &:nth-child(2) {
+            display: none;
+        }
+
+        &:nth-child(3) {
+            display: none;
+        }
     }
 }

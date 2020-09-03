@@ -176,7 +176,12 @@
 }
 
 @media (max-width: 480px) {
+    .stop__body-box {
+        text-align: left;
+    }
+
     .stop__list {
+        display: inline-block;
         font-size: 17px;
     }
 }
