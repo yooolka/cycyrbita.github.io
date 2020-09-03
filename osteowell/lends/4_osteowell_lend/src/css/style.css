@@ -339,6 +339,12 @@ html [type="button"],
   background-size: cover;
 }
 
+.section_sostav {
+  padding-top: 0 !important;
+  background-image: url("../media/section/sostav.jpg");
+  background-position: left center;
+}
+
 .section_commits {
   background-color: #cfd8e2;
 }
@@ -2872,6 +2878,90 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-weight: 700;
 }
 
+@charset "UTF-8";
+
+.sostav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.sostav__title {
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 62px;
+  color: #000;
+  text-align: center;
+}
+
+.sostav__product {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 440px;
+  flex: 0 0 440px;
+  margin-right: 60px;
+}
+
+.sostav__box {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(100% - 500px);
+  flex: 0 0 calc(100% - 500px);
+  max-width: 600px;
+}
+
+.sostav__name {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #23b187;
+}
+
+.sostav__list {
+  list-style-type: none;
+}
+
+.sostav__list b {
+  font-weight: 600;
+}
+
+.sostav__list span {
+  display: block;
+}
+
+.sostav__list li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.sostav__list li::before {
+  position: absolute;
+  left: 0;
+  content: "—";
+}
+
+.sostav__list li + li {
+  margin-top: 10px;
+}
+
+.sostav__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sostav__item {
+  position: relative;
+  padding-left: 130px;
+}
+
+.sostav__item + .sostav__item {
+  margin-top: 30px;
+}
+
 .stop {
   max-width: 643px;
   margin-left: auto;
@@ -3202,6 +3292,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     background-position: right bottom;
   }
 
+  .section_sostav {
+    background-image: url("../media/section/sostav-1280.jpg");
+    background-position: center center;
+  }
+
   .section__title {
     font-size: 42px;
     line-height: 1;
@@ -3286,6 +3381,26 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .form {
     max-width: 275px;
+  }
+
+  .sostav__product {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 220px;
+    flex: 0 0 220px;
+    margin-right: 0;
+  }
+
+  .sostav__box {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 250px);
+    flex: 0 0 calc(100% - 250px);
+    max-width: 100%;
+  }
+
+  .sostav {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .stop {
@@ -3392,6 +3507,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .section_face {
     background-image: url("../media/section/face-768.jpg");
+    background-position: center bottom;
+  }
+
+  .section_sostav {
+    background-image: url("../media/section/sostav-768.jpg");
     background-position: center bottom;
   }
 
@@ -3511,6 +3631,37 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     width: 100%;
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .sostav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .sostav__title {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .sostav__product {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    max-width: 300px;
+  }
+
+  .sostav__box {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+    margin-bottom: 30px;
   }
 
   .stop {
@@ -3704,6 +3855,42 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .container {
     max-width: 100%;
+  }
+
+  .sostav__media {
+    position: static;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+  }
+
+  .sostav__name {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 85px);
+    flex: 0 0 calc(100% - 85px);
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .sostav__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .sostav__list {
+    margin-top: 15px;
   }
 
   .surgeon__box {

@@ -35,6 +35,12 @@
         background-size: cover;
     }
 
+    &_sostav {
+        padding-top: 0 !important;
+        background-image: url("../media/section/sostav.jpg");
+        background-position: left center;
+    }
+
     &_commits {
         background-color: #cfd8e2;
     }
@@ -60,6 +66,11 @@
             background-image: url("../media/section/face-1280.jpg");
             background-position: right bottom;
         }
+
+        &_sostav {
+            background-image: url("../media/section/sostav-1280.jpg");
+            background-position: center center;
+        }
     }
 
     .section__title {
@@ -75,6 +86,11 @@
 
         &_face {
             background-image: url("../media/section/face-768.jpg");
+            background-position: center bottom;
+        }
+
+        &_sostav {
+            background-image: url("../media/section/sostav-768.jpg");
             background-position: center bottom;
         }
     }
