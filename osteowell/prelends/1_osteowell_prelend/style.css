@@ -2312,12 +2312,14 @@ button::-moz-focus-inner {
     width: 100%;
     max-width: 750px;
     margin: 16px auto;
+    height: 100%;
 }
 
 .img-posts {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     margin: 16px 0;
     line-height: 1;
 }
@@ -2325,6 +2327,7 @@ button::-moz-focus-inner {
 .img-posts img {
     width: 33%;
     margin: 10px 0;
+    height: 100%;
 }
 
 .product-img {
@@ -2478,6 +2481,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .before-after span {
