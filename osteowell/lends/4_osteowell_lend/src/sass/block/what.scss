@@ -91,6 +91,13 @@
     }
 }
 
+@media (max-width: 768px) {
+    .what__description {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
 @media (max-width: 480px) {
     .what__box {
         margin-right: -15px;
