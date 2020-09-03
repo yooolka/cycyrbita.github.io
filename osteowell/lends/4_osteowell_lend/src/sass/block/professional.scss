@@ -1,0 +1,163 @@
+
+.professional {
+    position: relative;
+}
+
+.professional__human {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    max-width: 370px;
+}
+
+.professional__title {
+    margin-bottom: 30px;
+    font-size: 47px;
+    color: #fff;
+
+    & span {
+        display: block;
+    }
+}
+
+.professional__box {
+    position: relative;
+    max-width: 900px;
+    padding: 40px 100px 40px 40px;
+    background-color: #fff;
+
+    &::before {
+        position: absolute;
+        top: 70px;
+        left: 100%;
+        width: 20px;
+        height: 61px;
+        content: '';
+        background-image: url("../media/professional/arrow.png");
+    }
+
+    & p {
+        &:nth-child(1) {
+            font-size: 20px;
+        }
+
+        & + p {
+            margin-top: 15px;
+        }
+    }
+}
+
+.professional__footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 900px;
+    padding-top: 15px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+}
+
+.professional__id {
+    margin-right: 30px;
+}
+
+.professional__name {
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+
+    & span {
+        display: block;
+    }
+}
+
+@media (max-width: 1280px) {
+    .professional__human {
+        max-width: 280px;
+    }
+
+    .professional__box {
+        max-width: 445px;
+        padding: 15px;
+        border-radius: 5px;
+
+        &::before {
+            top: auto;
+            bottom: 70px;
+        }
+    }
+
+    .professional__footer {
+        max-width: 445px;
+    }
+}
+
+@media (max-width: 768px) {
+    .professional__title {
+        font-size: 34px;
+    }
+
+    .professional__human {
+        bottom: -40px;
+        max-width: 160px;
+    }
+
+    .professional__footer {
+        justify-content: flex-start;
+    }
+
+    .professional__name {
+        font-size: 18px;
+    }
+
+    .professional__id {
+        max-width: 120px;
+    }
+
+    .professional__box {
+        max-width: 100%;
+
+        & p {
+            &:last-child {
+                margin-right: 105px;
+            }
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .professional__human {
+        bottom: -30px;
+        max-width: 125px;
+    }
+
+    .professional__box {
+        max-width: 100%;
+
+        & p {
+            &:last-child {
+                width: calc(100% - 80px);
+                margin-right: 0;
+            }
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .professional__id {
+        max-width: 90px;
+        margin-right: 15px;
+    }
+
+    .professional__name {
+        font-size: 16px;
+    }
+}
