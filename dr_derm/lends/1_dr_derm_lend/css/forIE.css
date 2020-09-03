@@ -69,6 +69,7 @@
 
     :nth-child(2n).plus-item>.plusItem-text {
         margin-top: -170px;
+        top: inherit;
         margin-bottom: 0;
     }
 }
