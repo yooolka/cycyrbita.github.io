@@ -1991,7 +1991,8 @@ body.limit-width .review-article header h1 {
 }
 
 #article-body figure figcaption, article figure figcaption {
-    width: 100%
+    width: 100%;
+    text-align:center;
 }
 
 figure {
@@ -2431,7 +2432,13 @@ img.lft {
 }
 
 .most-popular-item .popular-listings {
-    line-height: 22px
+    line-height: 22px;
+    padding-left: 15px;
+}
+
+.popular-listings {
+    box-sizing: border-box;
+    padding: 15px !important;
 }
 
 .most-popular-item .popular-listings span.number-1,
@@ -13862,10 +13869,10 @@ body.limit-width .gallery .news-article header h1 {
 
 .sub-menu .menu-item span {
     padding: 0 1rem
-}
+}article section .box
 
 article section .box {
-    margin-bottom: 1em
+    margin-bottom: 0;
 }
 
 .news-article .text-copy figcaption, article .text-copy figcaption {
@@ -16217,7 +16224,7 @@ button::-moz-focus-inner {
 }
 
 article section .box {
-    margin-bottom: 1em
+    margin-bottom: 0
 }
 
 article .text-copy figcaption, .news-article .text-copy figcaption {
@@ -58224,6 +58231,7 @@ html.om-reset-dimensions {
 
 .comment .comment-content .comm-img {
     display: block;
-    width: 40%;
+    width: 100%;
+    max-width: 400px;
     margin: 10px 0;
 }
