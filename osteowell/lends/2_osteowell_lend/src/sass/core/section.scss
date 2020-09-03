@@ -1,0 +1,170 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_face {
+        padding-bottom: 30px;
+        background-image: url("../media/section/face.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_problems {
+        padding-top: 200px;
+        padding-bottom: 160px;
+        background-image: url("../media/section/problems.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_stop {
+        padding-bottom: 160px;
+        background-image: url("../media/section/stop.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_pain {
+        padding-bottom: 15px;
+        background-image: url("../media/section/pain.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_step {
+        padding-top: 120px;
+        padding-bottom: 23%;
+        background-image: url("../media/section/step.jpg");
+        background-position: center bottom;
+        background-size: 100% auto;
+    }
+
+    &_effect {
+        background-image: url("../media/section/effect.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_commits {
+        background-color: #cfd8e2;
+    }
+
+    &_order {
+        background-color: #e0eaef;
+    }
+
+    &_warning {
+        background-image: url("../media/section/warning.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_info {
+        padding-top: 120px;
+    }
+
+    &_footer {
+        padding-top: 120px;
+    }
+}
+
+.section__title {
+    font-family: 'MinionPro', serif;
+    font-weight: 700;
+    line-height: 1;
+    color: #1a244f;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1280px) {
+    .section {
+        &_face {
+            padding-top: 30px;
+            background-image: url("../media/section/face-1280.jpg");
+        }
+
+        &_problems {
+            padding-top: 160px;
+            padding-bottom: 230px;
+            background-image: url("../media/section/problems-1280.jpg");
+        }
+
+        &_stop {
+            background-image: url("../media/section/stop-1280.jpg");
+        }
+
+        &_step {
+            padding-bottom: 23%;
+        }
+
+        &_info {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        &_professional {
+            padding-top: 0 !important;
+        }
+    }
+
+    .section__title {
+        font-size: 42px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &_face {
+            padding-top: 30px;
+            background-image: url("../media/section/face-768.jpg");
+        }
+
+        &_problems {
+            padding-bottom: 220px;
+            background-image: url("../media/section/problems-768.jpg");
+        }
+
+        &_pain {
+            background-image: url("../media/section/pain-768.jpg");
+        }
+
+        &_step {
+            padding-bottom: 23%;
+        }
+
+        &_info {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &_problems {
+            padding-bottom: 150px;
+        }
+
+        &_step {
+            padding-bottom: 23%;
+        }
+    }
+
+    .section__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 1;
+    }
+}

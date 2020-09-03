@@ -1,0 +1,134 @@
+
+.order__title {
+    margin-bottom: 30px;
+    font-size: 61px;
+    text-align: center;
+}
+
+.order__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__item {
+    max-width: 400px;
+
+    &:nth-child(3) {
+        & .order__media {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.order__media {
+    position: relative;
+    margin-bottom: 30px;
+    background-size: cover;
+    border: 10px solid #fff;
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 5;
+        width: 47px;
+        height: 47px;
+        margin-top: -23px;
+        margin-right: -46px;
+        content: '';
+        background-image: url("../media/order/arrow.png");
+        background-size: cover;
+    }
+}
+
+.order__description {
+    font-size: 20px;
+    color: #1a244f;
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .order__item {
+        max-width: 230px;
+    }
+
+    .order__media {
+        &::before {
+            width: 28px;
+            height: 28px;
+            margin-top: -18px;
+            margin-right: -36px;
+        }
+    }
+
+    .order__description {
+        max-width: 184px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .order__item {
+        width: calc(33.333% - 10px);
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .order__media {
+        margin-bottom: 10px;
+        border-width: 8px;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .order__item {
+        width: calc(33.333% - 5px);
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .order__media {
+        border-width: 2px;
+    }
+}
+
+@media (max-width: 410px) {
+    .order__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .order__item {
+        width: 100%;
+        max-width: 100%;
+
+        &::before {
+            display: none;
+        }
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    .order__description {
+        max-width: 100%;
+        font-weight: 700;
+    }
+
+    .order__media {
+        border-width: 10px;
+    }
+}

@@ -1,0 +1,153 @@
+
+.professional {
+    position: relative;
+    padding: 70px 85px;
+    background-image: url("../media/professional/bg.jpg");
+    background-size: cover;
+}
+
+.professional__title {
+    max-width: 520px;
+    margin-bottom: 20px;
+    font-size: 61px;
+    color: #fff;
+}
+
+.professional__body {
+    max-width: 615px;
+    margin-bottom: 30px;
+
+    & p {
+        color: #fff;
+
+        &:first-child {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        &:last-child {
+            font-size: 18px;
+        }
+    }
+}
+
+.professional__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 600px;
+}
+
+.professional__name {
+    margin-left: 20px;
+
+    & span {
+        display: block;
+        color: #fff;
+
+        &:first-child {
+            font-family: 'MinionPro', serif;
+            font-size: 22px;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        &:last-child {
+            font-size: 17px;
+            font-style: italic;
+        }
+    }
+}
+
+.professional__human {
+    position: absolute;
+    right: 85px;
+    bottom: 0;
+}
+
+@media (max-width: 1280px) {
+    .professional {
+        padding: 30px;
+    }
+
+    .professional__body {
+        max-width: 465px;
+
+        & p {
+            &:first-child {
+                font-size: 20px;
+            }
+
+            &:last-child {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .professional__human {
+        right: 25px;
+        max-width: 215px;
+    }
+
+    .professional__footer {
+        justify-content: flex-start;
+        max-width: 455px;
+    }
+}
+
+@media (max-width: 768px) {
+    .professional {
+        padding-bottom: 165px;
+    }
+
+    .professional__footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .professional__id {
+        max-width: 120px;
+    }
+
+    .professional__name {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .professional__human {
+        max-width: 165px;
+    }
+}
+
+@media (max-width: 480px) {
+    .professional {
+        padding-right: 15px;
+        padding-bottom: 90px;
+        padding-left: 15px;
+    }
+
+    .professional__body {
+        & p {
+            &:first-child {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .professional__human {
+        right: 15px;
+        max-width: 110px;
+    }
+
+    .professional__name {
+        & span {
+            &:first-child {
+                font-size: 16px;
+            }
+
+            &:last-child {
+                font-size: 15px;
+            }
+        }
+    }
+}
