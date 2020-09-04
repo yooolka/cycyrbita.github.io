@@ -760,7 +760,7 @@ body.no-touch .footer .footer__nav a:hover {
 @media (max-width:1024px) {
 	.header .nav-trigger {
 		float: right;
-		margin-top: 25px
+		margin-top: 50px
 	}
 
 	.header .nav {
@@ -1168,7 +1168,8 @@ body.no-touch .nav a:hover {
 }
 
 ul {
-	list-style-position: inside;
+	list-style-position: outside;
+	margin-left: 20px;
 }
 
 html {
