@@ -146,7 +146,7 @@ input::-moz-focus-inner {
 
 body {
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2em;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -228,7 +228,8 @@ a {
 ul {
     margin: 0;
     padding: 0;
-    list-style: none
+    list-style-position: inside;
+    list-style-type: disc;
 }
 
 li {
@@ -291,11 +292,6 @@ body {
 
 #topbar {
     color: #aaa
-}
-
-#topbar li,
-#topbar ul {
-    display: inline
 }
 
 #topbar .widget {
@@ -521,6 +517,7 @@ img {
     #header-aside {
         text-align: center;
         width: 0;
+        display: none;
     }
 
     .menu-toggle {
@@ -756,6 +753,7 @@ body {
     text-align: right
 }
 
+
 @media only screen and (max-width:1200px) {
     .menu-item a {
         padding: 5px 5px !important;
@@ -925,9 +923,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -941,7 +936,7 @@ body {
     max-width: 200px;
     /* border: 1px solid #cccbcb; */
     border-radius: 3px;
-    margin: 0 15px 0 30px;
+    margin: 10px 15px 0 30px;
 }
 
 @media (max-width: 768px) {
@@ -983,4 +978,8 @@ i {
         padding-right: 43px;
         padding-left: 43px;
     }
+}
+
+#menu-primary-items {
+    list-style-type: none !important;
 }
