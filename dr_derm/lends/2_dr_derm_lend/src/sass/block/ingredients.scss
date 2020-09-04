@@ -1,0 +1,88 @@
+
+.ingredients {
+    & .ingredients__title {
+        color: #fff;
+    }
+}
+
+.ingredients__title {
+    margin-bottom: 20px;
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ingredients__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
+.ingredients__rotate {
+    display: flex;
+    perspective: 1000px;
+
+    &:hover {
+        & .ingredients__item {
+            transform: rotateY(360deg);
+        }
+    }
+}
+
+.ingredients__item {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    padding: 0 30px 30px 30px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+    margin-left: 16px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transition: .6s transform;
+}
+
+.ingredients__media {
+    margin-right: -30px;
+    margin-bottom: 25px;
+    margin-left: -30px;
+}
+
+.ingredients__name {
+    margin-bottom: 10px;
+    font-family: "YanoneKaffeesatz", sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    color: #2d2d2d;
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+    }
+}
+
+.ingredients__description {
+    font-size: 17px;
+    line-height: 22px;
+
+    & span {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .ingredients__rotate {
+        &:hover {
+            & .ingredients__item {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}

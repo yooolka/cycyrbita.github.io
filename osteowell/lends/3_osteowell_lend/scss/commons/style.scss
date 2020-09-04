@@ -1,0 +1,251 @@
+@import "colors";
+@import "extend";
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url("../fonts/UniNeue/UniNeueBook.woff") format('woff'),
+  url("../fonts/UniNeue/UniNeueBook.woff2") format('woff2');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url("../fonts/UniNeue/UniNeueRegular.woff") format('woff'),
+  url("../fonts/UniNeue/UniNeueRegular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url("../fonts/UniNeue/UniNeueBold.woff") format('woff'),
+  url("../fonts/UniNeue/UniNeueBold.woff2") format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro';
+  src: url("../fonts/PFBeauSansPro/PFBeauSansPro-Regular.woff") format('woff'),
+  url("../fonts/PFBeauSansPro/PFBeauSansPro-Regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro';
+  src: url("../fonts/PFBeauSansPro/PFBeauSansPro-Bold.woff") format('woff'),
+  url("../fonts/PFBeauSansPro/PFBeauSansPro-Bold.woff2") format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro';
+  src: url("../fonts/PFBeauSansPro/PFBeauSansPro-Black.woff") format('woff'),
+  url("../fonts/PFBeauSansPro/PFBeauSansPro-Black.woff2") format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url("../fonts/Mont/Mont-Regular.woff") format('woff'),
+  url("../fonts/Mont/Mont-Regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'UniNeue';
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+div, section {
+  width: 100%;
+}
+
+img, p, button, label, select, input {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+  select::-ms-expand {
+    display: none;
+  }
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.select {
+  position: relative;
+}
+
+.select:before {
+  content: "";
+  display: block;
+  background: url('../imgs/order1/sort-down-solid.svg') no-repeat center;
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  top: 0;
+  margin: auto;
+  z-index: 2;
+  width: 30px;
+  height: 26px;
+  text-align: center;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1044px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h2,
+.text_green,
+.text-blue,
+.text-red,
+.text-bold {
+  font-weight: 700;
+}
+
+.text_green {
+  color: $green;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-red {
+  color: $red;
+}
+
+.borderBottom {
+  background: linear-gradient(to bottom, rgba(255,255,255,.001) 60%, $borderLight 60%, $borderLight 93%, rgba(255,255,255,.001) 93%);
+}
+
+.borderBottom_light {
+  background: linear-gradient(to bottom, rgba(255,255,255,.001) 60%, rgba(255,255,255,.8) 60%, rgba(255,255,255,.8) 93%, rgba(255,255,255,.001) 93%);
+}
+
+.borderBottom_dark {
+  background: linear-gradient(to bottom, rgba(255,255,255,.001) 60%, $borderDark 60%);
+}
+
+.productBlock {
+  @extend %absoluteCenter;
+  left: inherit;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.productBlock:before,
+.productBlock:after {
+  @extend %productBefore
+}
+
+.productBlock:before {
+  background: url("../imgs/product/product-flower.png") no-repeat center/100%;
+  width: 226px;
+  height: 217px;
+  left: 30px;
+  bottom: -250px;
+  z-index: 4;
+}
+
+.productBlock:after {
+  background: url("../imgs/product/product-ice.png") no-repeat center/100%;
+  width: 392px;
+  height: 383px;
+  right: -40px;
+  bottom: -100px;
+}
+
+.product-img {
+  max-width: 317px;
+  position: relative;
+  margin-left: 115px;
+  z-index: 3;
+}
+
+.product-before {
+  position: absolute;
+  width: 100%;
+  @extend %absoluteCenter;
+}
+
+.new-price {
+  background: url("../imgs/product/product-sale.png") no-repeat center/ 100%;
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+
+@import '../order1';
+@import '../bigToe';
+@import '../delay';
+@import '../effects';
+@import '../pain';
+@import '../plus';
+@import '../how';
+@import '../consist';
+@import '../expert';
+@import '../comm';
+@import '../order2';
+@import '../commons/forIE';
+
+
+footer {
+  padding: 10px 0 20px;
+  text-align: center;
+}
+
+footer a {
+  color: $green;
+}
+

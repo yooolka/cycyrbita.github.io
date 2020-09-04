@@ -1,0 +1,129 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_face {
+        padding-bottom: 30px;
+        background-image: url("../media/section/face.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_wooman {
+        background-image: url("../media/section/wooman.jpg");
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &_factors {
+        background-image: url("../media/section/factors.jpg");
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &_stop {
+        background-image: url("../media/section/stop.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_treatmen {
+        padding-top: 0 !important;
+        background-image: url("../media/section/treatmen.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_sostav {
+        padding-top: 0 !important;
+        background-image: url("../media/section/sostav.jpg");
+        background-position: left center;
+    }
+
+    &_professional {
+        background-image: url("../media/section/professional.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_commits {
+        background-color: #cfd8e2;
+    }
+
+    &_footer {
+        padding-top: 120px;
+    }
+
+    &_info {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+}
+
+.section__title {
+    font-weight: 700;
+    line-height: 1;
+    color: #1a244f;
+}
+
+@media (max-width: 1280px) {
+    .section {
+        &_face {
+            background-image: url("../media/section/face-1280.jpg");
+            background-position: right bottom;
+        }
+
+        &_sostav {
+            background-image: url("../media/section/sostav-1280.jpg");
+            background-position: center center;
+        }
+
+        &_footer {
+            padding-top: 90px;
+        }
+    }
+
+    .section__title {
+        font-size: 42px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &_face {
+            background-image: url("../media/section/face-768.jpg");
+            background-position: center bottom;
+        }
+
+        &_sostav {
+            background-image: url("../media/section/sostav-768.jpg");
+            background-position: center bottom;
+        }
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &_wooman {
+            background-image: url("../media/section/wooman-480.jpg");
+        }
+    }
+
+    .section__title {
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 1;
+    }
+}

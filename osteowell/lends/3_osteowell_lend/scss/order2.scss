@@ -1,0 +1,254 @@
+.order2 {
+  padding-bottom: 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,.001), $backgr);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .order1-left {
+    max-width: 615px;
+    flex: 1 0 100%;
+  }
+
+  .mainLogo {
+    margin-bottom: 5px;
+  }
+
+  .order1-title {
+    font-size: 36px;
+  }
+
+  .order1-main {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .productBlock {
+    position: relative;
+    max-width: 345px;
+  }
+
+  .productBlock:before,
+  .productBlock:after {
+    display: none;
+  }
+
+  .product-img {
+    margin: 0 auto;
+    max-width: 250px;
+  }
+
+  .order1-list_bottom {
+    max-width: 270px;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+  }
+
+  .order1ListItem {
+    margin-bottom: 30px;
+  }
+
+  .order1-list_bottom .order1List-text {
+    font-size: 24px;
+  }
+
+  .orderList-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .order1-btn {
+    margin: 20px auto 0;
+  }
+
+  .order1-right {
+    max-width: 405px;
+    flex: 1 0 100%;
+  }
+}
+
+.order-form {
+  padding: 30px 50px;
+  border: 9px solid $consistBorder;
+  border-radius: 15px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+  position: relative;
+}
+
+.orderForm-prices {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order2 .new-price {
+  top: -60px;
+  left: 15px;
+}
+
+.new-price_value {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.old-price {
+  max-width: 100px;
+  flex: 1 0 100%;
+  color: $formText;
+  margin-bottom: 40px;
+}
+
+.old-price_value {
+  text-decoration: line-through;
+  font-size: 30px;
+}
+
+select, input {
+  padding: 15px;
+  min-height: 54px;
+  border: 1px solid $formInputBorder;
+  border-radius: 30px;
+  margin: 10px 0;
+}
+
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 35px auto;
+  max-width: 260px;
+  flex: 1 0 100%;
+  font-family: 'Mont';
+}
+
+.counter-title {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.counter-item {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  border: 1px solid $formInputBorder;
+  background: #fff;
+  flex: 1 0 100%;
+  width: 100%;
+  max-width: 70px;
+  font-weight: 500;
+  font-size: 36px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.counter-item_hours:before,
+.counter-item_minutes:before,
+.counter-item_seconds:before {
+  position: absolute;
+  bottom: -25px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.counter-item_hours:before {
+  content: 'часов';
+}
+
+.counter-item_minutes:before {
+  content: 'минут';
+}
+
+.counter-item_seconds:before {
+  content: 'секунд';
+}
+
+.counter-item_hours:after,
+.counter-item_minutes:after {
+  content: ':';
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30px;
+  top: 0;
+  bottom: 0;
+  right: -15px;
+  margin: auto;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  .order2 {
+    padding-bottom: 20px;
+
+    .order1-right {
+      order: 3;
+      margin: 30px auto 0;
+    }
+
+    .order1-list_bottom .order1List-text {
+      display: block;
+      flex: 1 0;
+    }
+
+    .order1-list {
+      order: 2;
+    }
+
+    .order1-list_bottom {
+      max-width: 100%;
+      .order1ListItem {
+        justify-content: flex-start;
+        max-width: 45%;
+        flex: 1 0 45%;
+      }
+    }
+
+
+    .mainLogo,
+    .order1-title,
+    .order1-text {
+      text-align: center;
+      line-height: 1;
+    }
+
+    .order1-title,
+    .order1-text {
+      margin-bottom: 10px;
+    }
+
+    .order1ListItem {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .order-form {
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .order2 {
+    .order1-list_bottom {
+      .order1ListItem {
+        max-width: 100%;
+        flex: 1 0 100%;
+      }
+    }
+  }
+}

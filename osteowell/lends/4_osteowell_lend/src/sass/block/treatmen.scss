@@ -1,0 +1,146 @@
+
+.treatmen {
+    position: relative;
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.treatmen__product {
+    position: absolute;
+    top: 11px;
+    left: -290px;
+    flex-shrink: 0;
+    margin-right: 60px;
+}
+
+.treatmen__title {
+    margin-bottom: 30px;
+    font-size: 88px;
+    color: #000;
+    text-transform: uppercase;
+
+    & mark {
+        color: #23b187;
+    }
+}
+
+.treatmen__box {
+    margin-bottom: 30px;
+}
+
+.treatmen__item {
+    position: relative;
+    min-height: 25px;
+    padding-left: 40px;
+    font-size: 20px;
+    background-image: url("../media/treatmen/check.png");
+    background-position: left top;
+
+    & + & {
+        margin-top: 15px;
+    }
+}
+
+.treatmen__btn {
+    margin-bottom: 30px;
+
+    & a {
+        display: inline-block;
+        padding: 15px 85px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: rgb(251, 172, 5);
+        background-image: linear-gradient(180deg, rgba(251, 172, 5, 1) 0%, rgba(228, 93, 35, 1) 100%);
+        border: none;
+        border-radius: 40px;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(0.98);
+        }
+    }
+}
+
+.treatmen__description {
+    font-size: 20px;
+    font-weight: 700;
+    color: #23b187;
+
+    & a {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    & mark {
+        display: block;
+        color: inherit;
+    }
+
+    & span {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+    }
+}
+
+@media (max-width: 1280px) {
+    .treatmen {
+        max-width: 440px;
+    }
+
+    .treatmen__item {
+        font-size: 17px;
+    }
+
+    .treatmen__title {
+        font-size: 39px;
+    }
+
+    .treatmen__product {
+        top: 0;
+        left: -220px;
+        max-width: 185px;
+    }
+}
+
+@media (max-width: 768px) {
+    .treatmen__product {
+        position: static;
+        flex: 0 0 96px;
+        margin-right: 0;
+    }
+
+    .treatmen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .treatmen__box {
+        flex: 0 0 calc(100% - 120px);
+        padding: 15px;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .treatmen {
+        align-items: flex-end;
+    }
+
+    .treatmen__product {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 370px) {
+    .treatmen__title {
+        font-size: 26px;
+    }
+}

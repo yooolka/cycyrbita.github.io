@@ -1,0 +1,165 @@
+
+.pain {
+    max-width: 925px;
+    margin-left: auto;
+}
+
+.pain__title {
+    margin-bottom: 30px;
+    font-size: 53px;
+
+    & span {
+        display: block;
+    }
+}
+
+.pain__body {
+    display: flex;
+    align-items: flex-end;
+}
+
+.pain__product {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 220px;
+    max-width: 220px;
+    margin-right: 80px;
+
+    &::before {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        z-index: -1;
+        width: 118%;
+        height: 11.5%;
+        content: "";
+        background-image: url("../media/product-before.png");
+        background-size: cover;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -55px;
+        left: 50%;
+        width: 145%;
+        height: 21%;
+        content: "";
+        background-image: url("../media/product-after.png");
+        background-size: cover;
+        transform: translateX(-50%);
+    }
+}
+
+.pain__subtitle {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #1a244f;
+}
+
+.pain__content {
+    & p {
+        font-size: 18px;
+        color: #1a244f;
+
+        & + p {
+            margin-top: 20px;
+        }
+    }
+}
+
+.pain__btn {
+    display: inline-block;
+    padding: 16px 80px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    background: rgb(255, 200, 0);
+    background: linear-gradient(180deg, rgba(255, 200, 0, 1) 0%, rgba(255, 172, 0, 1) 100%);
+    border: none;
+    border-radius: 40px;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .pain__product {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pain__product {
+        max-width: 100px;
+        margin-right: 20px;
+    }
+
+    .pain__title {
+        margin-bottom: 15px;
+        font-size: 29px;
+    }
+
+    .pain__subtitle {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .pain__content {
+        & p {
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, .5);
+
+            & + p {
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .pain__btn {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pain__body {
+        position: relative;
+    }
+
+    .pain__product {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-right: 10px;
+    }
+
+    .pain__content {
+        & p {
+            padding-right: 120px;
+        }
+    }
+
+    .pain__btn {
+        padding: 15px 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pain__content {
+        & p {
+            font-size: 15px;
+            word-wrap: break-word;
+        }
+    }
+}

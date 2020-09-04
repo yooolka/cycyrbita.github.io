@@ -1,0 +1,131 @@
+
+.facts__title {
+    max-width: 320px;
+    margin-bottom: 20px;
+    font-size: 104px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.facts__body {
+    display: flex;
+}
+
+.facts__list {
+    max-width: 270px;
+}
+
+.facts__item {
+    position: relative;
+    padding: 11px 11px 11px 22px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 5px;
+
+    & + & {
+        margin-top: 10px;
+    }
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: -14px;
+        width: 27px;
+        height: 27px;
+        margin-top: -14px;
+        content: '';
+        background-image: url("../media/facts/close.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.facts__media {
+    margin-top: -65px;
+    margin-left: 95px;
+}
+
+.facts__media-item {
+    position: relative;
+
+    &_last {
+        margin-top: -65px;
+        margin-left: -35px;
+    }
+}
+
+.facts__description {
+    position: absolute;
+    bottom: 100%;
+    left: 130px;
+    width: 200px;
+    margin-bottom: -55px;
+    font-family: "Caveat", sans-serif;
+    font-size: 27px;
+    line-height: 24px;
+    text-align: center;
+    transform: rotate(46deg);
+
+    &::before {
+        position: absolute;
+        top: 42px;
+        right: 23px;
+        width: 21px;
+        height: 32px;
+        content: '';
+        background-image: url("../media/facts/arrow-1.png");
+        background-repeat: no-repeat;
+    }
+
+    &_last {
+        &::before {
+            top: 26px;
+            right: auto;
+            left: 10px;
+            width: 18px;
+            height: 34px;
+            background-image: url("../media/facts/arrow-2.png");
+        }
+    }
+}
+
+@media (max-width: 1030px) {
+    .facts__media {
+        margin-top: 0;
+    }
+
+    .facts__list {
+        margin-left: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .facts__body {
+        flex-direction: column;
+    }
+
+    .facts__list {
+        max-width: 100%;
+    }
+
+    .facts__media {
+        margin-top: 65px;
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .facts__title {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .facts__media-item {
+        max-width: 170px;
+    }
+
+    .facts__description {
+        left: 80px;
+        transform: rotate(53deg);
+    }
+}

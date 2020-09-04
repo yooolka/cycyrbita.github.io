@@ -1,0 +1,130 @@
+
+.commits__title {
+    margin-bottom: 30px;
+    font-size: 57px;
+    text-align: center;
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+    }
+}
+
+.commits__box {
+    & .owl-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px !important;
+    }
+
+    & .owl-dot {
+        width: 15px !important;
+        height: 15px !important;
+        margin-right: 3px !important;
+        margin-left: 3px !important;
+        background-color: #000 !important;
+        border-radius: 50% !important;
+
+        &.active {
+            background-color: #c8a77a !important;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.commits__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 85px 25px 25px;
+    margin: 50px 0 20px;
+    background-color: #fff;
+}
+
+.commits__face {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+    background-color: #e96771;
+    border: 3px solid #13ae8b;
+    border: 12px solid #cfd8e2;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.commits__name {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #1a244f;
+    text-align: center;
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+        font-weight: 400;
+    }
+}
+
+.commits__description {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.commits__star {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+
+    & img {
+        max-width: 33px;
+        margin-right: 2px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .commits__item {
+        padding: 75px 20px 20px;
+    }
+
+    .commits__name {
+        text-align: left;
+
+        & span {
+            display: inline;
+        }
+    }
+
+    .commits__face {
+        left: 20px;
+        transform: translate(0, -50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .commits__title {
+        margin-bottom: 15px;
+    }
+
+    .commits__description {
+        font-size: 16px;
+    }
+
+    .commits__item {
+        padding: 75px 15px 15px;
+    }
+
+    .commits__name {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+}
