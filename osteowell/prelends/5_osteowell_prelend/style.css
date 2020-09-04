@@ -1825,6 +1825,10 @@ h5.df-heading {
     display: flex;
     margin: 20px 0;
 }
+
+.comment + .comment {
+    margin-top: 40px;
+}
 .comment-answer {
     margin-left: 60px;
 }
