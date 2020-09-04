@@ -1,689 +1,348 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Osteowell</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="style.css" type="text/css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Osteowell</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body class="b-site">
-<div id="panel"></div>
-<div class="b-header" style="opacity: 1;">
-  <a class="logo">
-    <img src="./index_files/logo.svg" alt="grandmedica">
-    <div class="slogan">
-      медицинский клинический центр
-    </div>
-  </a>
-  <div class="right-menu">
-    <div class="tel d-none d-md-block">
-      <a href="tel:+73843994040">8 (3843)&nbsp;99-40-40</a>
-      , 32-88-88
-    </div>
-    <a class="appointment btn btn-primary js-btn-make-request"> Заявка на прием</a>
-    <a class="btn-change-size"><span>А</span>А</a>
-    <a class="loupe">
-      <svg viewBox="0 0 68.135 65.211" id="header-loop-search">
-        <path d="M68.135 61.803L53.068 46.735a29.228 29.228 0 0 0 5.693-17.355C58.762 13.18 45.582 0 29.381 0S0 13.18 0 29.38s13.18 29.38 29.381 29.38c7.977 0 15.217-3.2 20.518-8.378l14.828 14.829 3.408-3.408zm-38.754-7.862c-13.543 0-24.562-11.019-24.562-24.562S15.838 4.818 29.381 4.818 53.943 15.837 53.943 29.38 42.924 53.941 29.381 53.941z"></path>
-      </svg>
-    </a>
-
-    <a class="btn-change-language">EN</a>
-    <a class="question">
-      <svg width="31" height="31" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"><title>Group 22</title>
-        <g fill="none" fill-rule="evenodd">
-          <text font-family="Helvetica" font-size="21" letter-spacing=".75" fill="#000" transform="translate(1 1)">
-            <tspan x="8.285" y="22">?</tspan>
-          </text>
-          <path d="M15.5 30C7.492 30 1 23.508 1 15.5S7.492 1 15.5 1 30 7.492 30 15.5 23.508 30 15.5 30z"
-                stroke="#fff" stroke-width="2"/>
-        </g>
-      </svg>
-    </a>
-    <div class="dropdown d-none d-md-block">
-      <a class="btn-area">
-        <svg class="icon icon_header-area-icon" viewBox="0 0 29 28" id="header-area-icon"><title>Group 11</title>
-          <g fill-rule="evenodd">
-            <path d="M28.895 11C27.1 4.68 21.311.052 14.448.052 7.584.052 1.796 4.68 0 11h28.895zm-5.773-22c0 4.773-3.86 8.643-8.622 8.643-4.762 0-8.622-3.87-8.622-8.643 0-4.773 3.86-8.643 8.622-8.643 4.762 0 8.622 3.87 8.622 8.643"
-                  mask="url(#b)" transform="translate(0 17)"></path>
-            <ellipse cx="13.5" cy="7" rx="7.5" ry="7"></ellipse>
-          </g>
-        </svg>
-      </a>
-    </div>
-    <a class="nav burger">
-      <button class="hamburger hamburger--slider js-show-menu" type="button">
-        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-      </button>
-      <div class="menu">меню</div>
-    </a>
-  </div>
-</div>
-
-<div class="container">
-  <div class="b-bread-crumbs">
-    <a>Главная</a>
-    <a>О клинике</a>
-    <span>Часто задаваемые вопросы</span>
-  </div>
-</div>
-<div class="container">
-  <div class="b-question-answer">
-    <div class="component-title">
-      <div class="title">
-        <div class="question-answer-title">
-          <h2>Вопрос-ответ</h2>
-          <div class="question-mark"></div>
-        </div>
-        <div>Часто задаваемые вопросы</div>
-      </div>
-      <a class="btn js-scroll-to-question">Задайте свой вопрос</a>
-    </div>
-    <div class="questions-answers">
-      <div class="js-load-more-container">
-        <div id="bx_2745216059_373" class="question-answer js-load-more-item">
-          <div class="question">
-            <div class="quotes"></div>
-            <div class="text-question">
-              У меня тонкая роговица и лазерную коррекцию делать нельзя, у меня -7! Неужели я так и останусь в очках с толстыми стеклами?&nbsp;&nbsp;&nbsp;&nbsp;
-            </div>
-          </div>
-          <div class="answer">
-            <div class="text-answer">
-              Современный уровень офтальмологии позволяет снять очки с любого человека, для этого подбирается адекватный конкретному случаю вариант оперативного вмешательства: будь то лазерная коррекция, имплантация факичных линз, либо замена прозрачного хрусталика на искусственный, индивидуально рассчитанный хрусталик.&nbsp;&nbsp;В любом случае для решения вашей проблемы необходимо обратиться за консультацией к врачу-офтальмологу в клинику Гранд Медика и мы подберем для вас оптимальное лечение.
-            </div>
-          </div>
-        </div>
-        <div id="bx_2745216059_374" class="question-answer js-load-more-item">
-          <div class="question">
-            <div class="quotes"></div>
-            <div class="text-question">
-              У меня 100 кг лишнего веса, хочу пройти обследование и решить с вашей помощью эту проблему.
-            </div>
-          </div>
-          <div class="answer">
-            <div class="text-answer">
-              В клинике созданы все необходимые условия для консультативной помощи, диагностики и лечения пациентов с избыточной массой тела. На первом этапе необходимо пройти консультацию эндокринолога для выявления причины избыточной массы тела, при наличии показаний к хирургическому лечению ожирения в клинике Гранд Медика, здесь выполняются операции через несколько проколов (гастропластика, гастрошунтирование).
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="b-load-more js-load-more-btn">
-
-        Показать еще
-      </a>
-    </div>
-  </div>
-  <div class="container">
-    <div id="ask-question" class="b-ask-question">
-      <h2>Задайте вопрос</h2>
-      <form id="requestForm" method="post" action="">
-        <input type="hidden" name="sessid" id="sessid" value="9d4e517e5217bb526674317786896eb2">
-        <input type="hidden" name="action" value="support.callback.create">
-        <input type="hidden" name="block" value="contact">
-        <input type="hidden" name="type" value="EMAIL">
-        <input type="hidden" name="title" value="Обращение с формы контактов">
-        <div class="form-group was-validated">
-          <label for="fio">фамилия и имя</label>
-          <input id="fio" class="form-control" name="FIELDS[NAME]" value="" placeholder="Фамилия и имя" required="">
-          <div class="invalid-feedback"></div>
-        </div>
-        <div class="form-group was-validated">
-          <label for="email">электронная почта</label>
-          <input id="email" class="form-control" type="email" name="FIELDS[EMAIL]" value=""
-                 placeholder="Электронная почта" required="">
-          <div class="invalid-feedback"></div>
-        </div>
-        <div class="form-group was-validated">
-          <label>комментарий</label>
-          <textarea class="form-control" name="FIELDS[COMMENT]" rows="4" placeholder="Введите комментарий" required=""
-                    maxlength="600"></textarea>
-          <div class="invalid-feedback"></div>
-        </div>
-        <div class="send-message">
-          <button class="btn btn-primary" type="submit">Отправить сообщение</button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <br>
-</div>
-<div class="b-footer">
-  <div class="to-top-arrow" style="display: none;">
-    <div class="circle">
-
-    </div>
-  </div>
-  <div class="container">
-    <div class="footer-menu align-items-stretch">
-      <div class="column">
-        <ul class="nav-menu list-unstyled">
-          <li class="nav-item">
-            <a style="color: #212529;"> О клинике</a>
-          </li>
-          <li class="nav-item">
-            <a> Руководство</a>
-          </li>
-          <li class="nav-item">
-            <a> Нормативно-правовая документация</a>
-          </li>
-          <li class="nav-item">
-            <a> Корпоративным клиентам</a>
-          </li>
-          <li class="nav-item">
-            <a> Отзывы о клинике</a>
-          </li>
-          <li class="nav-item">
-            <a> 3D-тур</a>
-          </li>
-          <li class="nav-item">
-            <a> Страховые компании</a>
-          </li>
-          <li class="nav-item">
-            <a> Конференц-зал</a>
-          </li>
-          <li class="nav-item">
-            <a> Карьера</a>
-          </li>
-          <li class="nav-item">
-            <a> Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="column">
-        <ul class="nav-menu list-unstyled">
-          <li class="nav-item">
-            <a style="color: #212529;"> Пациенту</a>
-          </li>
-          <li class="nav-item">
-            <a> Прейскурант</a>
-          </li>
-          <li class="nav-item">
-            <a> Новости и акции</a>
-          </li>
-          <li class="nav-item">
-            <a> Часто задаваемые вопросы</a>
-          </li>
-          <li class="nav-item">
-            <a> Инобластным пациентам</a>
-          </li>
-          <li class="nav-item">
-            <a> Версия для слабовидящих</a>
-          </li>
-          <li class="nav-item">
-            <a> Горячая Линия</a>
-          </li>
-          <li class="nav-item">
-            <a> Способы оплаты</a>
-          </li>
-          <li class="nav-item">
-            <a> Как оплатить услугу с сайта</a>
-          </li>
-          <li class="nav-item">
-            <a> Карта сайта</a>
-          </li>
-          <li class="nav-item">
-            <a> Правила подготовки к диагностическим исследованиям</a>
-          </li>
-        </ul>
-      </div>
-      <div class="column">
-        <ul class="nav-menu list-unstyled">
-          <li class="nav-item">
-            <a style="color: #212529;"> Направления</a>
-          </li>
-          <li class="nav-item">
-            <a> Сердечно-сосудистая хирургия</a>
-          </li>
-          <li class="nav-item">
-            <a> Комплексные диагностические программы (Check-up)</a>
-          </li>
-          <li class="nav-item">
-            <a> Нейрохирургия</a>
-          </li>
-          <li class="nav-item">
-            <a> Общая хирургия</a>
-          </li>
-          <li class="nav-item">
-            <a> Ортопедия и травматология</a>
-          </li>
-          <li class="nav-item">
-            <a> Офтальмология</a>
-          </li>
-          <li class="nav-item">
-            <a> Пластическая хирургия</a>
-          </li>
-          <li class="nav-item">
-            <a> Амбулаторная хирургия</a>
-          </li>
-          <li class="nav-item">
-            <a> Реанимация</a>
-          </li>
-          <li class="nav-item">
-            <a> Медицинская реабилитация</a>
-          </li>
-          <li class="nav-item">
-            <a><b>Показать еще</b></a>
-          </li>
-        </ul>
-      </div>
-      <div class="column">
-        <ul class="nav-menu list-unstyled">
-          <li class="item">
-            <a>Врачи клиники</a>
-          </li>
-          <li class="item">
-            <a>Записаться на прием</a>
-          </li>
-          <li class="item">
-            <a>Медицинские <br>анализы</a>
-          </li>
-        </ul>
-      </div>
-      <div class="column social-column">
-        <div class="social">
-          <div class="title-social">Наши социальные сети</div>
-
-        </div>
-      </div>
-    </div>
-    <div class="footer-sub">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="column">
-            <div class="title"><b>Гранд</b> Медика</div>
-            <div class="tel">
-              <a href="tel:+73843994040">8 (3843)&nbsp;99-40-40</a>
-              , 32-88-88 <span class="light-gray">колл-центр</span>
-            </div>
-            <div class="tel">
-              <span class="light-gray"></span>
-            </div>
-            <p>
-              <a> Горячая линия</a>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="column">
-            <div class="title"><b>Наш адрес</b></div>
-            <div>ООО "Гранд Медика", 654007, Новокузнецк просп.&nbsp;Кузнецкстроевский,&nbsp;11</div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="btn-map">
-                <a class="btn btn-primary"> Показать на карте</a>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="link-logo">
-                <a class="link-likee mr-4">
-                  <svg viewBox="0 0 121.75 25.47" class="icon_footer-creator_likee footer-creator_likee">
-                    <path class="arcls-1"
-                          d="M12.828 10.08H9.467l-.512 5.91a24.311 24.311 0 0 1-.94 5.31 6.183 6.183 0 0 1-4.641 3.93 10.347 10.347 0 0 1-1.339.25l-2.05-3.73a3.639 3.639 0 0 0 3.56-4.01c.427-5.37.768-9.24.968-11.58h13.924v18.61h-5.581c0-1.61 0-4.06-.028-7.31v-7.38zm26.938 14.69l-.911-2.09h-6.521l-.94 2.09h-5.353L35.409 5.7h.655l9.169 19.07h-5.467zm-4.186-9.35l-1.651 3.7h3.36l-1.595-3.7h-.114zm34.655 9.35h-5.552v-9.43h-.114L53.406 25.2h-.626V6.16h5.581v9.38h.114L69.58 5.68h.655v19.09zM59.785 0a2.4 2.4 0 0 0 2.563 2.4A2.477 2.477 0 0 0 64.74 0h2.249a6.062 6.062 0 0 1-1.31 3.5 4.107 4.107 0 0 1-3.445 1.47c-3.047 0-4.613-2.15-4.727-4.97h2.278zm25.116 6.16v8.41l5.609-8.41h5.952l-6.35 8.98 6.663 9.63h-6.151l-5.723-9.04v9.04h-5.61V6.16h5.61zm36.849 18.61h-5.552v-9.43h-.114l-11.163 9.86h-.626V6.16h5.581v9.38h.114l11.1-9.86h.66v19.09z"></path>
-                  </svg>
-                </a>
-                <a class="link-power">
-                  <svg viewBox="0 0 107 19" class="icon_footer-creator_likee footer-creator_likee">
-                    <path class="aqcls-1"
-                          d="M39.67 14l5.16 5L55.87 5.5 50.94.3zm22.9-14L51.38 14l5.23 5L67.85 5.3h10.82l-1.08 1.5h-8.78l-5.82 7.3 4.82 4.9h8.78l3.85-5.4h-9.26l1.24-1.7h9.03l5.38-6.6-4.5-5.3H62.57zM11.12 0L6.7 5.4h10.39L16 6.7H5.58L0 13.5 4.95 19l5.37-6.6h8.58l6.06-7.5L20.95 0h-9.83zm16.31 13.3l6.42-7.8 2.36-.1-6.4 7.9h-2.38zM30.78 0L19.85 13.5l4.68 5.5h8.78L44.38 5.6 40.12 0h-9.34zm62.2 0l-4.26 5.3h10.77l-1.24 1.5H87.8l-4.76 5.7-.89 1 4.74 5.5 3.85-5 3.44 5h8.25l-5.11-6.6h3.71L107 4.7 103.05 0H92.98z"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="pt-4">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="make-appointment" class="b-modal modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <button class="close" type="button" aria-label="Close"></button>
-      <h2>Заказать звонок</h2>
-      <div class="modal-body">
-        <div class="b-make-appointment">
-          <div class="form">
-            <div class="item">
-              <div class="collapse1 show" role="tabpanel1">
-                <form class="collapse-body js-form js-form-appointment" method="post" action="">
-                  <input type="hidden" name="sessid" id="sessid_1" value="9d4e517e5217bb526674317786896eb2">
-                  <input type="hidden" name="action" value="support.callback.create">
-                  <input type="hidden" name="block" value="appointment">
-                  <input type="hidden" name="title" value="Запись на прием">
-                  <input type="hidden" name="type" value="PHONE">
-                  <div class="form-group was-validated">
-                    <label>как можно к вам обращаться?</label>
-                    <div class="position-relative">
-                      <input class="form-control" name="FIELDS[NAME]" value="" required="">
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group-tel">
-                    <label>номер вашего телефона</label>
-                    <div class="position-relative">
-                      <input class="form-control form-control-tel js-tel is-invalid" name="FIELDS[PHONE]" value=""
-                             required="">
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group was-validated comment">
-                    <label>Укажите интересующего специалиста или услугу</label>
-                    <div class="position-relative">
-                      <textarea class="form-control" name="FIELDS[COMMENT]" rows="4" required=""
-                                maxlength="600"></textarea>
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="appAcceptCheck" required="">
-                      <label class="custom-control-label" for="appAcceptCheck">
-                        Я ознакомлен с
-                        <a> Политикой обработки и защиты персональных данных Клиники</a>
-                        и
-                        <a> Пользовательским соглашением</a>
-                        , принимаю их, а также даю свое согласие на сбор, обработку и хранение моих персональных данных согласно бланку указанного
-                        <a> Согласия</a>
-                        .
-                      </label>
-                    </div>
-                  </div>
-                  <div class="send-application">
-                    <button class="btn btn-primary">Отправить заявку</button>
-                  </div>
-                  <div class="help-text mt-4">
-                        <span class="text-muted">
-                            Мы обещаем, что не будем присылать вам смс-сообщения рекламного или иного характера.
-                        </span>
-                  </div>
-                  <div class="message js-success-message">
-                    <div class="inner">
-                      <h2>Спасибо!</h2>
-                      <p>Ваша заявка принята, с вами свяжется оператор.</p>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="surgery-request" class="b-modal modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <button class="close" type="button" aria-label="Close"></button>
-      <h2>Заявка на бесплатную онлайн консультацию врача-хирурга</h2>
-      <div class="modal-body">
-        <div class="b-make-appointment">
-          <div class="form">
-            <div class="item">
-              <div class="collapse1 show" role="tabpanel1">
-                <form class="collapse-body js-form js-form-surgery" method="post" action="">
-                  <input type="hidden" name="sessid" id="sessid_2" value="9d4e517e5217bb526674317786896eb2">
-                  <input type="hidden" name="action" value="support.callback.create">
-                  <input type="hidden" name="block" value="surgery">
-                  <input type="hidden" name="title" value="Заявка на консультацию врача-хирурга">
-                  <input type="hidden" name="type" value="PHONE">
-                  <div class="form-group was-validated">
-                    <label>как можно к вам обращаться?</label>
-                    <div class="position-relative">
-                      <input class="form-control" name="FIELDS[NAME]" value="" required="">
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group-tel">
-                    <label>номер вашего телефона</label>
-                    <div class="position-relative">
-                      <input class="form-control form-control-tel js-tel is-invalid" name="FIELDS[PHONE]" value=""
-                             required="">
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group was-validated comment">
-                    <label>Комментарии</label>
-                    <div class="position-relative">
-                      <textarea class="form-control" name="FIELDS[COMMENT]" rows="4" required=""
-                                maxlength="600"></textarea>
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="appAcceptCheck2" required="">
-                      <label class="custom-control-label" for="appAcceptCheck2">
-                        Я ознакомлен с
-                        <a> Политикой обработки и защиты персональных данных Клиники</a>
-                        и
-                        <a> Пользовательским соглашением</a>
-                        , принимаю их, а также даю свое согласие на сбор, обработку и хранение моих персональных данных согласно бланку указанного
-                        <a> Согласия</a>
-                        .
-                      </label>
-                    </div>
-                  </div>
-                  <div class="send-application">
-                    <button class="btn btn-primary">Отправить заявку</button>
-                  </div>
-                  <div class="help-text mt-4">
-                        <span class="text-muted">
-                            Мы обещаем, что не будем присылать вам смс-сообщения рекламного или иного характера.
-                        </span>
-                  </div>
-                  <div class="message js-success-message">
-                    <div class="inner">
-                      <h2>Спасибо!</h2>
-                      <p>Ваша заявка принята, с вами свяжется оператор.</p>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="gynecology-request" class="b-modal modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <button class="close" type="button" aria-label="Close"></button>
-      <h2>Заявка на бесплатную онлайн консультацию врача-гинеколога</h2>
-      <div class="modal-body">
-        <div class="b-make-appointment">
-          <div class="form">
-            <div class="item">
-              <div class="collapse2 show" id="phoneAppointment2" role="tabpanel2">
-                <form class="collapse-body js-form js-form-gynecology" method="post" action="">
-                  <input type="hidden" name="sessid" id="sessid_3" value="9d4e517e5217bb526674317786896eb2">
-                  <input type="hidden" name="action" value="support.callback.create">
-                  <input type="hidden" name="block" value="gynecology">
-                  <input type="hidden" name="title" value="Заявка на консультацию врача-гинеколога">
-                  <input type="hidden" name="type" value="PHONE">
-                  <div class="form-group was-validated">
-                    <label>как можно к вам обращаться?</label>
-                    <div class="position-relative">
-                      <input class="form-control" name="FIELDS[NAME]" value="" required="">
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group-tel">
-                    <label>номер вашего телефона</label>
-                    <div class="position-relative">
-                      <input class="form-control form-control-tel js-tel is-invalid" name="FIELDS[PHONE]" value=""
-                             required="">
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group was-validated comment">
-                    <label>Комментарии</label>
-                    <div class="position-relative">
-                      <textarea class="form-control" name="FIELDS[COMMENT]" rows="4" required=""
-                                maxlength="600"></textarea>
-                      <div class="invalid-feedback"></div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="appAcceptCheck3" required="">
-                      <label class="custom-control-label" for="appAcceptCheck3">
-                        Я ознакомлен с
-                        <a> Политикой обработки и защиты персональных данных Клиники</a>
-                        и
-                        <a> Пользовательским соглашением</a>
-                        , принимаю их, а также даю свое согласие на сбор, обработку и хранение моих персональных данных согласно бланку указанного
-                        <a> Согласия</a>
-                        .
-                      </label>
-                    </div>
-                  </div>
-                  <div class="send-application">
-                    <button class="btn btn-primary">Отправить заявку</button>
-                  </div>
-                  <div class="help-text mt-4">
-                    <span class="text-muted">Мы обещаем, что не будем присылать вам смс-сообщения рекламного или иного характера.</span>
-                  </div>
-                  <div class="message js-success-message">
-                    <div class="inner">
-                      <h2>Спасибо!</h2>
-                      <p>Ваша заявка принята, с вами свяжется оператор.</p>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="b-modal modal fade small" tabindex="-1" role="dialog" id="auth_modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="js-modal-content"></div>
-    </div>
-  </div>
-</div>
-<div id="bxdynamic_DFNdzt_start" style="display:none"></div>
-<div class="b-modal modal fade small " tabindex="-1" role="dialog" id="registration">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <h2>Регистрация</h2>
-      <div class="modal-body">
-        <div class="b-registration">
-          <form class="form" action="" name="regform" method="post" enctype="multipart/form-data"
-                novalidate="novalidate">
-            <input type="hidden" name="sessid" id="sessid_4" value="9d4e517e5217bb526674317786896eb2">
-            <input type="hidden" name="REGISTER[LOGIN]" value="CKtZPX">
-            <div class="js-errors"></div>
-            <div class="form-group">
-              <label class="label">Ваше имя</label>
-              <input type="text" name="REGISTER[NAME]" class="form-control js-name" value="" required=""
-                     pattern="^[а-яА-ЯёЁa-zA-Z][а-яА-ЯёЁa-zA-Z0-9- ]{1,20}$">
-            </div>
-            <div class="form-group">
-              <label class="label">Фамилия</label>
-              <input type="text" name="REGISTER[LAST_NAME]" class="form-control js-name" value="" required=""
-                     pattern="^[а-яА-ЯёЁa-zA-Z][а-яА-ЯёЁa-zA-Z0-9- ]{1,20}$">
-            </div>
-            <div class="form-group">
-              <label class="label">Номер вашего телефона</label>
-              <input type="text" name="REGISTER[PERSONAL_PHONE]" class="form-control js-tel" value="" required="">
-            </div>
-            <div class="form-group">
-              <label class="label">Укажите ваш e-mail</label>
-              <input type="email" name="REGISTER[EMAIL]" class="form-control " value="" required="">
-            </div>
-            <div class="form-group">
-              <label class="label">Укажите пароль, не менее 6 знаков</label>
-              <input type="password" name="REGISTER[PASSWORD]"
-                     class="form-control password js-password js-password-keyup" value="" required="">
-            </div>
-            <div class="form-group">
-              <label class="label">Введите пароль еще раз</label>
-              <input type="password" name="REGISTER[CONFIRM_PASSWORD]"
-                     class="form-control password-again js-password-again js-password-keyup" value="" required="">
-            </div>
-            <div class="form-group">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="modalRegAcceptCheck" name="rules-accepted"
-                       value="Y" required="">
-                <label class="custom-control-label" for="modalRegAcceptCheck">
-                  Я ознакомлен с
-                  <a> Политикой обработки и защиты персональных данных Клиники</a>
-                  и
-                  <a> Пользовательским соглашением</a>
-                  , принимаю их, а также даю свое согласие на сбор, обработку и хранение моих персональных данных согласно бланку указанного
-                  <a> Согласия</a>
-                  .
-                </label>
-              </div>
-            </div>
-            <div class="form-group d-flex justify-content-center" style="border: 0; padding: 0;">
-              <div class="g-recaptcha">
-                <div style="width: 304px; height: 78px;">
-                  <div>
-                  </div>
-                  <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                </div>
-              </div>
-            </div>
-            <input type="hidden" name="register_submit_button" value="Y">
-            <button class="btn btn-primary js-submit-button" type="submit">
-              Войти в систему
-            </button>
-            <div class="js-existing-user" style="display: none">
-              <label>
-                Пользователь с такими данными уже зарегистрирован на сайте. Перейти к процедуре восстановления пароля?
-              </label>
-              <div class="row">
-                <div class="col-6">
-                  <a class="btn btn-primary"> Да</a>
-                </div>
-                <div class="col-6">
-                  <button class="btn btn-primary js-close-modal" type="submit">Нет</button>
-                </div>
-              </div>
-            </div>
-          </form>
-          <div class="question">
-            <div class="question-icon">
-              <svg class="icon icon_modal-authorization-question ">
-                <use></use>
-              </svg>
-            </div>
-            <div class="telephone">
-              <div>Остались вопросы?</div>
-              <div>
-                звоните
-                <a href="tel:+73843994040">8 (3843)&nbsp;99-40-40</a>
-                , 32-88-88
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+	<div id="panel"></div>
+	<div class="b-header" style="opacity:1;"><a class="logo"><img src="img/logo.svg" alt="grandmedica">
+			<div class="slogan">медицинский клинический центр </div>
+		</a>
+		<div class="right-menu"><a class="question"><svg width="31" height="31" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+					<title>Group 22</title>
+					<g fill="none" fill-rule="evenodd"><text font-family="Helvetica" font-size="21" letter-spacing=".75" fill="#000" transform="translate(1 1)">
+							<tspan x="8.285" y="22">?</tspan>
+						</text>
+						<path d="M15.5 30C7.492 30 1 23.508 1 15.5S7.492 1 15.5 1 30 7.492 30 15.5 23.508 30 15.5 30z" stroke="#fff" stroke-width="2" />
+					</g>
+				</svg></a>
+			<div class="dropdown d-none d-md-block"><a class="btn-area"><svg class="icon icon_header-area-icon" viewBox="0 0 29 28" id="header-area-icon">
+						<title>Group 11</title>
+						<g fill-rule="evenodd">
+							<path d="M28.895 11C27.1 4.68 21.311.052 14.448.052 7.584.052 1.796 4.68 0 11h28.895zm-5.773-22c0 4.773-3.86 8.643-8.622 8.643-4.762 0-8.622-3.87-8.622-8.643 0-4.773 3.86-8.643 8.622-8.643 4.762 0 8.622 3.87 8.622 8.643" mask="url(#b)" transform="translate(0 17)"></path>
+							<ellipse cx="13.5" cy="7" rx="7.5" ry="7"></ellipse>
+						</g>
+					</svg></a></div><a class="nav burger"><button class="hamburger hamburger--slider js-show-menu" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+				<div class="menu">меню</div>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="b-bread-crumbs"><a>Главная</a><a>О клинике</a><span>Часто задаваемые вопросы</span></div>
+	</div>
+	<div class="container">
+		<div class="b-question-answer">
+			<div class="component-title">
+				<div class="title">
+					<div class="question-answer-title">
+						<h2>Вопрос-ответ</h2>
+						<div class="question-mark"></div>
+					</div>
+					<div>Часто задаваемые вопросы</div>
+				</div>
+			</div>
+			<div class="questions-answers">
+				<div class="js-load-more-container">
+					<div id="bx_2745216059_373" class="question-answer js-load-more-item">
+						<div class="question">
+							<div class="quotes"></div>
+							<div class="text-question">У меня тонкая роговица и лазерную коррекцию делать нельзя, у меня -7! Неужели я так и останусь в очках с толстыми стеклами?&nbsp;&nbsp;&nbsp;&nbsp; </div>
+						</div>
+						<div class="answer">
+							<div class="text-answer">Современный уровень офтальмологии позволяет снять очки с любого человека, для этого подбирается адекватный конкретному случаю вариант оперативного вмешательства:будь то лазерная коррекция, имплантация факичных линз, либо замена прозрачного хрусталика на искусственный, индивидуально рассчитанный хрусталик.&nbsp;&nbsp;В любом случае для решения вашей проблемы необходимо обратиться за консультацией к врачу-офтальмологу в клинику Гранд Медика и мы подберем для вас оптимальное лечение. </div>
+						</div>
+					</div>
+					<div id="bx_2745216059_374" class="question-answer js-load-more-item">
+						<div class="question">
+							<div class="quotes"></div>
+							<div class="text-question">У меня 100 кг лишнего веса, хочу пройти обследование и решить с вашей помощью эту проблему. </div>
+						</div>
+						<div class="answer">
+							<div class="text-answer">В клинике созданы все необходимые условия для консультативной помощи, диагностики и лечения пациентов с избыточной массой тела. На первом этапе необходимо пройти консультацию эндокринолога для выявления причины избыточной массы тела, при наличии показаний к хирургическому лечению ожирения в клинике Гранд Медика, здесь выполняются операции через несколько проколов (гастропластика, гастрошунтирование). </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="ask-question" class="b-ask-question">
+				<h2>Задайте вопрос</h2>
+				<form id="requestForm" method="post" action=""><input type="hidden" name="sessid" id="sessid" value="9d4e517e5217bb526674317786896eb2"><input type="hidden" name="action" value="support.callback.create"><input type="hidden" name="block" value="contact"><input type="hidden" name="type" value="EMAIL"><input type="hidden" name="title" value="Обращение с формы контактов">
+					<div class="form-group was-validated"><label for="fio">фамилия и имя</label><input id="fio" class="form-control" name="FIELDS[NAME]" value="" placeholder="Фамилия и имя" required="">
+						<div class="invalid-feedback"></div>
+					</div>
+					<div class="form-group was-validated"><label for="email">электронная почта</label><input id="email" class="form-control" type="email" name="FIELDS[EMAIL]" value="" placeholder="Электронная почта" required="">
+						<div class="invalid-feedback"></div>
+					</div>
+					<div class="form-group was-validated"><label>комментарий</label><textarea class="form-control" name="FIELDS[COMMENT]" rows="4" placeholder="Введите комментарий" required="" maxlength="600"></textarea>
+						<div class="invalid-feedback"></div>
+					</div>
+					<div class="send-message"><button class="btn btn-primary" type="submit">Отправить сообщение</button></div>
+				</form>
+			</div>
+		</div><br>
+	</div>
+	<div class="b-footer">
+		<div class="to-top-arrow" style="display:none;">
+			<div class="circle"></div>
+		</div>
+		<div class="container">
+			
+			<div class="footer-sub">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="column">
+							<div class="title"><b>Пациенту</b></div>
+							<div class="tel"><span class="light-gray"></span></div>
+							<p><a>Часто задаваемые вопросы</a></p>
+							<div class="tel"><span class="light-gray"></span></div>
+							<p><a>Карта сайта</a></p>
+							<div class="tel"><span class="light-gray"></span></div>
+							<p><a>Прейскурант</a></p>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="column">
+							<div class="title"><b>Направления</b></div>
+							<div class="tel"><span class="light-gray"></span></div>
+							<p><a>Сердечно-сосудистая хирургия</a></p>
+							<div class="tel"><span class="light-gray"></span></div>
+							<p><a>Общая хирургия</a></p>
+							<div class="tel"><span class="light-gray"></span></div>
+							<p><a>Ортопедия и травматология</a></p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="column">
+									<div class="title"><b>Врачи клиники</b></div>
+									<div class="tel"><span class="light-gray"></span></div>
+									<p><a>Медицинские анализы</a></p>
+									<div class="tel"><span class="light-gray"></span></div>
+									<p><a>Отзывы о клинике</a></p>
+									<div class="tel"><span class="light-gray"></span></div>
+									<p><a>Страховые компании</a></p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="social column">
+									<div class="title"><b>Наши социальные сети</b></div>
+									<a class="link-social">
+										<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img"  viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+									</a>
+									<a class="link-social v-a-sub">
+										<svg fill="#000000" viewBox="0 0 32 32" width="512px" height="512px"><path d="M 8 5 C 6.355469 5 5 6.355469 5 8 L 5 24 C 5 25.644531 6.355469 27 8 27 L 24 27 C 25.644531 27 27 25.644531 27 24 L 27 8 C 27 6.355469 25.644531 5 24 5 Z M 21 8 L 24 8 L 24 11 L 21 11 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z M 7 14 L 10.34375 14 C 10.121094 14.625 10 15.300781 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 15.300781 21.878906 14.625 21.65625 14 L 25 14 L 25 24 C 25 24.566406 24.566406 25 24 25 L 8 25 C 7.433594 25 7 24.566406 7 24 Z"/></svg>
+									</a>
+									<a class="link-social link-social-center">
+										<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+									</a>
+										
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="make-appointment" class="b-modal modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"><button class="close" type="button" aria-label="Close"></button>
+				<h2>Заказать звонок</h2>
+				<div class="modal-body">
+					<div class="b-make-appointment">
+						<div class="form">
+							<div class="item">
+								<div class="collapse1 show" role="tabpanel1">
+									<form class="collapse-body js-form js-form-appointment" method="post" action=""><input type="hidden" name="sessid" id="sessid_1" value="9d4e517e5217bb526674317786896eb2"><input type="hidden" name="action" value="support.callback.create"><input type="hidden" name="block" value="appointment"><input type="hidden" name="title" value="Запись на прием"><input type="hidden" name="type" value="PHONE">
+										<div class="form-group was-validated"><label>как можно к вам обращаться?</label>
+											<div class="position-relative"><input class="form-control" name="FIELDS[NAME]" value="" required="">
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group form-group-tel"><label>номер вашего телефона</label>
+											<div class="position-relative"><input class="form-control form-control-tel js-tel is-invalid" name="FIELDS[PHONE]" value="" required="">
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group was-validated comment"><label>Укажите интересующего специалиста или услугу</label>
+											<div class="position-relative"><textarea class="form-control" name="FIELDS[COMMENT]" rows="4" required="" maxlength="600"></textarea>
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="appAcceptCheck" required=""><label class="custom-control-label" for="appAcceptCheck">Я ознакомлен с <a>Политикой обработки и защиты персональных данных Клиники</a>и <a>Пользовательским соглашением</a>, принимаю их, а также даю свое согласие на сбор, обработку и хранение моих персональных данных согласно бланку указанного <a>Согласия</a>. </label></div>
+										</div>
+										<div class="send-application"><button class="btn btn-primary">Отправить заявку</button></div>
+										<div class="help-text mt-4"><span class="text-muted">Мы обещаем, что не будем присылать вам смс-сообщения рекламного или иного характера. </span></div>
+										<div class="message js-success-message">
+											<div class="inner">
+												<h2>Спасибо!</h2>
+												<p>Ваша заявка принята, с вами свяжется оператор.</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="surgery-request" class="b-modal modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"><button class="close" type="button" aria-label="Close"></button>
+				<h2>Заявка на бесплатную онлайн консультацию врача-хирурга</h2>
+				<div class="modal-body">
+					<div class="b-make-appointment">
+						<div class="form">
+							<div class="item">
+								<div class="collapse1 show" role="tabpanel1">
+									<form class="collapse-body js-form js-form-surgery" method="post" action=""><input type="hidden" name="sessid" id="sessid_2" value="9d4e517e5217bb526674317786896eb2"><input type="hidden" name="action" value="support.callback.create"><input type="hidden" name="block" value="surgery"><input type="hidden" name="title" value="Заявка на консультацию врача-хирурга"><input type="hidden" name="type" value="PHONE">
+										<div class="form-group was-validated"><label>как можно к вам обращаться?</label>
+											<div class="position-relative"><input class="form-control" name="FIELDS[NAME]" value="" required="">
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group form-group-tel"><label>номер вашего телефона</label>
+											<div class="position-relative"><input class="form-control form-control-tel js-tel is-invalid" name="FIELDS[PHONE]" value="" required="">
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group was-validated comment"><label>Комментарии</label>
+											<div class="position-relative"><textarea class="form-control" name="FIELDS[COMMENT]" rows="4" required="" maxlength="600"></textarea>
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="appAcceptCheck2" required=""><label class="custom-control-label" for="appAcceptCheck2">Я ознакомлен с <a>Политикой обработки и защиты персональных данных Клиники</a>и <a>Пользовательским соглашением</a>, принимаю их, а также даю свое согласие на сбор, обработку и хранение моих персональных данных согласно бланку указанного <a>Согласия</a>. </label></div>
+										</div>
+										<div class="send-application"><button class="btn btn-primary">Отправить заявку</button></div>
+										<div class="help-text mt-4"><span class="text-muted">Мы обещаем, что не будем присылать вам смс-сообщения рекламного или иного характера. </span></div>
+										<div class="message js-success-message">
+											<div class="inner">
+												<h2>Спасибо!</h2>
+												<p>Ваша заявка принята, с вами свяжется оператор.</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="gynecology-request" class="b-modal modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"><button class="close" type="button" aria-label="Close"></button>
+				<h2>Заявка на бесплатную онлайн консультацию врача-гинеколога</h2>
+				<div class="modal-body">
+					<div class="b-make-appointment">
+						<div class="form">
+							<div class="item">
+								<div class="collapse2 show" id="phoneAppointment2" role="tabpanel2">
+									<form class="collapse-body js-form js-form-gynecology" method="post" action=""><input type="hidden" name="sessid" id="sessid_3" value="9d4e517e5217bb526674317786896eb2"><input type="hidden" name="action" value="support.callback.create"><input type="hidden" name="block" value="gynecology"><input type="hidden" name="title" value="Заявка на консультацию врача-гинеколога"><input type="hidden" name="type" value="PHONE">
+										<div class="form-group was-validated"><label>как можно к вам обращаться?</label>
+											<div class="position-relative"><input class="form-control" name="FIELDS[NAME]" value="" required="">
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group form-group-tel"><label>номер вашего телефона</label>
+											<div class="position-relative"><input class="form-control form-control-tel js-tel is-invalid" name="FIELDS[PHONE]" value="" required="">
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group was-validated comment"><label>Комментарии</label>
+											<div class="position-relative"><textarea class="form-control" name="FIELDS[COMMENT]" rows="4" required="" maxlength="600"></textarea>
+												<div class="invalid-feedback"></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="appAcceptCheck3" required=""><label class="custom-control-label" for="appAcceptCheck3">Я ознакомлен с <a>Политикой обработки и защиты персональных данных Клиники</a>и <a>Пользовательским соглашением</a>, принимаю их, а также даю свое согласие на сбор, обработку и хранение моих персональных данных согласно бланку указанного <a>Согласия</a>. </label></div>
+										</div>
+										<div class="send-application"><button class="btn btn-primary">Отправить заявку</button></div>
+										<div class="help-text mt-4"><span class="text-muted">Мы обещаем, что не будем присылать вам смс-сообщения рекламного или иного характера.</span></div>
+										<div class="message js-success-message">
+											<div class="inner">
+												<h2>Спасибо!</h2>
+												<p>Ваша заявка принята, с вами свяжется оператор.</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-modal modal fade small" tabindex="-1" role="dialog" id="auth_modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="js-modal-content"></div>
+			</div>
+		</div>
+	</div>
+	<div id="bxdynamic_DFNdzt_start" style="display:none"></div>
+	<div class="b-modal modal fade small " tabindex="-1" role="dialog" id="registration">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<h2>Регистрация</h2>
+				<div class="modal-body">
+					<div class="b-registration">
+						<form class="form" action="" name="regform" method="post" enctype="multipart/form-data" novalidate="novalidate"><input type="hidden" name="sessid" id="sessid_4" value="9d4e517e5217bb526674317786896eb2"><input type="hidden" name="REGISTER[LOGIN]" value="CKtZPX">
+							<div class="js-errors"></div>
+							<div class="form-group"><label class="label">Ваше имя</label><input type="text" name="REGISTER[NAME]" class="form-control js-name" value="" required="" pattern="^[а-яА-ЯёЁa-zA-Z][а-яА-ЯёЁa-zA-Z0-9- ]{1,20}$"></div>
+							<div class="form-group"><label class="label">Фамилия</label><input type="text" name="REGISTER[LAST_NAME]" class="form-control js-name" value="" required="" pattern="^[а-яА-ЯёЁa-zA-Z][а-яА-ЯёЁa-zA-Z0-9- ]{1,20}$"></div>
+							<div class="form-group"><label class="label">Номер вашего телефона</label><input type="text" name="REGISTER[PERSONAL_PHONE]" class="form-control js-tel" value="" required=""></div>
+							<div class="form-group"><label class="label">Укажите ваш e-mail</label><input type="email" name="REGISTER[EMAIL]" class="form-control " value="" required=""></div>
+							<div class="form-group"><label class="label">Укажите пароль, не менее 6 знаков</label><input type="password" name="REGISTER[PASSWORD]" class="form-control password js-password js-password-keyup" value="" required=""></div>
+							<div class="form-group"><label class="label">Введите пароль еще раз</label><input type="password" name="REGISTER[CONFIRM_PASSWORD]" class="form-control password-again js-password-again js-password-keyup" value="" required=""></div>
+							<div class="form-group">
+								<div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="modalRegAcceptCheck" name="rules-accepted" value="Y" required=""><label class="custom-control-label" for="modalRegAcceptCheck">Я ознакомлен с <a>Политикой обработки и защиты персональных данных Клиники</a>и <a>Пользовательским соглашением</a>, принимаю их, а также даю свое согласие на сбор, обработку и хранение моих персональных данных согласно бланку указанного <a>Согласия</a>. </label></div>
+							</div>
+							<div class="form-group d-flex justify-content-center" style="border:0; padding:0;">
+								<div class="g-recaptcha">
+									<div style="width:304px; height:78px;">
+										<div></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width:250px; height:40px; border:1px solid rgb(193, 193, 193); margin:10px 25px; padding:0px; resize:none; display:none;"></textarea>
+									</div>
+								</div>
+							</div><input type="hidden" name="register_submit_button" value="Y"><button class="btn btn-primary js-submit-button" type="submit">Войти в систему </button>
+							<div class="js-existing-user" style="display:none"><label>Пользователь с такими данными уже зарегистрирован на сайте. Перейти к процедуре восстановления пароля? </label>
+								<div class="row">
+									<div class="col-6"><a class="btn btn-primary">Да</a></div>
+									<div class="col-6"><button class="btn btn-primary js-close-modal" type="submit">Нет</button></div>
+								</div>
+							</div>
+						</form>
+						<div class="question">
+							<div class="question-icon"><svg class="icon icon_modal-authorization-question ">
+									<use></use>
+								</svg></div>
+							<div class="telephone">
+								<div>Остались вопросы?</div>
+								<div>звоните <a>8 (3843)&nbsp;99-40-40</a>, 32-88-88 </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="js/jq.js"></script>
 </body>
+
 </html>
