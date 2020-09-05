@@ -1992,6 +1992,23 @@ img {
     }
 }
 
+@media (max-width: 480px) {
+    .list-inline.tags li{
+        margin-bottom: 5px;
+    }
+
+    .comment-block {
+        margin-top: 0;
+    }
+
+    .order {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 440px) {
     .df-post-header.layout2 .entry-title {
         font-size: 22px;
@@ -2002,3 +2019,4 @@ img {
         margin-top: 10px;
     }
 }
+
