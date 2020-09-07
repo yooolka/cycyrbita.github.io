@@ -19,6 +19,11 @@
         padding-top: 30px !important;
         padding-bottom: 30px !important;
     }
+
+    &_man {
+        padding-top: 140px;
+        background-color: #212121;
+    }
 }
 
 .section__title {
@@ -44,6 +49,10 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &_man {
+            padding-top: 60px;
+        }
     }
 
     .section__title {
