@@ -98,13 +98,11 @@ header {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .logo {
-    margin-top: 19px;
-    margin-bottom: 19px;
-    padding-right: 90px;
+    margin: 20px;
 }
 
 .call {
@@ -163,6 +161,7 @@ img.paced_form {
     display: block;
     width: auto;
     max-width: 100%;
+    margin: 20px;
 }
 
 .form_content_head {
@@ -174,7 +173,7 @@ img.paced_form {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background: #f9fcfa;
-    padding: 10px;
+    padding: 20px 30px;
 }
 
 .form_title {
@@ -237,6 +236,7 @@ button {
     border: 1px solid #c1c0c0;
     outline: none;
     background: #fff;
+    padding: 7px;
 }
 
 .icon_phone {
@@ -252,8 +252,6 @@ button {
 }
 
 .form_top {
-    padding-left: 20px;
-    padding-right: 20px;
     margin-top: 3px;
 }
 
@@ -302,59 +300,34 @@ button {
     color: #000;
     display: inline-block;
     text-align: center;
-    padding-top: 145px;
-}
-
-.li_bl5_1 {
     width: 100%;
     max-width: 250px;
-    background: url('../images/bl5_icon_1.png') no-repeat center 0px;
-}
-
-.li_bl5_6 {
-    width: 100%;
-    max-width: 250px;
-    background: url('../images/bl6_icon_1.png') no-repeat center 0px;
-}
-
-.li_bl5_2 {
-    width: 100%;
-    max-width: 280px;
-    background: url('../images/bl5_icon_2.png') no-repeat center 0px;
-}
-
-.li_bl5_3 {
-    width: 100%;
-    max-width: 295px;
-    background: url('../images/bl5_icon_3.png') no-repeat center 0px;
-}
-
-.li_bl5_4 {
-    width: 100%;
-    max-width: 280px;
-    background: url('../images/bl5_icon_4.png') no-repeat center 0px;
-}
-
-.li_bl5_5 {
-    width: 100%;
-    max-width: 295px;
-    background: url('../images/bl5_icon_5.png') no-repeat center 0px;
 }
 
 .regular_ul {
     font-family: 'Roboto-Regular';
     font-size: 25.4px;
     line-height: 1.2;
+    margin-top: 10px;
+    display: block;
 }
 
 .ul_bl5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
     width: 100%;
     max-width: auto;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+.bl5-img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .bl_7 {
@@ -408,14 +381,18 @@ span.bold_s_28.pr_form2 {
     font-size: 36px;
 }
 
-span.input_name.new_size_for_name {
-    font-size: 17.2px;
+.input_name.new_size_for_name {
+    font-size: 16px;
 }
 
 .form_content_head.form_co_head_1 {
     width: 100%;
     max-width: 311px;
     border: none;
+}
+
+.form_co_head_2 .form_container {
+    margin-bottom: 20px;
 }
 
 input.input__inner.input__inner_1 {
@@ -559,10 +536,6 @@ img.fomr_paced {
     margin: 0 auto;
 }
 
-.clearfix {
-    *zoom: 1;
-}
-
 .clearfix:before,
 .clearfix:after {
     display: table;
@@ -613,7 +586,7 @@ select.country_select {
 .privacy h2 {
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.1;
     color: #44413b;
 }
 
@@ -624,6 +597,7 @@ select.country_select {
     line-height: 22px;
     color: #6b6b6b;
     letter-spacing: 0.2px;
+    list-style: disc;
 }
 
 .privacy ul {
@@ -634,28 +608,10 @@ select.country_select {
     padding-left: 0;
 }
 
-.privacy h1 + p {
-    margin-top: 30px;
-}
-
-.privacy p + h2 {
-    margin-top: 30px;
-}
-
-.privacy ul + h2 {
-    margin-top: 25px;
-}
-
-.privacy h2 + p {
-    margin-top: 9px;
-}
-
-.privacy p + p {
-    margin-top: 10px;
-}
-
-h1.privacy__title + p {
-    margin-top: 30px;
+.privacy h1,
+.privacy h2,
+.privacy p {
+    margin: 10px 0;
 }
 
 .privacy::before {
@@ -754,17 +710,16 @@ h1.privacy__title + p {
 
 .coockies .cnt_wrapp {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .text {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 10px;
 }
 
@@ -774,6 +729,7 @@ h1.privacy__title + p {
     border-radius: .5rem;
     background-color: rgba(100, 0, 0, 1);
     white-space: nowrap;
+    margin: 10px 5px;
 }
 
 .coockies .cnt_wrapp span {
