@@ -58,7 +58,7 @@ section {
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: 'Raleway', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -1485,5 +1485,10 @@ body {
 		font-size: 14px;
 		padding-right: 30px;
 		padding-left: 30px;
+	}
+
+	.sidebar+.content {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
