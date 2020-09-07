@@ -1,0 +1,151 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.header__logo {
+    padding-right: 25px;
+    font-family: "HeadingProTrial", sans-serif;
+    font-size: 46px;
+    color: #212121;
+    text-transform: uppercase;
+    border-right: 1px solid #d2d6d9;
+
+    & mark {
+        color: #008f3a;
+    }
+}
+
+.header__item {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.header__item-media {
+    margin-right: 10px;
+}
+
+.header__item-info {
+    font-size: 17px;
+    font-weight: 600;
+    color: #262324;
+
+    & span {
+        display: block;
+        color: #0f76b9;
+    }
+}
+
+.header__btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(0, 195, 80);
+    background-image: linear-gradient(90deg, rgba(0, 195, 80, 1) 0%, rgba(0, 137, 251, 1) 100%);
+    border-radius: 35px;
+    transition: .6s;
+
+    &:hover {
+        background-position-x: 200px;
+        transform: scale(0.99);
+    }
+}
+
+@media (max-width: 1054px) {
+    .header {
+        justify-content: flex-start;
+    }
+
+    .header__logo {
+        padding-right: 0;
+        border: none;
+    }
+
+    .header__item-info {
+        font-size: 14px;
+    }
+
+    .header__item-media {
+        max-width: 23px;
+    }
+
+    .header__btn {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        margin-top: -10px;
+    }
+
+    .header__item {
+        margin-top: 10px;
+
+        &:nth-child(1) {
+            order: 1;
+        }
+
+        &:nth-child(2) {
+            order: 4;
+        }
+
+        &:nth-child(3) {
+            order: 3;
+        }
+
+        &:nth-child(4) {
+            order: 2;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header__btn {
+        padding-top: 12px;
+        font-size: 10px;
+    }
+
+    .header__logo {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__logo {
+        font-size: 32px;
+    }
+
+    .header__btn {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .header__item {
+        margin-top: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
+
+        &:nth-child(4) {
+            margin-left: 0;
+        }
+
+        &:nth-child(2) {
+            margin-left: 0;
+        }
+    }
+
+    .header__item-info {
+        font-size: 12px;
+    }
+}
