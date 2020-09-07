@@ -2,12 +2,12 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 340px;
-    padding: 40px 20px;
-    margin-left: auto;
-    background-color: rgb(111, 189, 191);
-    background-image: linear-gradient(121deg, rgba(111, 189, 191, 1) 0%, rgba(208, 213, 236, 1) 100%);
-    border-radius: 3px;
+    max-width: 345px;
+    padding: 0 40px 40px 40px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #008f3b;
+    border-radius: 35px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, .08);
 }
 
@@ -62,14 +62,17 @@
 }
 
 .form__time {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: -40px;
+    margin-left: -40px;
+    background-color: #eda906;
 }
 
 .form__time-title {
-    margin-bottom: 5px;
-    font-size: 12px;
-    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase;
 }
@@ -90,20 +93,20 @@
 .form__time-count {
     position: relative;
     box-sizing: content-box;
-    width: 68px;
-    height: 52px;
-    background-color: #fff;
-    border: 1px solid #c9c9c9;
-    border-radius: 3px;
+    width: 55px;
+    height: 55px;
+    background-color: #000;
+    border-radius: 50%;
 
     & span {
         display: block;
         font-weight: 500;
 
         &:first-child {
-            font-size: 34px;
+            font-size: 23px;
             font-weight: 700;
-            line-height: 53px;
+            line-height: 56px;
+            color: #fff;
             text-align: center;
             text-transform: uppercase;
         }
@@ -142,8 +145,8 @@
     height: 55px;
     padding: 10px 25px;
     background-color: #fff;
-    border: 1px solid #e7e6e3;
-    border-radius: 3px;
+    border: 1px solid #b3b3b3;
+    border-radius: 30px;
 
     &:focus {
         outline: none;
@@ -159,7 +162,7 @@
 
 .form__select {
     appearance: none;
-    background-color: #e7e6e3;
+    background-color: #fff;
     background-image: url("../media/form/arrow.png");
     background-repeat: no-repeat;
     background-position: calc(100% - 20px) center;
@@ -173,19 +176,26 @@
 .form__btn {
     display: block;
     width: 100%;
-    padding-top: 16.5px;
-    padding-bottom: 16.5px;
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 500;
     color: #fff;
-    background-color: rgb(251, 172, 5);
-    background-image: linear-gradient(180deg, rgba(251, 172, 5, 1) 0%, rgba(228, 93, 35, 1) 100%);
+    background: rgb(125, 191, 226);
+    background: linear-gradient(180deg, rgba(125, 191, 226, 1) 0%, rgba(60, 102, 206, 1) 100%);
     border: none;
-    border-radius: 40px;
-    transition: .3s;
+    border-bottom: 7px solid #0049a6;
+    border-radius: 30px;
+
+    & mark {
+        font-weight: 900;
+        color: #fff;
+    }
 
     &:hover {
+        margin-top: 22px;
+        border-bottom: 0;
         transform: scale(0.98);
     }
 
@@ -194,9 +204,18 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1054px) {
     .form {
         max-width: 275px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .form__time {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: -15px;
+        margin-left: -15px;
     }
 }
 
@@ -222,5 +241,11 @@
     .form__title {
         font-size: 22px;
         line-height: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    .form {
+        margin-top: 0;
     }
 }

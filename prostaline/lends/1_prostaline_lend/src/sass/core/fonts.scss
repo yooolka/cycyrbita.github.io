@@ -33,6 +33,14 @@
 }
 
 @font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-Black.woff2') format('woff2'), 
+		url('../fonts/Montserrat/Montserrat-Black.woff') format('woff');
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
 	font-family: 'HeadingProTrial';
 	src: url('../fonts/HeadingProTrial/HeadingProTrial-Bold.woff2') format('woff2'),
 		url('../fonts/HeadingProTrial/HeadingProTrial-Bold.woff') format('woff');
