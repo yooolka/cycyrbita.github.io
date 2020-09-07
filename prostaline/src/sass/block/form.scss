@@ -1,0 +1,226 @@
+.form {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 340px;
+    padding: 40px 20px;
+    margin-left: auto;
+    background-color: rgb(111, 189, 191);
+    background-image: linear-gradient(121deg, rgba(111, 189, 191, 1) 0%, rgba(208, 213, 236, 1) 100%);
+    border-radius: 3px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .08);
+}
+
+.form__title {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+
+    & span {
+        display: block;
+    }
+}
+
+.form__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.form__price-old {
+    position: relative;
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        width: calc(100% + 10px);
+        height: 2px;
+        content: '';
+        background-color: #fff;
+    }
+}
+
+.form__price-new {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.form__price-main {
+    font-size: 32px;
+    font-weight: 700;
+    color: #22b292;
+}
+
+.form__time {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.form__time-title {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form__time-box {
+    display: flex;
+    justify-content: center;
+
+    & > span {
+        margin-right: 3px;
+        margin-left: 3px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 49px;
+    }
+}
+
+.form__time-count {
+    position: relative;
+    box-sizing: content-box;
+    width: 68px;
+    height: 52px;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+
+    & span {
+        display: block;
+        font-weight: 500;
+
+        &:first-child {
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 53px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &:last-child {
+            position: absolute;
+            right: 0;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
+
+.form__label {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+
+    & span {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: .1s transform;
+        transform: translateY(17px);
+    }
+}
+
+.form__field {
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 1px solid #e7e6e3;
+    border-radius: 3px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &_active {
+        & + span {
+            font-size: 14px;
+            transform: translateY(-18px);
+        }
+    }
+}
+
+.form__select {
+    appearance: none;
+    background-color: #e7e6e3;
+    background-image: url("../media/form/arrow.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+    background-size: 10px;
+
+    & option {
+        color: #000;
+    }
+}
+
+.form__btn {
+    display: block;
+    width: 100%;
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(251, 172, 5);
+    background-image: linear-gradient(180deg, rgba(251, 172, 5, 1) 0%, rgba(228, 93, 35, 1) 100%);
+    border: none;
+    border-radius: 40px;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .form {
+        max-width: 275px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        max-width: 100%;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        max-width: 100%;
+    }
+
+    .form__btn {
+        font-size: 20px;
+    }
+
+    .form__title {
+        font-size: 22px;
+        line-height: 1;
+    }
+}

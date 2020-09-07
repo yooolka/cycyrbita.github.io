@@ -1,0 +1,27 @@
+
+.factors {
+    max-width: 600px;
+}
+
+.factors__title {
+    margin-bottom: 30px;
+    font-size: 62px;
+    color: #fff;
+}
+
+.factors__item {
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #fff;
+
+    & + & {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .factors__item {
+        font-size: 18px;
+    }
+}
