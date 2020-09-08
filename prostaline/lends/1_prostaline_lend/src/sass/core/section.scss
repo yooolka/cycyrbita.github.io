@@ -30,6 +30,12 @@
         background-position: center center;
         background-size: cover;
     }
+
+    &_reasons {
+        background-image: url("../media/section/reasons.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
 }
 
 .section__title {
@@ -76,6 +82,18 @@
             border-left: 7px solid #eda906;
         }
     }
+
+    &_red {
+        &::before {
+            border-top: 7px solid #df2922;
+            border-right: 7px solid #df2922;
+        }
+
+        &::after {
+            border-bottom: 7px solid #df2922;
+            border-left: 7px solid #df2922;
+        }
+    }
 }
 
 @media (max-width: 1054px) {
@@ -87,6 +105,10 @@
 
         &_often {
             background-image: url("../media/section/often-1054.jpg");
+        }
+
+        &_reasons {
+            background-image: url("../media/section/reasons-1054.jpg");
         }
     }
 
@@ -101,6 +123,10 @@
         &_face {
             padding-top: 30px;
             padding-bottom: 30px;
+        }
+
+        &_reasons {
+            background-image: url("../media/section/reasons-768.jpg");
         }
     }
 
