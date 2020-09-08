@@ -1120,8 +1120,6 @@ body.bosed .meta-header > .limit-wrapper {
 .page-header .portfolio-slider-prev.loading .icon,
 .page-header .portfolio-slider-next.loading .icon,
 .page-header .portfolio-slider-close.loading .icon {
-  background: url(../wpv_theme/assets/images/loader.gif) center center no-repeat;
-  background-image: url(../wpv_theme/assets/images/loader.gif), url(../wpv_theme/assets/images/loader_bg.png);
   background-position: center center, center center;
   color: transparent !important;
 }
@@ -2171,7 +2169,7 @@ figcaption {
     background-color: #163fc3;
     padding: 15px 60px;
     border-radius: 5px;
-    -webkit-transition: .3s;f
+    -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
 }
