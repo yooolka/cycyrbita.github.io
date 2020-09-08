@@ -2923,7 +2923,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   display: block;
   font-size: 48px;
   font-weight: 700;
-  color: #d69803;
+  color: #df2922;
   text-transform: uppercase;
 }
 
@@ -2951,6 +2951,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 @media (max-width: 1054px) {
   .container {
     max-width: 768px;
+  }
+
+  .section_man {
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
 
   .section__title {
@@ -3024,6 +3029,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 @media (max-width: 768px) {
   .container {
     max-width: 480px;
+  }
+
+  .section_face {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .section__title {
@@ -3293,6 +3303,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .man__description p:first-child {
     margin-bottom: 15px;
+  }
+
+  .man__title {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 22px;
   }
 }
 

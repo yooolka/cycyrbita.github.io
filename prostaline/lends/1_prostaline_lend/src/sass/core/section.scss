@@ -33,6 +33,13 @@
 }
 
 @media (max-width: 1054px) {
+    .section {
+        &_man {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+    }
+
     .section__title {
         font-size: 42px;
         line-height: 1;
@@ -40,6 +47,13 @@
 }
 
 @media (max-width: 768px) {
+    .section {
+        &_face {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
     .section__title {
         font-size: 36px;
     }
