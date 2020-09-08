@@ -361,6 +361,12 @@ html [type="button"],
   background-size: cover;
 }
 
+.section_help {
+  background-image: url("../media/section/help.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
 .section__title {
   font-weight: 700;
   line-height: 1;
@@ -2864,6 +2870,152 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   transform: scale(0.99);
 }
 
+.help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.help__box:last-child {
+  max-width: 635px;
+}
+
+.help__product {
+  position: relative;
+}
+
+.help__product-discond {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 169px;
+  height: 173px;
+  font-family: "HeadingProTrial", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../media/help/popular.png");
+  background-size: cover;
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.help__product-discond mark {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  line-height: 0.8;
+  color: #f7c600;
+}
+
+.help__title {
+  font-family: "HeadingProTrial", sans-serif;
+  font-size: 109px;
+  text-transform: uppercase;
+}
+
+.help__title mark {
+  color: #008f3a;
+}
+
+.help__subtitile {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.help__subtitile mark {
+  color: #007bd7;
+}
+
+.help__subtitile + .help__subtitile {
+  margin-top: 30px;
+}
+
+.help__subtitile.section__title_arrow {
+  margin-left: -20px;
+}
+
+.help__list {
+  margin-top: 30px;
+}
+
+.help__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 42px;
+  padding-left: 60px;
+  font-size: 24px;
+  font-weight: 500;
+  background-image: url("../media/help/check.png");
+  background-position: left top;
+}
+
+.help__item + .help__item {
+  margin-top: 15px;
+}
+
+.help__btn {
+  text-align: center;
+}
+
+.help__btn a {
+  display: inline-block;
+  padding: 20px 20px;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  background: #7dbfe2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7dbfe2), to(#3c66ce));
+  background: -o-linear-gradient(top, #7dbfe2 0%, #3c66ce 100%);
+  background: linear-gradient(180deg, #7dbfe2 0%, #3c66ce 100%);
+  border: none;
+  border-bottom: 7px solid #0049a6;
+  border-radius: 30px;
+}
+
+.help__btn a mark {
+  font-weight: 900;
+  color: #fff;
+}
+
+.help__btn a:hover {
+  margin-top: 22px;
+  border-bottom: 0;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.help__btn a:focus {
+  outline: none;
+}
+
 .info {
   position: relative;
   display: -webkit-box;
@@ -3256,6 +3408,19 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     font-size: 13px;
   }
 
+  .help {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .help__product {
+    max-width: 524px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .man__description p:last-child mark {
     font-size: 28px;
   }
@@ -3402,6 +3567,26 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+  }
+
+  .help__subtitile {
+    font-size: 17px;
+  }
+
+  .help__subtitile::before {
+    display: none;
+  }
+
+  .help__subtitile::after {
+    display: none;
+  }
+
+  .help__subtitile + .help__subtitile {
+    margin-top: 10px;
+  }
+
+  .help__title {
+    font-size: 60px !important;
   }
 
   .info {
@@ -3576,6 +3761,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .header__logo {
     font-size: 40px;
+  }
+
+  .help__item {
+    font-size: 20px;
+  }
+
+  .help__product-discond {
+    width: 100px;
+    height: 102px;
+    font-size: 20px;
+  }
+
+  .help__product-discond mark {
+    font-size: 22px;
   }
 
   .container {
