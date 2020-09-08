@@ -389,6 +389,7 @@ input:focus:-ms-input-placeholder {
     text-align: center;
     border: 2px solid #fe917f;
     border-radius: 30px;
+    margin-left: 80px;
 }
 
 .face__box {
@@ -532,6 +533,11 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 1030px) {
+
+    .face__logo {
+        margin-left: 40px;
+    }
+
     .form {
         max-width: 250px;
     }
