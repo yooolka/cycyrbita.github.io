@@ -118,7 +118,7 @@
 							<p class="lt40"><strong>Almási Béla:</strong> Egyből válaszolnék a második kérdésre: mi elsőként vettük fel Károllyal a kapcsolatot. Ezen túlmenően pedig a legfrissebb határozatok szerint maga a bizottság felel az új gyógyszerek és készülékek fejlesztéséért és a a teljes népesség körében való elosztásáért.<br>Az egészségügyi rendszerünk annyira korrupt, hogy külön autonóm struktúrát kellett létrehozni, amelyet ki kellett vonni ebből a körből. Ez lehetővé teszi a korrupció kikerülését és a szabálytalanságok megakadályozását az új eszközök és készítmények fejlesztésénél.</p>
 							<p class="lt41">Ami pedig a <a href="">karkötő</a> működési szerkezetét illeti, ez a vérnyomás stabilizálásának teljesen új módszere. Először is tisztázzuk, hogy működnek a régi alacsony vérnyomás kezelésére használt készítmények és készülékek. Ezek szűkítik az ereket, és a vérnyomása emelkedni kezd. És ez tönkre teszi az ereket és a szívet. Egy ilyen készítmény minden egyes bevételével az ember csak még közelebb kerül a szívroham vagy agyvérzés okozta halálhoz. Ezek a készítmények sehogy nem hatnak az alacsony vérnyomás fő okára, arteriolák és a kis artériák széndioxiddal való telítettségére.</p>
 							<p class="lt42">A Bárdos Úr által kifejlesztett karkötő elektromos stimuláció útján hat. A készüléken két elektróda van elhelyezve, amelyek alacsony frekvencián hatnak a csuklóra feltéve. Ez a stimuláció megváltoztatja a kis artériák simaizom feszülését. A feszesség növelésekor nő az artériás vérnyomás. Emellett a karkötő lehetővé teszi az alacsony vérnyomás néhány nap alatt való teljes gyógyítását, ha a beteg kezdeti stádiumban van.</p>
-							<p><strong class="lt43">Tudósító: "A hipotónia valóban ilyen veszélyes? Hiszen ez csak a vérnyomás csökkenése".”</strong></p>
+							<p><strong class="lt43">Tudósító: "A hipotónia valóban ilyen veszélyes? Hiszen ez csak a vérnyomás csökkenése".</strong></p>
 							<p class="lt44"><strong>Almási Béla:</strong> Csak a vérnyomás csökkenése? Akkor feltennék Önnek egy kérdést: Látta már a magyarországi halálozási statisztikákat? Tudja, hogy körülbelül hány ember hal meg szív- és érrendszeri betegségekben? Az emberek 69%-a! Ez több, mint a halálesetek két harmada. És mindegyiküknél alacsony vérnyomás diagnosztizálható, vagy ingadozó, vagy stabilan alacsony. És minden szívelégtelenség, szívroham vagy stroke vérnyomás problémákra vezethető vissza. Már rég rájöttek, hogy ez provokál nagyon sok betegséget. Meg kell szüntetni, és nem lesz semmilyen betegség, és főképp nem haláleset. Ha csak a tüneteket kezelik, akkor az ember bevehet minden nap akár egy tonna gyógyszert, az eredmény akkor is a nullához fog konvergálni.</p>
 							<p class="lt45">A szív- és érrendszeri betegségek oka minden esetben az alacsony vérnyomás. Az alacsony vérnyomás súlyosbodásával nő a hirtelen agyvérzés és infarktus veszélye is. A hipotenzióban szenvedő személyek állapotát gyengeség kíséri, egészen az eszméletvesztésig, ami a belső szervek és az agy veszélyes oxigénhiányához vezethet. Az az ember, akinek folyton leesik a vérnyomás, a szakadék szélén áll. Tulajdonképpen ilyen állapotban bármelyik pillanatban meghalhat.</p>
 							<p><strong class="lt46">Tudósító: A gyógyszertárakban több száz különféle készítmény kapható az alacsony vérnyomás kezelésére. Ezek valóban alkalmatlanok a kezelésre?</strong></p>
@@ -392,41 +392,40 @@
 			</div>
 		</div>
 	</main>
-	<script src="index.js">
+	<script src="index.js"></script>
+	<script type="text/javascript">
+      /*Генератор даты для комментов, обязателно подключение Jquery, подключение в шапке*/
+      Date.prototype.addDays = function (d) {
+          this.setDate(this.getDate() + d);
+          return this;
+      };
+      $('document').ready(function () {
+          var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+          var commentDate = $('span.comment_date');
+          var comments = commentDate.length;
+          var dates = [];
+          var d = new Date();
+          for (var i = comments - 1; i >= 0; i--) {
+              var delta = Math.round(Math.random() * 2);
+              var d = new Date(d.addDays(-delta));
+              dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+          }
+          commentDate.each(function (i, el) {
+              $(this).text(dates[i]);
+          });
+      });
 	</script>
 	<script type="text/javascript">
-		d = new Date();
-		p = new Date(d.getTime() - 0 * 86400000);
-		monthA = 'Január, február, március, április, május, június, július, augusztus, szeptember, október, november, december'.split(',');
-		var w = p.getDate();
-		document.querySelectorAll('.date_s').forEach(function (elem) {
-			elem.innerHTML = p.getDate() + ' ' + monthA[p.getMonth()] + ' ' + p.getFullYear()
-		});
-	</script>
-	<script type="text/javascript">
-		Date.prototype.addDays = function (d) {
-			this.setDate(this.getDate() + d);
-			return this;
-		};
-		$('document').ready(function () {
-			var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-			var commentDate = $('span.comment_date');
-			var comments = commentDate.length;
-			var dates = [];
-			var d = new Date();
-			for (var i = comments - 1; i >= 0; i--) {
-                var delta = Math.round(Math.random() * 2);
-                var d = new Date(d.addDays(-delta));
-                var $data = d.getDate();
-                if($data <= 9) {
-                    $data = '0' + $data;
-                }
-				dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
-			}
-			commentDate.each(function (i, el) {
-				$(this).text(dates[i]);
-			});
-		});
+      d = new Date();
+      p = new Date(d.getTime() - 0 * 86400000);
+      function zero(val) {
+          return val.toString().length === 1 ? '0' + val : val
+      }
+      monthA = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+      var w = p.getDate();
+      document.querySelectorAll('.date_s').forEach(function (elem) {
+          elem.innerHTML = zero(p.getDate()) + '.' + monthA[p.getMonth()] + '.' + p.getFullYear()
+      });
 	</script>
 
 

@@ -77,7 +77,7 @@
 																<p><span class="lt5" style="font-weight:400;">120/80 – mit 20-40 Jahren ist normal<br>135/90 – mit 40-60 Jahren ist normal<br>140/90 – Hypertonie ersten Grades<br>150/100 – schwere Hypertonie</span></p>
 																<hr>
 																<p><b class="lt6">– Wie kann man die Risikozone verlassen oder verstehen, dass man Druckprobleme hat?</b></p>
-																<p><span class="lt7" style="font-weight:400;">– Leider ist niemand gegen Blutdruckstöße versichert. Ich höre fast immer dieselben Geschichten: „Fühle mich heute so schrecklich. Habe Kopfschmerzen, möchte nichts tun, nur mich hinlegen und ausruhen. Ich komme sehr müde von der Arbeit nach Hause, kann aber lange nicht einschlafen. In der Nacht wache ich 5 Mal pro Nacht auf. Liegt wahrscheinlich am Wetter... “ – dasliegt aber nicht am Wetter, sondern am Bluthochdruck.</span></p>
+																<p><span class="lt7" style="font-weight:400;">– Leider ist niemand gegen Blutdruckstöße versichert. Ich höre fast immer dieselben Geschichten: „Fühle mich heute so schrecklich. Habe Kopfschmerzen, möchte nichts tun, nur mich hinlegen und ausruhen. Ich komme sehr müde von der Arbeit nach Hause, kann aber lange nicht einschlafen. In der Nacht wache ich 5 Mal pro Nacht auf. Liegt wahrscheinlich am Wetter...“ – dasliegt aber nicht am Wetter, sondern am Bluthochdruck.</span></p>
 																<p><b class="lt8">– Heißt es, dass die Menschen nicht einmal wissen, dass sie bereits erste Symptome dieser Krankheit haben?</b></p>
 																<p><span class="lt9" style="font-weight:400;">– Genau! 87% der Menschen kennen einfach keine Symptome des Bluthochdrucks und kümmern sich nicht um die eigene Gesundheit, bis es ernst wird. Schließlich führt der Bluthochdruck zu schweren Komplikationen – koronare Herzkrankheiten und Schlaganfälle. <span class="underline">Allein seit Beginn unseres Interviews sind weltweit 263 Menschen an Bluthochdruck gestorben.</span></span></p>
 																<p><img alt="insuficienta cardiaca" class="alignnone size-full wp-image-9108" src="./index_files/Insuficienta-Cardiaca-CM-Garibaldi-1.jpg" ></p>
@@ -97,9 +97,11 @@
 																<p></p>
 																<p><b class="lt19">– Könnten Sie uns bitte noch mehr über АВР-051 erzählen?</b></p>
 																<p><span class="lt20" style="font-weight:400;">– Dabei handelt es sich um ein Armband, das elektromagnetische Impulse einer bestimmten Frequenz durch die Haut sendet. Stromimpulse unterschiedlicher Stärke beeinflussen die Wurzeln der Spinalnerven und straffen dadurch die Gefäße für eine bessere Durchblutung.</span></p>
-																<p><img alt="insuficienta cardiaca" class="alignnone size-full wp-image-9110" src="./index_files/04.-10-500x500.jpg"></p>
+																<p>
+																	<img alt="insuficienta cardiaca" class="alignnone size-full wp-image-9110" src="./index_files/04.-10-500x500.jpg">
+																	<i><small class="lt21" style="font-weight:400;">Die Nervenfasern werden durch diese Einwirkung angeregt, was zu einer Verbesserung der Blutmikrozirkulation, Reinigung und Stärkung der Gefäßwände führt.</small></i>
+																</p>
 																<p></p>
-																<p><span class="lt21" style="font-weight:400;">Die Nervenfasern werden durch diese Einwirkung angeregt, was zu einer Verbesserung der Blutmikrozirkulation, Reinigung und Stärkung der Gefäßwände führt.</span></p>
 																<p></p>
 																<p><b class="lt22">– Unglaublich! Wie schwer ist die Anwendung? Wie lange dauert es, bis die gewünschte Wirkung eintritt?</b></p>
 																<p><span class="lt23" style="font-weight:400;">– Die Anwendung ist ganz einfach! Man braucht АВР-051 nur auf das linke Handgelenk anzuziehen und das Programm zu starten. Das wars. Der Korrektor beginnt allmählich, den Blutdruck durch elektrische Stimulation auf bioaktive Zonen zu senken. Um eine Wirkung zu erzielen, muss man das Elektrostimulationsverfahren mit Hilfe von АВР-051 <b>14 Tage lang täglich durchführen</b>.</span></p>
@@ -238,29 +240,30 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		Date.prototype.addDays = function (d) {
-			this.setDate(this.getDate() + d);
-			return this
-		};
-		$('document').ready(function () {
-			var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-			var commentDate = $('span.comment_date');
-			var comments = commentDate.length;
-			var dates = [];
-			var d = new Date();
-			for (var i = comments – 1; i >= 0; i--) {
-                var delta = Math.round(Math.random() * 2);
-                var d = new Date(d.addDays(-delta));
-                var $data = d.getDate();
-                if($data <= 9) {
-                    $data = '0' + $data;
-                }
-				dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
-			}
-			commentDate.each(function (i, el) {
-				$(this).text(dates[i])
-			})
-		});
+      /*Генератор даты для комментов, обязателно подключение Jquery, подключение в шапке*/
+      Date.prototype.addDays = function (d) {
+          this.setDate(this.getDate() + d);
+          return this;
+      };
+      $('document').ready(function () {
+          var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+          var commentDate = $('span.comment_date');
+          var comments = commentDate.length;
+          var dates = [];
+          var d = new Date();
+          for (var i = comments - 1; i >= 0; i--) {
+              var delta = Math.round(Math.random() * 2);
+              var d = new Date(d.addDays(-delta));
+              var $data = d.getDate();
+              if ($data <= 9) {
+                  $data = '0' + $data;
+              }
+              dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+          }
+          commentDate.each(function (i, el) {
+              $(this).text(dates[i]);
+          });
+      });
 	</script>
 </body>
 
