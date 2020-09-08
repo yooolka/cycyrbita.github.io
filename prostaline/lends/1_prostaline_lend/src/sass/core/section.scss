@@ -55,6 +55,12 @@
         background-position: center center;
         background-size: cover;
     }
+
+    &_ingredients {
+        background-image: url("../media/section/ingredients.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
 }
 
 .section__title {
