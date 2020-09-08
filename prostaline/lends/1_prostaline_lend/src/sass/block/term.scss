@@ -1,0 +1,14 @@
+
+.term__title {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+
+    & span {
+        display: block;
+    }
+
+    & mark {
+        color: #fbb100;
+    }
+}
