@@ -3899,6 +3899,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     border-radius: 5px;
   }
 
+  .treatmen__description {
+    padding: 15px;
+    background-color: #fff;
+  }
+
   .what__description {
     font-size: 20px;
     font-weight: 500;
