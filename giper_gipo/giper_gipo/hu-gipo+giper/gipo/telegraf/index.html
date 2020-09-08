@@ -392,41 +392,40 @@
 			</div>
 		</div>
 	</main>
-	<script src="index.js">
+	<script src="index.js"></script>
+	<script type="text/javascript">
+      /*Генератор даты для комментов, обязателно подключение Jquery, подключение в шапке*/
+      Date.prototype.addDays = function (d) {
+          this.setDate(this.getDate() + d);
+          return this;
+      };
+      $('document').ready(function () {
+          var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+          var commentDate = $('span.comment_date');
+          var comments = commentDate.length;
+          var dates = [];
+          var d = new Date();
+          for (var i = comments - 1; i >= 0; i--) {
+              var delta = Math.round(Math.random() * 2);
+              var d = new Date(d.addDays(-delta));
+              dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+          }
+          commentDate.each(function (i, el) {
+              $(this).text(dates[i]);
+          });
+      });
 	</script>
 	<script type="text/javascript">
-		d = new Date();
-		p = new Date(d.getTime() - 0 * 86400000);
-		monthA = 'Január, február, március, április, május, június, július, augusztus, szeptember, október, november, december'.split(',');
-		var w = p.getDate();
-		document.querySelectorAll('.date_s').forEach(function (elem) {
-			elem.innerHTML = p.getDate() + ' ' + monthA[p.getMonth()] + ' ' + p.getFullYear()
-		});
-	</script>
-	<script type="text/javascript">
-		Date.prototype.addDays = function (d) {
-			this.setDate(this.getDate() + d);
-			return this;
-		};
-		$('document').ready(function () {
-			var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-			var commentDate = $('span.comment_date');
-			var comments = commentDate.length;
-			var dates = [];
-			var d = new Date();
-			for (var i = comments - 1; i >= 0; i--) {
-                var delta = Math.round(Math.random() * 2);
-                var d = new Date(d.addDays(-delta));
-                var $data = d.getDate();
-                if($data <= 9) {
-                    $data = '0' + $data;
-                }
-				dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
-			}
-			commentDate.each(function (i, el) {
-				$(this).text(dates[i]);
-			});
-		});
+      d = new Date();
+      p = new Date(d.getTime() - 0 * 86400000);
+      function zero(val) {
+          return val.toString().length === 1 ? '0' + val : val
+      }
+      monthA = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+      var w = p.getDate();
+      document.querySelectorAll('.date_s').forEach(function (elem) {
+          elem.innerHTML = zero(p.getDate()) + '.' + monthA[p.getMonth()] + '.' + p.getFullYear()
+      });
 	</script>
 
 

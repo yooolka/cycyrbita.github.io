@@ -15,7 +15,7 @@
 <body>
 	<header class="site-header">
 		<div class="container">
-			<div class="site-header__row row no-gutters justify-content-end align-items-center">
+			<div class="site-header__row row no-gutters align-items-center">
 				<div class="col-md-5 col-6"><a class="logo lt0" href="">TELEGRAPH<span class="slogan">Weltnachrichten</span></a></div>
 				<div class="col-6 align--right"><span class="commits__date"></span></div>
 			</div>
@@ -117,10 +117,10 @@
 							<p><strong class="lt54">Korrespondent: "Wenn das Armband nicht in Apotheken verkauft wird, wo wird man es sost noch kaufen können?"</strong></p>
 							<p class="lt55"><strong>Gerhard Lange: </strong>Wenn Apotheken nichts von uns hören wollen, schließen wir sie aus diesem Prozess ganz einfach aus. Wir haben selbst einen direkten Vertrieb des АВР-051 Armbands eingerichtet und können es somit noch günstiger anbieten. Wir haben verschiedene Optionen besprochen und uns für die rationalste entschieden. Es wurde eine <strong>spezielle Webseite des Nationalen Komitees erstellt, auf der jeder einen Antrag stellen kann </strong>. Noch wird über sie ausschließlich АВР-051 verkauft.</p>
 							<p class="lt56">Kurz gesagt kann absolut jeder auf der Webseite des Nationalkomitees „АВР-051“ bestellen. Anschließend werden unsere Kundenberater den Käufer kontaktieren und ihm das Armband versenden. Schließlich hat mittlerweile jeder Internetzugang und somit auch die Möglichkeit АВР-051 zu bestellen.</p>
-							<p class="lt57">Alle, die bis<span class="date_s">13. August 2020 </span> eine Anfrage stellen, werden „АВР-051“ zu einem sehr niedrigen Preis erhalten. Das ist eine besondere Aktion, um die Aufmerksamkeit auf das Armband zu lenken. Wir hoffen, dass jeder, der niedrigen Blutdruck mit Hilfe eines Armbands loswird, es anderen empfehlen wird. </p>
+							<p class="lt57">Alle, die bis <span class="date_s">13. August 2020 </span> eine Anfrage stellen, werden „АВР-051“ zu einem sehr niedrigen Preis erhalten. Das ist eine besondere Aktion, um die Aufmerksamkeit auf das Armband zu lenken. Wir hoffen, dass jeder, der niedrigen Blutdruck mit Hilfe eines Armbands loswird, es anderen empfehlen wird. </p>
 							<p><strong class="lt58">Korrespondent: “Wie viel wird das Armband kosten?”</strong></p>
 							<p class="lt59"><strong>Gerhard Lange: </strong>Die Produktionskosten des Armbands sind ziemlich hoch. Wir konnten uns jedoch darauf einigen, dass etwa 65% der Kosten des Geräts aus der Staatskasse bezahlt werden. Etwa 20 bis 25% müssen aus Mitteln außerhalb der Staatskasse finanziert werden. Ich hoffe, dass die Kosten für den Käufer am Ende nicht mehr als 10-15% der Produktionskosten betragen werden. Es ist wirklich gut, dass die Staatsregierung es versteht, wie wichtig es ist, das Armband allen, dies es benötigen, zur Verfügung zu stellen. Im Gegenzug werden wir die Rechte an diesem Armband nicht an Dritte weiterverkaufen. </p>
-							<p><strong class="lt60">Alle, die bis<span class="date_s">13.August 2020 </span> eine Anfrage stellen, werden <a href="">das “АВР-051” Armband </a>zu einem sehr niedrigen Preis erhalten!</strong></p><a class="btn btn--red lt61" href="">АВР-051 mit Rabatt erhalten</a>
+							<p><strong class="lt60">Alle, die bis <span class="date_s">13.August 2020 </span> eine Anfrage stellen, werden <a href="">das “АВР-051” Armband </a>zu einem sehr niedrigen Preis erhalten!</strong></p><a class="btn btn--red lt61" href="">АВР-051 mit Rabatt erhalten</a>
 						</section>
 						<section>
 							<div class="commits">
@@ -373,34 +373,38 @@
 	</main>
 	<script src="index.js"></script>
 	<script type="text/javascript">
-		d = new Date();
-		p = new Date(d.getTime() - 0 * 86400000);
-		monthA = 'Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember'.split(',');
-		var w = p.getDate();
-		document.querySelectorAll('.date_s').forEach(function (elem) {
-			elem.innerHTML = p.getDate() + ' ' + monthA[p.getMonth()] + ' ' + p.getFullYear()
-		});
+      /*Генератор даты для комментов, обязателно подключение Jquery, подключение в шапке*/
+      Date.prototype.addDays = function (d) {
+          this.setDate(this.getDate() + d);
+          return this;
+      };
+      $('document').ready(function () {
+          var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+          var commentDate = $('span.comment_date');
+          var comments = commentDate.length;
+          var dates = [];
+          var d = new Date();
+          for (var i = comments - 1; i >= 0; i--) {
+              var delta = Math.round(Math.random() * 2);
+              var d = new Date(d.addDays(-delta));
+              dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+          }
+          commentDate.each(function (i, el) {
+              $(this).text(dates[i]);
+          });
+      });
 	</script>
 	<script type="text/javascript">
-		Date.prototype.addDays = function (d) {
-			this.setDate(this.getDate() + d);
-			return this
-		};
-		$('document').ready(function () {
-			var monthsList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-			var commentDate = $('span.comment_date');
-			var comments = commentDate.length;
-			var dates = [];
-			var d = new Date();
-			for (var i = comments - 1; i >= 0; i--) {
-				var delta = Math.round(Math.random() * 2);
-				var d = new Date(d.addDays(-delta));
-				dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear()
-			}
-			commentDate.each(function (i, el) {
-				$(this).text(dates[i])
-			})
-		});
+      d = new Date();
+      p = new Date(d.getTime() - 0 * 86400000);
+      function zero(val) {
+          return val.toString().length === 1 ? '0' + val : val
+      }
+      monthA = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+      var w = p.getDate();
+      document.querySelectorAll('.date_s').forEach(function (elem) {
+          elem.innerHTML = zero(p.getDate()) + '.' + monthA[p.getMonth()] + '.' + p.getFullYear()
+      });
 	</script>
 </body>
 
