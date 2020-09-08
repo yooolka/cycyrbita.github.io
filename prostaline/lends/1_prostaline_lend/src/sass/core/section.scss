@@ -36,9 +36,18 @@
         background-position: center center;
         background-size: cover;
     }
-
+    
     &_warning {
+        padding-bottom: 0 !important;
         background-color: #212121;
+    }
+
+    &_term {
+        padding-top: 80px;
+        margin-top: -60px;
+        background-image: url("../media/section/term.jpg");
+        background-position: center center;
+        background-size: cover;
     }
 }
 
