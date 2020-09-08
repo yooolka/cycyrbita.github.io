@@ -212,46 +212,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="screenLock" style="height: 6236px; display: none;">
-		<div class="msg">
-			<div class="close lt78">
-				X
-			</div>
-			<h1 class="lt2 lt79">Várjon!<br></h1>
-			<p class="lt80">Az Ön számára most van egy különleges ajánlatunk<br>De csak <script type="text/javascript">
-					d = new Date();
-					p = new Date(d.getTime() - 0 * 86400000);
-					monthA = 'január, február, március, április, május, június, július, augusztus, szeptember, október, november, december'.split(',');
-					var w = p.getDate();
-					document.write(p.getDate() + ' ' + monthA[p.getMonth()] + ' ' + p.getFullYear());
-				</script>. augusztus 14-ig kaphatja meg a terméket akciósan!</p><img src="index_files/product.png"> <a href="" style="text-decoration: none; color:white;">
-				<center>
-					<button class="submit lt3 lt81" type="submit">Meg szeretném kapni</button>
-				</center>
-			</a>
-		</div>
-	</div>
-	<script>
-		$(function () {
-			$('.screenLock').css({
-				height: $(document).height() + "px"
-			});
-			$('a.order-btn').click(function () {
-				$(this).closest('form').submit();
-				return false;
-			});
-			$('.close').click(function () {
-				$('.screenLock').fadeOut(300);
-			});
-			var flag = true;
-			$(window).mouseout(function (e) {
-				if (e.pageY - $(window).scrollTop() < 1 && flag == true) {
-					$('.screenLock').fadeIn(300);
-					flag = false;
-				}
-			})
-		});
-	</script>
+
 	<script type="text/javascript">
 		Date.prototype.addDays = function (d) {
 			this.setDate(this.getDate() + d);
