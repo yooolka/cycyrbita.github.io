@@ -336,10 +336,54 @@ html [type="button"],
   background-color: #212121;
 }
 
+.section_often {
+  background-image: url("../media/section/often.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
 .section__title {
   font-weight: 700;
   line-height: 1;
   color: #1a244f;
+}
+
+.section__title_arrow {
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.section__title_arrow::before {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  content: '';
+  border-top: 7px solid #fff;
+  border-right: 7px solid #fff;
+}
+
+.section__title_arrow::after {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  content: '';
+  border-bottom: 7px solid #fff;
+  border-left: 7px solid #fff;
+}
+
+.section__title_gold::before {
+  border-top: 7px solid #eda906;
+  border-right: 7px solid #eda906;
+}
+
+.section__title_gold::after {
+  border-bottom: 7px solid #eda906;
+  border-left: 7px solid #eda906;
 }
 
 /* stylelint-disable */
@@ -2856,28 +2900,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   text-transform: uppercase;
 }
 
-.man__title::before {
-  position: absolute;
-  top: -20px;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  content: '';
-  border-top: 7px solid #fff;
-  border-right: 7px solid #fff;
-}
-
-.man__title::after {
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  content: '';
-  border-bottom: 7px solid #fff;
-  border-left: 7px solid #fff;
-}
-
 .man__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2923,8 +2945,62 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   display: block;
   font-size: 48px;
   font-weight: 700;
-  color: #d69803;
+  color: #df2922;
   text-transform: uppercase;
+}
+
+.often__title {
+  max-width: 850px;
+  margin-bottom: 60px;
+  font-size: 52px;
+  color: #df2922;
+  text-transform: uppercase;
+}
+
+.often__description {
+  font-size: 24px;
+}
+
+.often__description span {
+  display: block;
+}
+
+.often__description span + span {
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+
+.often__description span + span mark {
+  position: relative;
+}
+
+.often__description span + span mark::before {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  width: 209px;
+  height: 42px;
+  content: '';
+  background-image: url("../media/often/arrow.png");
+  background-size: cover;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.often__description span mark {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #df2922;
+}
+
+.often__description p {
+  max-width: 640px;
+}
+
+.often__description p b {
+  font-weight: 700;
 }
 
 @media (max-width: 1280px) {
@@ -2951,6 +3027,15 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 @media (max-width: 1054px) {
   .container {
     max-width: 768px;
+  }
+
+  .section_man {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .section_often {
+    background-image: url("../media/section/often-1054.jpg");
   }
 
   .section__title {
@@ -3024,6 +3109,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 @media (max-width: 768px) {
   .container {
     max-width: 480px;
+  }
+
+  .section_face {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .section__title {
@@ -3165,6 +3255,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     -ms-flex-align: center;
     align-items: center;
   }
+
+  .often__description span {
+    font-size: 18px;
+  }
+
+  .often__description span + span {
+    margin-bottom: 80px;
+  }
+
+  .often__title {
+    max-width: 370px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -3293,6 +3395,29 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .man__description p:first-child {
     margin-bottom: 15px;
+  }
+
+  .man__title {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 22px;
+  }
+
+  .often__title {
+    max-width: 312px;
+    margin-bottom: 40px;
+  }
+
+  .often__description span + span {
+    margin-top: 20px;
+  }
+
+  .often__description span + span mark::before {
+    bottom: -85px;
+  }
+
+  .often__description p {
+    font-size: 18px;
   }
 }
 

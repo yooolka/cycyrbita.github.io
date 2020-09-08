@@ -24,15 +24,72 @@
         padding-top: 140px;
         background-color: #212121;
     }
+
+    &_often {
+        background-image: url("../media/section/often.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
 }
 
 .section__title {
     font-weight: 700;
     line-height: 1;
     color: #1a244f;
+
+    &_arrow {
+        position: relative;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        &::before {
+            position: absolute;
+            top: -20px;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            content: '';
+            border-top: 7px solid #fff;
+            border-right: 7px solid #fff;
+        }
+
+        &::after {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            content: '';
+            border-bottom: 7px solid #fff;
+            border-left: 7px solid #fff;
+        }
+    }
+
+    &_gold {
+        &::before {
+            border-top: 7px solid #eda906;
+            border-right: 7px solid #eda906;
+        }
+
+        &::after {
+            border-bottom: 7px solid #eda906;
+            border-left: 7px solid #eda906;
+        }
+    }
 }
 
 @media (max-width: 1054px) {
+    .section {
+        &_man {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        &_often {
+            background-image: url("../media/section/often-1054.jpg");
+        }
+    }
+
     .section__title {
         font-size: 42px;
         line-height: 1;
@@ -40,6 +97,13 @@
 }
 
 @media (max-width: 768px) {
+    .section {
+        &_face {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
     .section__title {
         font-size: 36px;
     }

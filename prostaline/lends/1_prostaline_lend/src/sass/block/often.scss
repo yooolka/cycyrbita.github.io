@@ -1,0 +1,93 @@
+
+.often__title {
+    max-width: 850px;
+    margin-bottom: 60px;
+    font-size: 52px;
+    color: #df2922;
+    text-transform: uppercase;
+}
+
+.often__description {
+    font-size: 24px;
+
+    & span {
+        display: block;
+
+        & + span {
+            margin-top: 40px;
+            margin-bottom: 110px;
+
+            & mark {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    bottom: -60px;
+                    left: 50%;
+                    width: 209px;
+                    height: 42px;
+                    content: '';
+                    background-image: url("../media/often/arrow.png");
+                    background-size: cover;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        & mark {
+            display: inline-block;
+            padding: 5px 10px;
+            color: #fff;
+            background-color: #df2922;
+        }
+    }
+
+    & p {
+        max-width: 640px;
+
+        & b {
+            font-weight: 700;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .often__description {
+        & span {
+            font-size: 18px;
+
+            & + span {
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    .often__title {
+        max-width: 370px;
+    }
+}
+
+@media (max-width: 480px) {
+    .often__title {
+        max-width: 312px;
+        margin-bottom: 40px;
+    }
+
+    .often__description {
+        & span {
+            & + span {
+                margin-top: 20px;
+
+                & mark {
+                    &::before {
+                        bottom: -85px;
+                    }
+                }
+            }
+        }
+
+        & p {
+            font-size: 18px;
+        }
+    }
+}

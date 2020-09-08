@@ -9,28 +9,6 @@
     color: #d69803;
     text-align: center;
     text-transform: uppercase;
-
-    &::before {
-        position: absolute;
-        top: -20px;
-        right: 0;
-        width: 30px;
-        height: 30px;
-        content: '';
-        border-top: 7px solid #fff;
-        border-right: 7px solid #fff;
-    }
-
-    &::after {
-        position: absolute;
-        bottom: -20px;
-        left: 0;
-        width: 30px;
-        height: 30px;
-        content: '';
-        border-bottom: 7px solid #fff;
-        border-left: 7px solid #fff;
-    }
 }
 
 .man__info {
@@ -72,7 +50,7 @@
             display: block;
             font-size: 48px;
             font-weight: 700;
-            color: #d69803;
+            color: #df2922;
             text-transform: uppercase;
         }
     }
@@ -123,5 +101,11 @@
                 margin-bottom: 15px;
             }
         }
+    }
+
+    .man__title {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 22px;
     }
 }
