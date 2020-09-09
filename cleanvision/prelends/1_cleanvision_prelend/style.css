@@ -102,12 +102,8 @@ img{
 svg:not(:root){
     overflow:hidden
 }
-head{
-    font-family:'{
-        "mobile":320,"mobile-wide":480,"tablet":650,"tablet-wide":768,"desktop":980,"desktop-wide":1180,"desktop-max":1200,"desktop-extra-wide":1600
-    }
-    '
-}
+
+
 .footer-menu-item a,.footer-copyright,.footer-legal-menu-item a,.standard-body-content{
     font-family:Charter,Georgia,Times,Serif;
     font-size:1.1875rem;
@@ -171,13 +167,10 @@ head{
     transition:transform .3s ease-in-out;
     position:relative
 }
-.sidepanel-menu-legal .sidepanel-item a:last{
+.sidepanel-menu-legal .sidepanel-item a:last-child{
     margin-right:0
 }
-@font-face{
-    font-family:IconFont;
-    src:url() format("woff2"),url() format("woff")
-}
+
 
 @media only screen and (min-width:61.25rem){
     .standard-body-content p{
@@ -439,12 +432,7 @@ head{
  svg:not(:root) {
      overflow: hidden
 }
- head {
-     font-family:'{
-        "mobile":320,"mobile-wide":480,"tablet":650,"tablet-wide":768,"desktop":980,"desktop-wide":1180,"desktop-max":1200,"desktop-extra-wide":1600
-    }
-    '
-}
+
  body {
      font-family: Charter, Georgia, Times, Serif;
      font-size: 1.1875rem;
@@ -512,10 +500,7 @@ head{
  .standard-body img {
      image-rendering: auto
 }
- @font-face {
-     font-family: IconFont;
-     src: url() format("woff2"), url() format("woff")
-}
+
  body {
      overflow-x: hidden
 }
