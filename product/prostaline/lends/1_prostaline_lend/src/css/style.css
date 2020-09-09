@@ -2530,7 +2530,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .face__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 600;
   color: #212121;
@@ -3037,6 +3037,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .help__title {
+  margin-bottom: 10px;
   font-family: "HeadingProTrial", sans-serif;
   font-size: 109px;
   text-transform: uppercase;
@@ -3460,6 +3461,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .professional__id {
   margin-top: 15px;
   margin-left: auto;
+  font-weight: 700;
+  color: #007bd7;
 }
 
 .professional__human {
@@ -3763,6 +3766,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     border: 15px solid #f0f0f0;
   }
 
+  .professional__id-name {
+    font-size: 16px;
+  }
+
   .professional__human {
     bottom: 0;
     left: 0;
@@ -4059,8 +4066,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .professional__id {
-    max-width: 140px;
     margin-top: 0;
+  }
+
+  .professional__id img {
+    max-width: 140px;
   }
 
   .reasons {
@@ -4380,7 +4390,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     padding-bottom: 60px;
   }
 
-  .professional__id {
+  .professional__id img {
     max-width: 105px;
   }
 }

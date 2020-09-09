@@ -45,6 +45,8 @@
 .professional__id {
     margin-top: 15px;
     margin-left: auto;
+    font-weight: 700;
+    color: #007bd7;
 }
 
 .professional__human {
@@ -61,6 +63,10 @@
         background-color: #fff;
         background-image: none;
         border: 15px solid #f0f0f0;
+    }
+
+    .professional__id-name {
+        font-size: 16px;
     }
 
     .professional__human {
@@ -105,8 +111,11 @@
     }
 
     .professional__id {
-        max-width: 140px;
         margin-top: 0;
+
+        & img {
+            max-width: 140px;
+        }
     }
 }
 
@@ -130,6 +139,8 @@
     }
 
     .professional__id {
-        max-width: 105px;
+        & img {
+            max-width: 105px;
+        }
     }
 }
