@@ -379,6 +379,11 @@ html [type="button"],
   background-size: cover;
 }
 
+.section_important {
+  padding-top: 0 !important;
+  padding-bottom: 50px !important;
+}
+
 .section__title {
   font-weight: 700;
   line-height: 1;
@@ -3078,6 +3083,22 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .help__btn a:focus {
   outline: none;
+}
+
+.important__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #df2922;
+  text-transform: uppercase;
+}
+
+.important__title mark {
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #202020;
+  text-transform: none;
 }
 
 .info {

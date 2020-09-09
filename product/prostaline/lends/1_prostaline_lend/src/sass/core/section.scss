@@ -67,6 +67,11 @@
         background-position: center center;
         background-size: cover;
     }
+
+    &_important {
+        padding-top: 0 !important;
+        padding-bottom: 50px !important;
+    }
 }
 
 .section__title {
