@@ -120,6 +120,32 @@
     transform: rotate(-30deg);
 }
 
+.face__product-natural {
+    position: absolute;
+    top: -40px;
+    right: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 127px;
+    height: 119px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    content: '';
+    background-image: url("../media/face/natural.png");
+    background-size: cover;
+
+    & span {
+        display: block;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+}
+
 @media (max-width: 1054px) {
     .face__title {
         font-size: 62px;
@@ -141,6 +167,11 @@
 
     .face__product-popular {
         right: 60px;
+    }
+
+    .face__product-natural {
+        top: 6px;
+        right: 149px;
     }
 }
 
@@ -190,6 +221,18 @@
 
         &::after {
             display: none;
+        }
+    }
+
+    .face__product-natural {
+        top: 180px;
+        right: 125px;
+        width: 70px;
+        height: 67px;
+        font-size: 14px;
+
+        & span {
+            font-size: 6px;
         }
     }
 }

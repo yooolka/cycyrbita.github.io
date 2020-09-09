@@ -70,7 +70,12 @@
 
     &_important {
         padding-top: 0 !important;
-        padding-bottom: 50px !important;
+        padding-bottom: 50px;
+    }
+
+    &_footer {
+        padding-top: 120px;
+        background-color: #212121;
     }
 }
 
@@ -134,8 +139,11 @@
 
 @media (max-width: 1054px) {
     .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
         &_man {
-            padding-top: 80px;
+            padding-top: 170px;
             padding-bottom: 40px;
         }
 
@@ -145,6 +153,14 @@
 
         &_reasons {
             background-image: url("../media/section/reasons-1054.jpg");
+        }
+
+        &_footer {
+            padding-top: 80px;
+        }
+
+        &_term {
+            padding-top: 65px;
         }
     }
 
@@ -156,6 +172,9 @@
 
 @media (max-width: 768px) {
     .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
         &_face {
             padding-top: 30px;
             padding-bottom: 30px;
@@ -163,6 +182,10 @@
 
         &_reasons {
             background-image: url("../media/section/reasons-768.jpg");
+        }
+
+        &_term {
+            padding-top: 90px;
         }
     }
 
