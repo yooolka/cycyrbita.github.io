@@ -1,0 +1,135 @@
+
+.professional__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1016px;
+    min-height: 797px;
+    padding: 95px 125px 125px 155px;
+    background-image: url("../media/professional/list.png");
+}
+
+.professional__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+    color: #008f3a;
+}
+
+.professional__description {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+
+    & p {
+        &:nth-child(1) {
+            margin-bottom: 20px;
+
+            & mark {
+                font-weight: 600;
+                color: #df2922;
+            }
+        }
+
+        &:nth-child(2) {
+            & mark {
+                font-weight: 800;
+                color: #007bd7;
+            }
+        }
+    }
+}
+
+.professional__id {
+    margin-top: 15px;
+    margin-left: auto;
+}
+
+.professional__human {
+    position: absolute;
+    bottom: -60px;
+    left: -400px;
+    z-index: -1;
+}
+
+@media (max-width: 1054px) {
+    .professional__list {
+        min-height: auto;
+        padding: 30px;
+        background-color: #fff;
+        background-image: none;
+        border: 15px solid #f0f0f0;
+    }
+
+    .professional__human {
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        max-width: 300px;
+    }
+
+    .professional__description {
+        font-size: 19px;
+
+        & p {
+            &:nth-child(2) {
+                & span {
+                    display: inline-block;
+                    padding-left: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .professional__description {
+        font-size: 18px;
+
+        & p {
+            &:nth-child(2) {
+                padding-bottom: 90px;
+
+                & span {
+                    display: inline;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    .professional__human {
+        max-width: 170px;
+    }
+
+    .professional__id {
+        max-width: 140px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .professional__list {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .professional__human {
+        max-width: 120px;
+    }
+
+    .professional__description {
+        & p {
+            &:nth-child(2) {
+                padding-bottom: 60px;
+            }
+        }
+    }
+
+    .professional__id {
+        max-width: 105px;
+    }
+}
