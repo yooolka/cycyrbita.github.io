@@ -1,0 +1,16 @@
+
+.important__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #df2922;
+    text-transform: uppercase;
+
+    & mark {
+        display: block;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #202020;
+        text-transform: none;
+    }
+}
