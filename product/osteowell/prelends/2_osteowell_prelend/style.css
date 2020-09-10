@@ -305,7 +305,7 @@ body {
     color: inherit;
     font-size: .928571em;
     line-height: 1.333333em;
-    padding: 10px 7px 9px 2.5em;
+    padding: 10px 7px 9px 10px;
     vertical-align: bottom
 }
 
@@ -906,7 +906,7 @@ body {
     height: 100px;
     max-width: 500px;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
     resize: none;
 }
 
@@ -1130,6 +1130,12 @@ i {
     text-decoration: line-through;
     max-width: 60px;
     flex: 1 0 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
 
 @media (max-width: 576px) {
