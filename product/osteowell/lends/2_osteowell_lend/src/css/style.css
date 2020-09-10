@@ -3117,6 +3117,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-size: 18px;
   font-weight: 700;
   color: #000;
+  text-decoration: none;
   background: #ffc800;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffc800), to(#ffac00));
   background: -o-linear-gradient(top, #ffc800 0%, #ffac00 100%);
@@ -3323,6 +3324,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   max-width: 885px;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .stop__title {
@@ -3663,6 +3665,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .form {
     max-width: 275px;
     margin-top: 75px;
+  }
+
+  .form__title {
+    font-size: 22px;
   }
 
   .order__item {
@@ -4099,6 +4105,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow: hidden;
   }
 
   .section_problems {
