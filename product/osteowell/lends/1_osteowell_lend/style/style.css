@@ -944,6 +944,8 @@ body {
 }
 
 .bl9-dots li button {
+    min-width: 20px;
+    min-width: 20px;
     width: 20px;
     height: 20px;
     background-color: #ffffff;
@@ -1071,7 +1073,7 @@ li.slick-active button {
     }
 
     .order2 .order-product {
-        display: flex;
+        display: block;
     }
 
     .order-product_mob {
@@ -1218,7 +1220,9 @@ li.slick-active button {
     }
 
     .bl8-text:after {
-        display: none;
+        width: 80px;
+        height: 80px;
+        background-size: cover;
     }
 
     .bl9-avatar {
@@ -1256,7 +1260,7 @@ li.slick-active button {
 
     .bl11 .bl10-btn {
         left: 0;
-        top: -170px;
+        top: -190px;
     }
 
     .bl11 {
@@ -1345,10 +1349,18 @@ li.slick-active button {
         display: none;
     }
 
+    .bl5 {
+        padding-top: 20px;
+    }
+
     .bl5List-item {
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 10px;
+    }
+
+    .bl3-itemTitle, .bl3-itemText {
+        text-align: left;
     }
 
     .list-style {
@@ -1387,7 +1399,7 @@ li.slick-active button {
     }
 
     .bl8-text {
-        padding: 40px 10px;
+        padding: 40px 10px 90px;
     }
 
     .bl9-sliderItem {
@@ -1399,6 +1411,10 @@ li.slick-active button {
 
     .bl10-text {
         margin: 0;
+    }
+
+    .bl8Text-footer {
+        margin-top: 25px;
     }
 
     .bl6 {
