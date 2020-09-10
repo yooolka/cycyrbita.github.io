@@ -1,0 +1,56 @@
+.notForEach {
+  padding: 100px 0;
+  background: url("../../imgs/notForEach-bg.jpg") no-repeat center/cover;
+}
+
+.notForEach-title {
+  color: #fff;
+}
+
+.notForEach-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.notForEach-item {
+  max-width: 306px;
+  height: 731px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 0 35px 40px 40px;
+  color: #fff;
+  margin: 10px 5px;
+}
+
+.notForEach-item_1 {
+  background: url("../../imgs/notForEach-item1.jpg") no-repeat center/cover;
+}
+.notForEach-item_2 {
+  background: url("../../imgs/notForEach-item2.jpg") no-repeat center/cover;
+}
+.notForEach-item_3 {
+  background: url("../../imgs/notForEach-item3.jpg") no-repeat center/cover;
+}
+.notForEach-item_4 {
+  background: url("../../imgs/notForEach-item4.jpg") no-repeat center/cover;
+}
+
+.notForEachItem-title {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.notForEach-text {
+  font-size: 15px;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+.notForEach-text:last-child {
+  margin-top: 20px;
+}

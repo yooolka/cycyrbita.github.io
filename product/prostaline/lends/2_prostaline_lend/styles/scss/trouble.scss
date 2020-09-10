@@ -1,0 +1,75 @@
+.trouble {
+  padding: 0 0 90px;
+  background: #fff;
+}
+
+.trouble-title {
+  margin-bottom: 40px;
+}
+
+.trouble-subTitle,
+.troubleContent-title {
+  text-align: center;
+  margin: 0 auto 30px;
+  width: 100%;
+  max-width: 615px;
+}
+
+.troubleContent-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.trouble-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trouble-item {
+  width: 100%;
+  max-width: 426px;
+  flex: 1 0 100%;
+  min-height: 426px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 40px 40px;
+}
+
+.trouble-item_1 {
+  background: url("../../imgs/trouble-1.jpg") no-repeat center/cover;
+}
+
+.trouble-item_2 {
+  background: url("../../imgs/trouble-2.jpg") no-repeat center/cover;
+}
+
+.trouble-item_3 {
+  background: url("../../imgs/trouble-3.jpg") no-repeat center/cover;
+}
+
+.trouble-item_4 {
+  background: url("../../imgs/trouble-4.jpg") no-repeat center/cover;
+}
+
+.trouble-item_5 {
+  background: url("../../imgs/trouble-5.jpg") no-repeat center/cover;
+}
+
+.trouble-item_6 {
+  background: url("../../imgs/trouble-6.jpg") no-repeat center/cover;
+}
+
+.troubleItem-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 5px rgb(0,0,0);
+}
+
+@media screen and (max-width: 576px) {
+  .trouble-subTitle, .troubleContent-title {
+    margin-bottom: 20px;
+  }
+}

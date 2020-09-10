@@ -1,0 +1,306 @@
+.order {
+	background: url("../../imgs/oreder-bg.png") no-repeat 50% 0%/1920px;
+	padding: 40px 0 130px;
+	overflow: hidden;
+}
+
+.order_bottom {
+	padding-bottom: 40px;
+}
+
+.order-right,
+.order-left {
+	max-width: 640px;
+	flex: 1 0 455px;
+	position: relative;
+}
+
+.product-img {
+	@extend %absoluteCenter;
+	bottom: inherit;
+	top: 50px;
+	left: 140px;
+	max-width: 876px;
+}
+
+.order-main {
+	max-width: 520px;
+	margin: 0 auto;
+	@extend %flexCenter;
+}
+
+.logo {
+	max-width: 193px;
+}
+
+.order-title {
+	color: #fff;
+	font-size: 98px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: .7;
+	margin: 35px 0 25px;
+}
+
+.order-title_green {
+	color: $lightGreen;
+	font-size: 68px;
+}
+
+.order-subTitle {
+	display: block;
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 16px;
+	margin: 0 0 40px;
+}
+
+.order-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0;
+}
+
+.orderList-item {
+	display: flex;
+}
+
+.orderList-img {
+	margin-right: 12px;
+}
+
+.orderList-text {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.product-img_mob {
+	display: none;
+}
+
+.form {
+	width: 100%;
+	margin-top: 50px;
+	padding: 50px 0;
+	background: #fff;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+	.container {
+		max-width: 390px;
+	}
+}
+
+.form-title {
+	width: 100%;
+	font-size: 27px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.form-title_green {
+	color: $darkGreen;
+}
+
+.prices {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.old-prise {
+	margin: 0 5px;
+	text-decoration: line-through;
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+}
+
+.new-prise {
+	margin: 0 15px;
+	font-size: 27px;
+	font-weight: 700;
+	color: $GreenValute;
+}
+
+.form-label {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.form-input {
+	margin-top: 5px;
+	min-height: 50px;
+	background: #f9f9f9;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.counter {
+	margin-top: 10px;
+}
+
+.counter-title {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 15px;
+}
+
+.counter-time {
+	max-width: 320px;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	margin: 0 auto 30px;
+}
+
+.count {
+	max-width: 80px;
+	font-size: 39px;
+	font-weight: 600;
+	text-align: center;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	padding: 15px 0;
+	position: relative;
+}
+
+.count_hours:before {
+	content: 'часов';
+}
+.count_minutes:before {
+	content: 'минут';
+}
+.count_seconds:before {
+	content: 'секунд';
+}
+
+.count:before,
+.count_hours:after,
+.count_minutes:after {
+	font-size: 17px;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.count_hours:after,
+.count_minutes:after {
+	content: ':';
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0;
+	top: 0;
+	right: -125px;
+}
+
+.btn {
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 20px;
+	background: linear-gradient(#2ea862, #218947);
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+	.product-img {
+		left: 20px;
+		max-width: 760px;
+		top: 0;
+		bottom: 0;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.order-title {
+		font-size: 85px;
+	}
+
+	.order-title_green {
+		font-size: 60px;
+	}
+
+	.order-subTitle {
+		letter-spacing: 13px;
+	}
+
+	.order-right,
+	.order-left {
+		max-width: 100%;
+		flex: 1 0 100%
+	}
+
+	.product-img_mob {
+		display: block;
+		position: relative;
+		max-width: 500px;
+		margin: 20px 0;
+		left: 100px;
+	}
+
+	.order-right {
+		display: none;
+	}
+
+	.form {
+		margin-top: 10px;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+
+	.order-title {
+		font-size: 55px;
+		margin: 25px 0;
+	}
+
+	.order-title_green {
+		font-size: 40px;
+	}
+
+	.order-subTitle {
+		letter-spacing: 4px;
+		margin-bottom: 10px;
+	}
+
+	.order-list {
+		justify-content: center;
+	}
+
+	.orderList-item {
+		margin: 15px;
+		justify-content: center;
+	}
+
+	.product-img_mob {
+		margin: 10px 0;
+		max-width: 320px;
+		left: 65px;
+	}
+
+	.count_hours:after,
+	.count_minutes:after {
+		display: none;
+	}
+
+}

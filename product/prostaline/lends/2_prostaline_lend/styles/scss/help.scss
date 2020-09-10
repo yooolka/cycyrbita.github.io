@@ -1,0 +1,148 @@
+.help {
+	padding: 100px 0;
+	background: url("../../imgs/help-bg.jpg") no-repeat 50% 0%/1920px;
+	position: relative;
+	overflow: hidden;
+
+	.container {
+		justify-content: flex-end;
+	}
+}
+
+.help-right,
+.product-block {
+	max-width: 640px;
+	flex: 1 0 455px;
+	position: relative;
+}
+
+.product-block:before {
+	content: '';
+	display: block;
+	background: url("../../imgs/product-before.png") no-repeat center/100%;
+	width: 803px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+}
+
+.product-bottle {
+	@extend %absoluteCenter;
+	left: inherit;
+	right: 200px;
+	width: 100%;
+	max-width: 626px;
+}
+
+.help-title {
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+.help-text {
+	font-size: 18px;
+	margin-bottom: 35px;
+}
+
+.help-list {
+	display: block;
+	width: 100%;
+}
+
+.helpList-item {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	background: #f5f5f5;
+	margin-bottom: 10px;
+}
+
+.helpList-img {
+	width: 26px;
+	height: 26px;
+	margin-right: 10px;
+}
+
+.help-footer {
+	margin-top: 30px;
+	padding-left: 25px;
+}
+
+.alarm {
+	position: relative;
+	border: 1px solid #dddddd;
+	padding: 30px 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background: url("../../imgs/alarm-bg.png") no-repeat center;
+	background-size: cover;
+}
+
+.alarm:before {
+	content: '';
+	display: block;
+	background: url("../../imgs/alarm-before.png") no-repeat center;
+	width: 55px;
+	height: 49px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -28px;
+	margin: auto;
+}
+
+.alarm-left {
+	margin-right: 15px;
+	max-width: 210px;
+}
+
+.alarm-title {
+	font-size: 16px;
+	font-weight: 700;
+	color: #000;
+}
+
+.alarm-right {
+	max-width: 610px;
+	flex: 1 0 auto;
+}
+
+.alarm-red {
+	color: #ea1111;
+}
+
+@media screen and (max-width: 1280px) {
+	.product-bottle {
+		left: -150px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.help .container {
+		justify-content: center;
+	}
+
+	.help-right {
+		margin-top: 170px;
+		flex: 1 0 100%;
+	}
+
+	.product-block {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+	.help {
+		background: none;
+	}
+
+	.help-right {
+		margin-top: 0;
+	}
+}

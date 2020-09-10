@@ -1,0 +1,107 @@
+.consist {
+	padding: 90px 0;
+	background: linear-gradient(#ecf6f5, #fff 70%);
+}
+
+.consist-title {
+	margin-bottom: 50px;
+}
+
+.consist-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	position: relative;
+}
+
+.consist-list:before {
+	content: '';
+	@extend %absoluteCenter;
+	right: 250px;
+	display: block;
+	background: url("../../imgs/product-bottle.png") no-repeat center/100%;
+	width: 626px;
+	height: 601px;
+	z-index: 1;
+}
+
+.consist-item {
+	max-width: 640px;
+	flex: 1 0 455px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-bottom: 50px;
+}
+
+.consist-item:nth-child(even) {
+	justify-content: flex-end;
+	.consist-img {
+		order: 2;
+		margin: 0 0 0 25px;
+	}
+	.consistItem-content {
+		order: 1;
+		text-align: right;
+	}
+}
+
+.consist-img {
+	margin-right: 25px;
+	width: 121px;
+	height: 121px;
+}
+
+.consistItem-content {
+	max-width: 230px;
+}
+
+@media screen and (max-width: 1100px) {
+
+	.consist-list:before {
+		width: 465px;
+		right: 165px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.consist-list:before {
+		display: none;
+	}
+
+	.consist-list {
+		justify-content: center;
+	}
+
+	.consist-item {
+		max-width: 320px;
+		flex: 1 0 100%;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.consistItem-title {
+		text-align: center;
+	}
+
+	.consist-img {
+		margin: 10px;
+	}
+
+	.consist-item:nth-child(even) {
+		justify-content: center;
+		.consist-img {
+			order: 1;
+			margin: 10px;
+		}
+		.consistItem-content {
+			order: 2;
+			text-align: left;
+		}
+	}
+}
+
+

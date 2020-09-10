@@ -1,0 +1,23 @@
+%flexCenter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+%absoluteCenter {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+@mixin absoluteCenter {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
