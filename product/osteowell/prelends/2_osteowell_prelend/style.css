@@ -334,7 +334,8 @@ body {
     position: relative;
     border: 1px solid #ddd;
     border-right: none;
-    border-left: none
+    border-left: none;
+    margin-top: -2px;
 }
 
 #header:before {

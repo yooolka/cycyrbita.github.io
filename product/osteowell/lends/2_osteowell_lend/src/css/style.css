@@ -3323,6 +3323,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   max-width: 885px;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .stop__title {
@@ -4099,6 +4100,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow: hidden;
   }
 
   .section_problems {

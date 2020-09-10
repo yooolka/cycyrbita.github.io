@@ -115,6 +115,7 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+        overflow: hidden;
 
         &_wooman {
             background-image: url("../media/section/wooman-480.jpg");

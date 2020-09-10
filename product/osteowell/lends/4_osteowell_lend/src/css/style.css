@@ -3922,6 +3922,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow: hidden;
   }
 
   .section_wooman {
