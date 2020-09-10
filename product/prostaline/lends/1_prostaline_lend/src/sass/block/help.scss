@@ -5,6 +5,12 @@
 }
 
 .help__box {
+    &:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     &:last-child {
         max-width: 635px;
     }
@@ -12,6 +18,7 @@
 
 .help__product {
     position: relative;
+    margin-top: 30px;
 }
 
 .help__product-discond {
@@ -97,7 +104,6 @@
     & a {
         display: inline-block;
         padding: 20px 20px;
-        margin-top: 15px;
         font-size: 24px;
         font-weight: 500;
         color: #fff;
