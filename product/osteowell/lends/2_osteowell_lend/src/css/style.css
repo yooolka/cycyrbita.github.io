@@ -3117,6 +3117,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-size: 18px;
   font-weight: 700;
   color: #000;
+  text-decoration: none;
   background: #ffc800;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffc800), to(#ffac00));
   background: -o-linear-gradient(top, #ffc800 0%, #ffac00 100%);
