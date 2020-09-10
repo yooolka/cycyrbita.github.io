@@ -183,6 +183,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 5px auto 15px;
+    max-width: 190px;
 }
 
 .timer-timerItems {
@@ -201,6 +202,18 @@ body {
     height: 55px;
     margin-bottom: 8px;
 }
+
+.adress {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #888;
+    text-align: center;
+}
+
+.adress a {
+    color: #888;
+}
+
 
 .timer-timerItems:not(:last-child):before {
     content: ':';
