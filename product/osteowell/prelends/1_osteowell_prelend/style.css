@@ -209,23 +209,10 @@ main a:hover {
 
 html body {
     background: #fff;
-    padding: 40px 0 0 0
 }
 
 html body * {
     outline: 0
-}
-
-@media (min-width: 769px) {
-    html body {
-        padding: 55px 0 0 0
-    }
-}
-
-@media (min-width: 1025px) {
-    html body {
-        padding: 97.25px 0 0 0
-    }
 }
 
 body .page-content {
@@ -346,12 +333,6 @@ body .page-content {
 .sticky-share-bar-container > div {
     position: absolute;
     height: 100%
-}
-
-.sticky-share-bar-container .social {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 110px
 }
 
 .article-template__body {
@@ -979,7 +960,6 @@ body, html {
 }
 
 .header {
-    position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
@@ -2232,9 +2212,9 @@ h4 {
 }
 
 .ryle__item:nth-of-type(1) {
-    -webkit-transform: rotate(-60deg) translate(143px, -98px);
-    -ms-transform: rotate(-60deg) translate(143px, -98px);
-    transform: rotate(-60deg) translate(143px, -98px)
+    -webkit-transform: rotate(-60deg) translate(143px, -88px);
+    -ms-transform: rotate(-60deg) translate(143px, -88px);
+    transform: rotate(-60deg) translate(143px, -88px)
 }
 
 .ryle__item:nth-of-type(2) {
@@ -2244,21 +2224,21 @@ h4 {
 }
 
 .ryle__item:nth-of-type(3) {
-    -webkit-transform: rotate(0deg) translate(80px, -10px);
-    -ms-transform: rotate(0deg) translate(80px, -10px);
-    transform: rotate(0deg) translate(80px, -10px)
+    -webkit-transform: rotate(0deg) translate(80px, -13px);
+    -ms-transform: rotate(0deg) translate(80px, -13px);
+    transform: rotate(0deg) translate(80px, -13px)
 }
 
 .ryle__item:nth-of-type(4) {
-    -webkit-transform: rotate(30deg) translate(90px, 45px);
-    -ms-transform: rotate(30deg) translate(90px, 45px);
-    transform: rotate(30deg) translate(90px, 45px)
+    -webkit-transform: rotate(30deg) translate(90px, 32px);
+    -ms-transform: rotate(30deg) translate(90px, 32px);
+    transform: rotate(30deg) translate(90px, 32px)
 }
 
 .ryle__item:nth-of-type(5) {
-    -webkit-transform: rotate(60deg) translate(117px, 85px);
-    -ms-transform: rotate(60deg) translate(117px, 85px);
-    transform: rotate(60deg) translate(117px, 85px)
+    -webkit-transform: rotate(60deg) translate(117px, 73px);
+    -ms-transform: rotate(60deg) translate(117px, 73px);
+    transform: rotate(60deg) translate(117px, 73px)
 }
 
 .ryle__item:nth-of-type(6) {
