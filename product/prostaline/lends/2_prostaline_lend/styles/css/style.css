@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.consist-list:before, .product-bottle, .product-img {
+.consist-list:before, .product-bottle, .product-img_capsules, .product-img, .order-right:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -340,11 +340,32 @@ h2 span {
   position: relative;
 }
 
+.order-right:before {
+  content: "";
+  display: block;
+  background: url("../../imgs/product-shadow.png") no-repeat center/477px;
+  width: 477px;
+  height: 34px;
+  top: inherit;
+  bottom: 236px;
+  left: inherit;
+  right: -202px;
+}
+
 .product-img {
   bottom: inherit;
   top: 50px;
   left: 140px;
   max-width: 876px;
+  transition: all 1s ease-in;
+  transform-origin: bottom center;
+}
+
+.product-img_capsules {
+  bottom: inherit;
+  top: 40px;
+  right: 165px;
+  transition: opacity 1s ease-in;
 }
 
 .order-main {
@@ -552,6 +573,21 @@ h2 span {
     top: 0;
     bottom: 0;
   }
+
+  .product-img_capsules {
+    top: 125px;
+    right: 320px;
+  }
+
+  .order-right:before {
+    bottom: 145px;
+    right: -125px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .order-right:before {
+    display: none;
+  }
 }
 @media screen and (max-width: 991px) {
   .order-title {
@@ -577,7 +613,8 @@ h2 span {
     position: relative;
     max-width: 500px;
     margin: 20px 0;
-    left: 100px;
+    left: -90px;
+    height: auto;
   }
 
   .order-right {
@@ -615,7 +652,7 @@ h2 span {
   .product-img_mob {
     margin: 10px 0;
     max-width: 320px;
-    left: 65px;
+    left: -60px;
   }
 
   .count_hours:after,
