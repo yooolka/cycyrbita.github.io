@@ -2,11 +2,19 @@
 @import "commons/colors";
 
 @font-face {
-	font-family: 'Roboto Condensed';
-	src: url("../../fonts/RobotoCondensed-Bold.woff") format('woff'),
-	url("../../fonts/RobotoCondensed-Bold.woff2") format('woff2');
+	font-family: 'Montserrat';
+	src: url("../../fonts/Montserrat/Montserrat-BoldItalic.woff") format('woff'),
+	url("../../fonts/Montserrat/Montserrat-BoldItalic.woff2") format('woff2');
 	font-weight: 700;
-	font-style: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../../fonts/Montserrat/Montserrat-italic.woff") format('woff'),
+	url("../../fonts/Montserrat/Montserrat-italic.woff2") format('woff2');
+	font-weight: 400;
+	font-style: italic;
 }
 
 @font-face {
@@ -289,9 +297,9 @@ div, section, header, footer {
 }
 
 .container {
-	max-width: 1300px;
+	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 80px;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
@@ -329,6 +337,8 @@ h2 {
 @import "notForEach";
 @import "help";
 @import "consist";
+@import "spec";
+@import "comments";
 
 footer {
 	padding: 10px 0 20px;
@@ -337,6 +347,13 @@ footer {
 
 footer a {
 	color: $darkGreen;
+}
+
+@media screen and (max-width: 1440px) {
+	.container {
+		max-width: 1300px;
+		padding: 0 10px;
+	}
 }
 
 @media screen and (max-width: 991px) {

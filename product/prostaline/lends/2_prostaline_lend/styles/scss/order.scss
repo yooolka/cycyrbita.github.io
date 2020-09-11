@@ -23,7 +23,7 @@
 	width: 477px;
 	height: 34px;
 	top: inherit;
-	bottom: 236px;
+	bottom: 233px;
 	left: inherit;
 	right: -202px;
 }
@@ -118,6 +118,7 @@
 	box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
 	.container {
 		max-width: 390px;
+		padding: 0 10px;
 	}
 }
 

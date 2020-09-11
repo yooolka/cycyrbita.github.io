@@ -1,0 +1,120 @@
+.spec {
+	padding: 60px 0;
+	background: url("../../imgs/spec-bg.jpg") no-repeat center/cover;
+	position: relative;
+	overflow: hidden;
+}
+
+.spec:before {
+	content: '';
+	display: block;
+	width: 100%;
+	max-width: 1920px;
+	height: 100%;
+	background: url("../../imgs/spec.png") no-repeat center/cover;
+	@extend %absoluteCenter;
+	z-index: 2;
+}
+
+.spec-card {
+	padding: 65px 65px 35px;
+	background: #fff;
+}
+
+.spec-main {
+	max-width: 700px;
+}
+
+.spec-title {
+	color: $specBlue;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.spec-title,
+.spec-text,
+.spec-footer {
+	position: relative;
+	z-index: 3;
+}
+
+.spec-text {
+	max-width: 100%;
+}
+
+.spec-text_blue {
+	font-size: 21px;
+	color: $specBlue;
+	margin-bottom: 25px;
+}
+
+.spec-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 30px;
+}
+
+.specFooter-text {
+	text-align: right;
+	max-width: 270px;
+	flex: 1 0 100%;
+}
+
+.spec-name {
+	color: $specBlue;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.spec-exp {
+	font-style: italic;
+}
+
+.sign {
+	margin-left: 50px;
+}
+
+.spec-mob {
+	max-width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	border: 1px solid #b8b8b8;
+	display: none;
+}
+
+.doctor {
+	@extend %absoluteCenter;
+	max-width: 494px;
+	top: inherit;
+	left: inherit;
+	right: 200px;
+}
+
+@media screen and (max-width: 1280px){
+
+	.spec:before {
+		display: none;
+	}
+	.spec-mob {
+		display: block;
+		margin-right: 20px;
+	}
+
+	.spec-main {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.spec-card {
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.spec-card {
+		padding: 30px 10px;
+	}
+}

@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.consist-list:before, .product-bottle, .product-img_capsules, .product-img, .order-right:before {
+.avatar, .doctor, .spec:before, .consist-list:before, .product-bottle, .product-img_capsules, .product-img, .order-right:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -15,10 +15,16 @@
 }
 
 @font-face {
-  font-family: "Roboto Condensed";
-  src: url("../../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/Montserrat-BoldItalic.woff") format("woff"), url("../../fonts/Montserrat/Montserrat-BoldItalic.woff2") format("woff2");
   font-weight: 700;
-  font-style: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/Montserrat-italic.woff") format("woff"), url("../../fonts/Montserrat/Montserrat-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
 }
 @font-face {
   font-family: "Montserrat";
@@ -288,9 +294,9 @@ div, section, header, footer {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 80px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -347,7 +353,7 @@ h2 span {
   width: 477px;
   height: 34px;
   top: inherit;
-  bottom: 236px;
+  bottom: 233px;
   left: inherit;
   right: -202px;
 }
@@ -440,6 +446,7 @@ h2 span {
 }
 .form .container {
   max-width: 390px;
+  padding: 0 10px;
 }
 
 .form-title {
@@ -1039,6 +1046,194 @@ h2 span {
     text-align: left;
   }
 }
+.spec {
+  padding: 60px 0;
+  background: url("../../imgs/spec-bg.jpg") no-repeat center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.spec:before {
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  background: url("../../imgs/spec.png") no-repeat center/cover;
+  z-index: 2;
+}
+
+.spec-card {
+  padding: 65px 65px 35px;
+  background: #fff;
+}
+
+.spec-main {
+  max-width: 700px;
+}
+
+.spec-title {
+  color: #3b29c1;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.spec-title,
+.spec-text,
+.spec-footer {
+  position: relative;
+  z-index: 3;
+}
+
+.spec-text {
+  max-width: 100%;
+}
+
+.spec-text_blue {
+  font-size: 21px;
+  color: #3b29c1;
+  margin-bottom: 25px;
+}
+
+.spec-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.specFooter-text {
+  text-align: right;
+  max-width: 270px;
+  flex: 1 0 100%;
+}
+
+.spec-name {
+  color: #3b29c1;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spec-exp {
+  font-style: italic;
+}
+
+.sign {
+  margin-left: 50px;
+}
+
+.spec-mob {
+  max-width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid #b8b8b8;
+  display: none;
+}
+
+.doctor {
+  max-width: 494px;
+  top: inherit;
+  left: inherit;
+  right: 200px;
+}
+
+@media screen and (max-width: 1280px) {
+  .spec:before {
+    display: none;
+  }
+
+  .spec-mob {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .spec-main {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .spec-card {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .spec-card {
+    padding: 30px 10px;
+  }
+}
+.comments {
+  padding: 80px 0 40px;
+}
+
+.comments-title {
+  margin-bottom: 55px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -80px;
+}
+
+.slider-item {
+  max-width: 320px;
+  padding: 60px 30px 30px;
+  border: 1px solid #000;
+  position: relative;
+  margin: 60px 25px 0;
+}
+
+.avatar {
+  bottom: inherit;
+  top: -60px;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+}
+
+.sliderItem-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.age {
+  font-weight: 600;
+  color: #22b292;
+  margin-bottom: 25px;
+}
+
+.sliderItem-text {
+  margin-bottom: 20px;
+}
+
+.stars {
+  max-width: 172px;
+}
+
+@media screen and (max-width: 1440px) {
+  .slider {
+    margin: 0 auto;
+    max-width: 1064px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .slider-item {
+    padding: 60px 10px 30px;
+    margin: 60px 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    max-width: 670px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .slider {
+    max-width: 320px;
+  }
+}
 footer {
   padding: 10px 0 20px;
   text-align: center;
@@ -1048,6 +1243,12 @@ footer a {
   color: #3e986f;
 }
 
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1300px;
+    padding: 0 10px;
+  }
+}
 @media screen and (max-width: 991px) {
   .wrap header,
 .wrap section,
