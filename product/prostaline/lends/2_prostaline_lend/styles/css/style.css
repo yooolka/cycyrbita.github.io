@@ -371,6 +371,7 @@ h2 span {
 .order-main {
   max-width: 520px;
   margin: 0 auto;
+  align-items: flex-start;
 }
 
 .logo {
